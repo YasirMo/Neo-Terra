@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
-import Navbar from './Components/Navbar';
+import Navbar from './Navbar';
 import  Home  from './Components/pages/Home';
 import TakeAction from './Components/pages/TakeAction';
-import Footer from './Components/pages/Footer';
+import Footer from './Footer';
 import Learn from './Components/pages/Learn';
 import News from './Components/pages/News';
 import Aboutus from './Components/pages/Aboutus';
@@ -14,21 +14,26 @@ function App() {
   <div className="App">
   <Router>
   <Navbar/>
-  
+           
 
     <Switch>
-
+   
     <Route path='/' exact component={Home} />
     <Route path='/TakeAction' exact component={TakeAction} />
     <Route path='/Learn' exact component={Learn} />
     <Route path='/News' exact component={News} />
     <Route path='/Aboutus' exact component={Aboutus} />
-    
+     
+   
     </Switch>
-          <Footer/>
+           <div className="page"> 
+            <div className="content">
+          <Footer />
+          </div>
+          </div>
        </Router>
 </div> 
-    
+
     </>
   );
 }

@@ -5,13 +5,12 @@ import './Video.css'
 function Video() {
     return (
 
-        
         <div className ="video">
            
-                <video src = '/videos/Climatevideo.mp4'  autoPlay loop muted/>
+                <video src = '/videos/Climate.mp4'  autoPlay loop muted/>
         </div>
        
-        
+   
     )
 }
 
