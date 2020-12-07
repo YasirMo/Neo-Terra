@@ -3,8 +3,10 @@ import React from 'react'
 function Learn() {
     return (
         <div>
-            Learn About Climate Change
+               <img src="/images/plant.jpg" alt="plant" / >
+              
         </div>
+     
     )
 }
 

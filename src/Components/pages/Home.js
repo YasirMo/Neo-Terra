@@ -1,11 +1,24 @@
 import React from 'react';
 import Carousels from '../../Carousels';
-import Video from '../Video';
+import '../../App.css';
 function Home (){
     return(
         <>
-           <Video/>
-          <Carousels/>
+
+       
+        <div>
+        <img src="/images/Glacier.jpg"  alt="Glacier" />
+        <div className="QuizTitle">
+        Take our Quiz
+        </div>
+        </div>
+      
+     
+        
+        <Carousels/>
+       
+        
+          
         </>
     )
     

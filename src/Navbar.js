@@ -49,7 +49,6 @@ function Navbar() {
               
               <Link to='/Quiz' className='Button-link'>
              Quiz
-          
               </Link>
  
             </div>

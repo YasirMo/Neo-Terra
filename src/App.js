@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Learn from './Components/pages/Learn';
 import News from './Components/pages/News';
 import Aboutus from './Components/pages/Aboutus';
+import Quiz from './Components/pages/Quiz';
 function App() {
   return (
   <>
@@ -23,6 +24,7 @@ function App() {
     <Route path='/Learn' exact component={Learn} />
     <Route path='/News' exact component={News} />
     <Route path='/Aboutus' exact component={Aboutus} />
+    <Route path='/Quiz' exact component={Quiz} />
      
    
     </Switch>

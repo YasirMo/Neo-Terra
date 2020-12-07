@@ -1,42 +1,35 @@
 import React from 'react'
 import Carousel from "react-elastic-carousel";
-import Getinvolved from './Getinvolved.js';
+import TakeActionSlider from './TakeActionSlider.js';
 import Item from "./Item.js";
 import MapItem from './MapItem.js';
 import NewsItem from "./NewsItem.js"
+import { Link } from 'react-router-dom';
+import './App.css';
 const breakPoints = [
   { width: 50, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },
-  { width: 500000, itemsToShow: 4 },
+  { width: 500000, itemsToShow: 1 },
   ];
 function Carousels() {
     return (
 
        
-       
         <>
         <div className="App">
+       
           <Carousel breakPoints={breakPoints}>
-          <Item >
-          <div>
-          <h1>
-          Take Action
-          </h1>
-              <h4> 
-              Take actions about what you care about
-              </h4>
-              <h4>
-               Lets change the world together
-              </h4>
-           </div>
-
-            </Item>
-
+         
+   
+ 
+        
             <NewsItem>
-            <div>
+       
+            <div >
+            
                <h1>
-              News
+               <Link to='/News' className='Carousels-Links'>  News </Link>
               </h1>
               <h4> 
               Here at Neo-Terra we believe it is time to
@@ -49,13 +42,30 @@ function Carousels() {
               </h4>
              
            </div>
-           
+        
             </NewsItem>
-            
-            <Getinvolved>
-            <div>
+            <Item >
+          <div>
           <h1>
-          Get involved
+          <Link to='/TakeAction' className='Carousels-Links'>  Take Action </Link>
+
+          </h1>
+              <h4> 
+              Take actions about what you care about
+              </h4>
+              <h4>
+               Lets change the world together
+              </h4>
+           </div>
+
+            </Item>
+            
+            <TakeActionSlider >
+            <div >
+            
+          <h1>
+          <Link to='/Learn' className='Carousels-Links'>  Learn </Link>
+
           </h1>
               <h4> 
               Society needs to be more educated 
@@ -66,8 +76,9 @@ function Carousels() {
               <h4>
               find out how you can get involved
               </h4>
+             
            </div>
-            </Getinvolved>
+            </TakeActionSlider>
 
             <MapItem>
             <div>
@@ -88,11 +99,13 @@ function Carousels() {
 
 
          
-
+          
          
      
           </Carousel>
+       
         </div>
+       
       </>
         
     )

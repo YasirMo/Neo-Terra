@@ -1,29 +1,42 @@
-* {
-    box-sizing: border-box;
-    /* font-family: 'PT Sans', sans-serif; */
-  
-   
-  }
- 
-  .App {
-   
-     background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    
-  } 
-  .page {
-    position:absolute;
-    left:0;
-    bottom:50;
-    right:0;
+
+  img {
+    width: 1900px;
+    height: 1200px;
   }
 
-  .content{
-    padding-bottom: 1 px;
+  .QuizTitle{
+    position: absolute;
+    bottom: 520px;
+    left: 745px;
+    color: white;
+    font-size: 90px;
+    font-family: Alegreya Sans;
   }
- 
   
+  
+
+  .main {
+    padding-top: 10em;
+   
+   
+  }
+
+  .list{
+    list-style: none;
+  }
+
+  
+  .Carousels-Links {
+    color: #FFF;
+    font-size: 40px;
+  }
+  .Carousels-Links:hover {
+     color: rgb(255, 255, 255);
+     transition: all 0.2s ease-out;
+     text-decoration: none;
+  }
+
+ 
   
   
 

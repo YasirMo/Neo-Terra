@@ -3,7 +3,7 @@ import React from 'react'
 function Quiz() {
     return (
         <div>
-         Quiz
+        Quiz
         </div>
     )
 }

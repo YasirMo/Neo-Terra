@@ -3,7 +3,7 @@ import React from 'react'
 function TakeAction() {
     return (
         <div>
-          Take action
+         <img src="/images/fire.jpg" alt="fire" / >
         </div>
     )
 }
