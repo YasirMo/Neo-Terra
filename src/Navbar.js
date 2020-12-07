@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+
 function Navbar() {
 
 
@@ -9,9 +10,7 @@ function Navbar() {
       <nav className='navbar'>
 
     <div className='navbar-container'> 
-         <Link to='/' className='navbar-logo'> 
-         Neo Terra
-         </Link>
+         <img className="navbar-Logo" src='/images/Logo.png' alt='logo'/>
          </div>
             
          <ul className={ 'nav-menubar'}>
