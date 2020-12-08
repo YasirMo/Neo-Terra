@@ -12,7 +12,7 @@ function Footer() {
             <h4>NEO-TERRA </h4>
 
             <h1 className="list">
-              <li>London, Engalnd</li>
+              <li>London, England</li>
               <li>Uxbridge</li>
 
             </h1>
@@ -24,7 +24,7 @@ function Footer() {
 
             <div className="list">
               <li>Quiz</li>
-              <li> Interactive Map</li>
+              <li>Interactive Map</li>
               <li>Learn about climate change</li>
               <li>Take action</li>
             </div>
