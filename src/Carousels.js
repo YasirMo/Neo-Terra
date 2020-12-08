@@ -10,7 +10,6 @@ const breakPoints = [
   { width: 50, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },
-  { width: 500000, itemsToShow: 1 },
   ];
 function Carousels() {
     return (

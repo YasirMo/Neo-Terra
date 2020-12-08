@@ -26,19 +26,19 @@ function App() {
     <Route path='/Aboutus' exact component={Aboutus} />
     <Route path='/Quiz' exact component={Quiz} />
      
-   
     </Switch>
+
            <div className="page"> 
             <div className="content">
           <Footer />
           </div>
+
           </div>
        </Router>
-</div> 
+    </div> 
 
     </>
   );
 }
 
 export default App;
-//<Footer/>
