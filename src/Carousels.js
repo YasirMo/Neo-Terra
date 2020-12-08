@@ -38,7 +38,7 @@ function Carousels() {
               share postive and insightful news 
               </h4>
               <h4>
-              about cliamte change
+              about climate change
               </h4>
              
            </div>
