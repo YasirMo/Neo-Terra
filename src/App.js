@@ -7,7 +7,7 @@ import TakeAction from './Components/pages/TakeAction';
 import Footer from './Footer';
 import Learn from './Components/pages/Learn';
 import News from './Components/pages/News';
-import Aboutus from './Components/pages/Aboutus';
+import CarbonFootprint from './Components/pages/CarbonFootprint';
 import Quiz from './Components/pages/Quiz';
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
     <Route path='/TakeAction' exact component={TakeAction} />
     <Route path='/Learn' exact component={Learn} />
     <Route path='/News' exact component={News} />
-    <Route path='/Aboutus' exact component={Aboutus} />
+    <Route path='/CarbonFootprint' exact component={CarbonFootprint} />
     <Route path='/Quiz' exact component={Quiz} />
      
     </Switch>

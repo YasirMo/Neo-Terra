@@ -40,8 +40,8 @@ function Navbar() {
 
             <li className='nav-item'>
               
-              <Link to='/Aboutus' className='nav-links' >
-              About us
+              <Link to='/CarbonFootprint' className='nav-links' >
+              Carbon Footprint
               </Link>
  
             </li>
