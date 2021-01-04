@@ -19,6 +19,9 @@ public class news_stories {
 	@Column(name = "story_link")
 	private String story_link;
 	
+	@Column(name = "source")
+	private String source;
+	
 	public news_stories() {
 		
 	} //
@@ -31,6 +34,13 @@ public class news_stories {
 
 	public void setStory_id(Integer story_id) {
 		this.story_id = story_id;
+	}
+	public String getSource() {
+		return source;
+	}
+	
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getStory_title() {
