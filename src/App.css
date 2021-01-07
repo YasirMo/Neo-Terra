@@ -3,6 +3,7 @@
     width: 1900px;
     height: 1200px;
   }
+  
 
   .QuizTitle{
     position: absolute;
@@ -37,8 +38,58 @@
      text-decoration: none;
   }
 
- 
-  
-  
+  .Quiz-component {
+    background: url(tropical-plants.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 1000px;
+}
 
+.Carbon-background{
+  color: DDC8C4;
+}
+
+.question-carbon{
+  margin-left: 820px;
+  margin-right: -605px;
+  font-size: 25px;
+  margin-top: 250px;
+  font-weight: bolder;
+  color: black;
+  display: grid;
+}
+  
+.answerOurQuestions{
+  margin-left: -390px;
+  font-size: 20px;
+  margin-top: 120px;
+  display: grid;
+  font-weight: bolder;
+  
+}
+
+.Start-btn{
+ margin-left: 910px;
+ margin-right: 100px;
+  font-size: 25px;
+  margin-bottom: 300px;
+  margin-top: -45px;
+  width: 19%;
+}
+
+
+
+.questionaire-carbon{
+  margin-left: 600px;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
  
+.score-section-carbon{
+  margin-left: 800px;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
