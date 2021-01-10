@@ -5,7 +5,7 @@ function Footer() {
     <div className="main">
 
       <div className="container">
-
+      <div className="content-wrap">
         <div className="row">
           <div className="col">
 
@@ -48,6 +48,7 @@ function Footer() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

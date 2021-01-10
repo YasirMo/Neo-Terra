@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../../App.css'
+import { Link } from 'react-router-dom';
+import '../../App.css';
+
 function CarbonFootprint()   {
 
 	
@@ -10,18 +12,22 @@ function CarbonFootprint()   {
         display: "flex",
         
       };
-      
+	 
+
+	  
+
       const questions = [
 		
 		{
 			CarbonFootprint: 'Carbon Footprint Calculator' ,
+			CarbonFootprint2:'Measure your carbon footprint by answering our questionnaire.',
 			answerOptions: [
 				{ answerText: 'Start' },
 				
 			],
 		},
 		{
-			Userinput: '1.	How many people are in your household?',
+			questionText: '1.	How many people are in your household?',
 			answerOptions: [
 				{ answerText: '0', Household: 0},
 				{ answerText: '1-3', Household: 3},
@@ -44,10 +50,10 @@ function CarbonFootprint()   {
 		{
             questionText: '3.	How many cars are used in your household?' ,
 			answerOptions: [
-				{ answerText: '0', Household: 0},
-				{ answerText: '1-3', Household: 2.436  },
-				{ answerText: '4-5' ,Household: 3.654   },
-				{ answerText: '6' ,Household: 5.481 },
+				{ answerText: '0', car: 0},
+				{ answerText: '1-3', car: 2.436  },
+				{ answerText: '4-5' ,car: 3.654   },
+				{ answerText: '6' ,car: 5.481 },
 				
 			],
 		},
@@ -214,14 +220,22 @@ function CarbonFootprint()   {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
+	let [score, setScore] = useState(0);
 
+	const handleAnswerOptionClick = (Household,Answer,carType,Car) => {
 		
 
-	const handleAnswerOptionClick = (Answer) => {
-		if (Answer) {
-			setScore(Answer + 1);
+		if (Answer > 0) {
+			return score+1;
+		  }
+	  
+		if (Household) {
+			setScore(Household);
+		}else {
+			setShowScore(Answer);
 		}
+		
+		
 
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
@@ -234,6 +248,7 @@ function CarbonFootprint()   {
 	
 	function refreshPage() {
 		window.location.reload(false);
+		
 	  }
     return (
 		<div style={backgroundImage}  >
@@ -242,18 +257,26 @@ function CarbonFootprint()   {
 		
           
 			{showScore ? (
-				<div className='score-section-carbon'>
-					
-					<h1>
-					Your total is: {score}
+				<div >
+					<h1 className='score-section-carbon'>
+				 
+				
+					Your total is:  {score+1} 
 					<br/>
-					The world total is: 4.4
+					The world average is 4.4
 					<br/>
-					The Uk average is: 14.1
-            	
-					  
+					The Uk average is 14.1
 					</h1>
-					<button onClick={refreshPage}>Retake Quiz</button>
+
+					
+					<button onClick={refreshPage} className="Start-btn">Retake Quiz</button>
+					<button  className='Start-btn' >
+					<Link to='/Maps' className="Maps-btn">
+              Maps
+              </Link>
+					</button>
+					
+					
 				</div>
 				
 			) : (
@@ -264,19 +287,20 @@ function CarbonFootprint()   {
 					
 				
 						<div className='question-count'>
-						<div className='question-carbon'>{questions[currentQuestion].CarbonFootprint}</div>
+						<div className='question-carbon'>{questions[currentQuestion].CarbonFootprint} 
+						<br/>		
+						<p className="messure-carbon">{questions[currentQuestion].CarbonFootprint2} </p>
+						</div>
+
 					</div>
 					<div className='questionaire-carbon'>
 
-						<div >{questions[currentQuestion].Userinput} </div>
 						</div>
                         <div  className="questionaire-carbon">{questions[currentQuestion].questionText}</div>
 
-						
-						
-						<div className='Start-btn'>
+						<div >
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.Answer)} >{answerOption.answerText}</button>
+							<button onClick={() => handleAnswerOptionClick(answerOption.Answer)} className="Start-btn">{answerOption.answerText}</button>
 						))}
 					</div>
 						
@@ -288,6 +312,7 @@ function CarbonFootprint()   {
             
 		</div>
         </div>
+		
 	);
 }
 

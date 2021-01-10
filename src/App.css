@@ -15,14 +15,13 @@
     
   }
   
-  
 
   .main {
     padding-top: 10em;
-   
-   
+  
   }
-
+  
+  
   .list{
     list-style: none;
   }
@@ -49,10 +48,10 @@
 }
 
 .question-carbon{
-  margin-left: 820px;
+  margin-left: 720px;
   margin-right: -605px;
   font-size: 25px;
-  margin-top: 250px;
+  margin-top: 220px;
   font-weight: bolder;
   color: black;
   display: grid;
@@ -68,14 +67,25 @@
 }
 
 .Start-btn{
- margin-left: 910px;
+ margin-left: 700px;
  margin-right: 100px;
   font-size: 25px;
-  margin-bottom: 300px;
-  margin-top: -45px;
-  width: 19%;
+  margin-bottom: 50px;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
+  display: grid;
+  text-decoration: none;
+  color: white;
 }
-
+.Maps-btn{
+  text-decoration: none;
+  color: white;
+  font-size: 25px !important;
+  margin-left: 20px;
+  text-align: center;
+  display: grid;
+}
 
 
 .questionaire-carbon{
@@ -86,10 +96,67 @@
   display: grid;
   margin-top: 20px;
   margin-bottom: 50px;
+  
 }
  
 .score-section-carbon{
-  margin-left: 800px;
+  margin-left: 700px;
   margin-bottom: 100px;
   margin-top: 200px;
+  display: grid;
+  text-align: center;
+  border-radius: 50px;
+
 }
+
+.messure-carbon{
+  font-size: 22px;
+  margin-right: 200px !important;
+  margin-left: -120px;
+  font-weight: 100;
+}
+
+.Retake-btn{
+  text-align: center;
+  font-size: 19px;
+  position: relative;
+  display: grid;
+}
+.Maps-btn{
+  text-align: center;
+  font-size: 19px;
+  position: relative;
+  display: flex;
+  margin-left: 150px;
+  color: white;
+  border-radius: 100px;
+  text-decoration: none;
+
+}
+
+.Maps-btn:hover{
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+
+}
+
+.app-map{
+  position: center;
+  height: 900px;
+  
+}
+
+.carbon-title{
+  font-size: 25px;
+  margin-left: 730px;
+  font-weight: 300vh;
+}
+
+
+
+
+
+
+
+

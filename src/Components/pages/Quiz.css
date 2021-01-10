@@ -54,8 +54,8 @@
     font-size: 16px;
     color: #ffffff;
     background-color: rgb(7, 31, 85);
-    border-radius: 20px;
-    display: flex;
+    border-radius: 50px;
+    display: grid;
     padding: 15px 32px;
     cursor: pointer;
     margin-top: 10px !important;
