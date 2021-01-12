@@ -8,21 +8,17 @@ import { Link } from 'react-router-dom';
 import './App.css';
 const breakPoints = [
   { width: 50, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
+  { width: 450, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },
+  { width: 760, itemsToShow: 3 },
   ];
 function Carousels() {
     return (
 
-       
         <>
-        <div className="App">
+        <div className="App-Carousel">
        
           <Carousel breakPoints={breakPoints}>
-         
-   
- 
-        
             <NewsItem>
        
             <div >
@@ -82,7 +78,7 @@ function Carousels() {
             <MapItem>
             <div>
           <h1>
-         Maps
+          <Link to='/Maps' className='Carousels-Links'>  Maps </Link>
           </h1>
               <h4> 
               Society needs to be more educated 

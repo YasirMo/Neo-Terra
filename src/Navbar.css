@@ -1,6 +1,5 @@
 .navbar {
     background:transparent;
-    height: 130px;
   }
 
  
@@ -18,10 +17,9 @@
   .nav-menubar {
   display: grid;
   grid-template-columns: repeat(25, auto);
-  grid-gap: 30px;
+  grid-gap: 28px;
   list-style: none;
-  width: 74vw;
-  justify-content: end;
+  margin-left: 150px;
   
   }
 
@@ -43,9 +41,9 @@
 .Button-link{
 
   background-color: #7BE0AD;;
-  margin-left: 1520px; 
+  margin-left: 1620px; 
   margin-right: 90px;
-  margin-top: -100px;
+  margin-top: -90px;
   display: grid;
   font-size: 1.4rem;
   color: rgb(255, 255, 255);
