@@ -16,25 +16,16 @@ function Navbar() {
          </div>
             
          <ul className={ 'nav-menubar'}>
-       
+        <li className='nav-item'>
+                  <Link to='/' className='nav-links' >
+                 Home
+                  </Link>
+                  </li>
+           
+
             <li className='nav-item'>
-
-              <Link to='/Learn' className='nav-links' >
-              Learn
-              </Link>
-            </li>
-
-            <li className='nav-item'>
-
-              <Link to='/TakeAction' className='nav-links'>
-               Take action
-              </Link>
-
-            </li>
-            
-            <li className='nav-item'>
-              <Link  to='/News' className='nav-links'>
-               News
+              <Link  to='/Learn' className='nav-links'>
+               Learn
               </Link>
             </li>
 
@@ -45,18 +36,18 @@ function Navbar() {
               </Link>
  
             </li>
-            </ul>
-            <div className='Buttons'>
+             <li className='nav-item'>
               
-              <Link to='/Quiz' className='Button-link'>
-             Quiz
+              <Link to='/News' className='nav-links' >
+              News
               </Link>
  
-            </div>
-           
-           
-          
-       
+            </li>
+            </ul>
+
+            <Link to='/Quiz' className='Button-link' >
+            Quiz
+            </Link>
       </nav>
     </>
   );

@@ -9,11 +9,10 @@
 
   .QuizTitle{
     position: absolute;
-    bottom: 490px;
-    left: 690px;
+    bottom: 530px;
+    left: 550px;
     color: white;
-    font-size: 100px;
-    font-family: Alegreya Sans;
+    font-size: 130px;
     
   }
   
@@ -88,13 +87,14 @@
   color: white;
 }
 
-.Maps-btn{
+.map-btn{
   text-decoration: none;
   color: white;
-  font-size: 25px !important;
-  margin-left: 20px;
-  text-align: center;
-  display: grid;
+  text-decoration: none;
+}
+.map-btn:hover{
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -112,7 +112,7 @@
 .score-section-carbon{
   margin-left: 700px;
   margin-bottom: 100px;
-  margin-top: 200px;
+  margin-top: -500px;
   display: grid;
   text-align: center;
   border-radius: 50px;

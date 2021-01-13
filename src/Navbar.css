@@ -4,8 +4,8 @@
 
  
   .navbar-Logo {
-    margin-top: 28px;
-    margin-bottom: 45px;
+    margin-top: 7px;
+    margin-bottom: 15px;
     max-width: 170px;
     max-height: 30px;
     margin-left: 100px;  
@@ -17,7 +17,7 @@
   .nav-menubar {
   display: grid;
   grid-template-columns: repeat(25, auto);
-  grid-gap: 28px;
+  grid-gap: 10px;
   list-style: none;
   margin-left: 150px;
   
@@ -41,21 +41,19 @@
 .Button-link{
 
   background-color: #7BE0AD;;
-  margin-left: 1620px; 
-  margin-right: 90px;
-  margin-top: -90px;
-  display: grid;
-  font-size: 1.4rem;
-  color: rgb(255, 255, 255);
+  margin-left: 80px; 
+  margin-right: 130px;
+  list-style: none;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
   cursor: pointer;
-  font-family: Alegreya Sans;
   padding: 15px 32px;
+  text-decoration: none;
 }
 
 .Button-link:hover {
   transition: all 0.2s ease-out;
-  color:black;
+  color:rgb(255, 255, 255);
   text-decoration: none;  
 
 }

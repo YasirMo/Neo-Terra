@@ -42,14 +42,14 @@ function Carousels() {
             <Item >
           <div>
           <h1>
-          <Link to='/TakeAction' className='Carousels-Links'>  Take Action </Link>
+          <Link to='/CarbonFootprint' className='Carousels-Links'>  Carbon Footprint Calculator </Link>
 
           </h1>
               <h4> 
-              Take actions about what you care about
+             Please take our carbon footprint calculator
               </h4>
               <h4>
-               Lets change the world together
+               Lets change the world together, measure your carbon footprint
               </h4>
            </div>
 
