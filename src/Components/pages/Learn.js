@@ -11,8 +11,8 @@ function Learn() {
     const useStyles = makeStyles((theme) => ({
         container: {
           display: 'grid',
-          gridTemplateColumns: 'repeat(15, 5fr)',
-          gridGap: theme.spacing(30),
+          gridTemplateColumns: 'repeat(2, 2fr)',
+          gridGap: theme.spacing(15),
         },
         paper: {
           padding: theme.spacing(16),
@@ -34,54 +34,44 @@ function Learn() {
       const Ocean = {
         backgroundImage : "url(/images/oceans.png)",
         height: "390px",
-        width:"800px",
+        width:"900px",
 
       };
-<<<<<<< HEAD
-      const Leaf = {
-        backgroundImage : "url(/images/leafsprout.jpg",
-        height: "500px",
-        width: "100%,"
-        
-=======
       const Fire = {
         backgroundImage : "url(/images/fires.jpg",
         height: "460px",
         width:"1900px",
 
->>>>>>> f8f336976d93a0287a67a6f74952c183e00d6619
       };
     
   return (
       
     <div>
       <Typography variant="subtitle1" gutterBottom>
-      <div style={Leaf}>
+      <div style={Fire}>
                 <h1 className="TitleLearn">
                     What are the effects of climate<br/> change in nature?
                     <br/>
-                    <h4>
+                    <h4 >
                  health impacts in cities due to heat, and flooding and erosion in coastal areas are additional concerns.
                     </h4>
                 </h1>
       </div>
       </Typography>
-      <div>
-          hi
-      </div>
      
       <Divider className={classes.divider} />
       <Typography variant="subtitle1" gutterBottom>
 
       </Typography>
       <div className={classes.container}>
+      <div >
+          <Paper className={classes.container}><div style={Ocean}></div></Paper>
+        </div>
         <div >
           <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
           Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
         </div>
-        <div >
-          <Paper className={classes.container}><div style={Ocean}></div></Paper>
-        </div>
+     
        
 
       </div>
