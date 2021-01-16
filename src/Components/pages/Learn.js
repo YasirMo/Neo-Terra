@@ -11,18 +11,18 @@ function Learn() {
     const useStyles = makeStyles((theme) => ({
         container: {
           display: 'grid',
-          gridTemplateColumns: 'repeat(12, 1fr)',
-          gridGap: theme.spacing(3),
+          gridTemplateColumns: 'repeat(15, 5fr)',
+          gridGap: theme.spacing(30),
         },
         paper: {
-          padding: theme.spacing(1),
+          padding: theme.spacing(16),
           textAlign: 'center',
           color: theme.palette.text.secondary,
           whiteSpace: 'nowrap',
-          marginBottom: theme.spacing(1),
+          marginBottom: theme.spacing(5),
         },
         divider: {
-          margin: theme.spacing(2, 0),
+          margin: theme.spacing(0, 1),
         },
       }));
     const classes = useStyles();
@@ -33,14 +33,14 @@ function Learn() {
       };
       const Ocean = {
         backgroundImage : "url(/images/oceans.png)",
-        height: "460px",
-        width:"1000px",
+        height: "390px",
+        width:"800px",
 
       };
       const Fire = {
         backgroundImage : "url(/images/fires.jpg",
         height: "460px",
-        width:"10000px",
+        width:"1900px",
 
       };
     
@@ -63,29 +63,54 @@ function Learn() {
       <Divider className={classes.divider} />
       <Typography variant="subtitle1" gutterBottom>
 
-
-          
       </Typography>
       <div className={classes.container}>
-        <div style={{ gridColumnEnd: 'span 3' }}>
+        <div >
           <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
           Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
         </div>
-        <div style={{ gridColumnEnd: 'span 3' }}>
-          <Paper className={classes.paper}>xs=3</Paper>
+        <div >
+          <Paper className={classes.container}><div style={Ocean}></div></Paper>
         </div>
-        <div style={{ gridColumnEnd: 'span 3' }}>
-          <Paper className={classes.paper}>xs=3</Paper>
+       
+
+      </div>
+
+
+      
+      <Divider className={classes.divider} />
+      <Typography variant="subtitle1" gutterBottom>
+
+      </Typography>
+      <div className={classes.container}>
+        <div >
+          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
+          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
         </div>
-        <div style={{ gridColumnEnd: 'span 3' }}>
-          <Paper className={classes.paper}>xs=3</Paper>
+        <div >
+          <Paper className={classes.container}><div style={Ocean}></div></Paper>
         </div>
-        <div style={{ gridColumnEnd: 'span 8' }}>
-          <Paper className={classes.paper}>xs=8</Paper>
+       
+
+
+
+      </div>
+      <Divider className={classes.divider} />
+      <Typography variant="subtitle1" gutterBottom>
+
+      </Typography>
+      <div className={classes.container}>
+        <div >
+          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
+          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
         </div>
-        <div style={{ gridColumnEnd: 'span 4' }}>
-          <Paper className={classes.paper}>xs=4</Paper>
+        <div >
+          <Paper className={classes.container}><div style={Ocean}></div></Paper>
         </div>
+       
+
+       
+
       </div>
     </div>
   );
