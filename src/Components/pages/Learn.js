@@ -58,7 +58,9 @@ function Learn() {
                 </h1>
       </div>
       </Typography>
-      
+      <div>
+          hi
+      </div>
      
       <Divider className={classes.divider} />
       <Typography variant="subtitle1" gutterBottom>
@@ -109,7 +111,7 @@ function Learn() {
         </div>
        
 
-       
+
 
       </div>
     </div>
