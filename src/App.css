@@ -19,7 +19,6 @@
 
   .main {
     padding-top: 10em;
-  
   }
   
   
@@ -28,7 +27,7 @@
   }
 .Links-footer{
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .Links-footer:hover{
   text-decoration: none;

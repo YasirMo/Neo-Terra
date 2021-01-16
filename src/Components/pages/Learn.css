@@ -1,0 +1,13 @@
+.question1{
+    height: 200px;
+    display: grid;
+    position: center;
+}
+.number2{
+    height: 20px;
+}
+
+.TitleLearn{
+    color: white;
+    font-weight: 200;
+}

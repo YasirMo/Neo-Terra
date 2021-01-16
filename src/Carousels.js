@@ -42,7 +42,7 @@ function Carousels() {
             <Item >
           <div>
           <h1>
-          <Link to='/CarbonFootprint' className='Carousels-Links'>  Carbon Footprint Calculator </Link>
+          <Link to='/CarbonFootprint' className='Carousels-Links'>  Carbon Calculator </Link>
 
           </h1>
               <h4> 
