@@ -72,10 +72,6 @@ function Learn() {
       };
       
 
-
-      
-      
-    
   return (
       
     <div>
