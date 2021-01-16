@@ -54,7 +54,7 @@ function CarbonFootprint(props)   {
 					</p>
 					<h1 className='score-section-carbon'>
 					
-					Your total is:  { (showScore*0.93) *100/1000+1.1 +showScore/2} 
+					Your total is:  {0} 
 					<br/>
 					The world average is 4.4
 					<br/>
