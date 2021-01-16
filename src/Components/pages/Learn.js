@@ -29,8 +29,7 @@ function Learn() {
           display: 'flex',
           justifyContent: 'center',
           alignitems: 'center',
-          backgroundColor: cyan[100],
-          
+         
         },
     
         factBox:{
@@ -102,7 +101,7 @@ function Learn() {
          In this article we will take a look at the main consequences of climate change in nature:
          </h2>
       
-      <div className={classes.divider}>
+      <div className={classes.paper2}>
        <Paper className={classes.factBox} elevation={10}>
          <Box m="2" p={1}>
           <Typography variant="subtitle1">
