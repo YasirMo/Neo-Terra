@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import './Learn.css'
 import { cyan, lightBlue } from '@material-ui/core/colors';
+
 function Learn() {
   
     
@@ -24,11 +25,12 @@ function Learn() {
           marginBottom: theme.spacing(5),
         },
         paper2: {
-            "& > *": {
-              padding: theme.spacing(2),
-              margin: theme.spacing(1),
-            
-          }
+          height:'1h',
+          display: 'flex',
+          justifyContent: 'center',
+          alignitems: 'center',
+          backgroundColor: cyan[100],
+          
         },
     
         factBox:{
@@ -39,12 +41,15 @@ function Learn() {
           borderRadius: 25,
           whiteSpace: 'nowrap',
           textAlign: 'center',
+          
         },
 
         divider: {
           margin: theme.spacing(0, 1),
         },
+        
 
+       
       
       }));
     const classes = useStyles();
@@ -66,7 +71,7 @@ function Learn() {
         height: "700px",
         width:"1900px",
       };
-
+      
 
 
       
@@ -91,25 +96,23 @@ function Learn() {
       </Typography>
 
       {/*Mid Section for Fact box */}
-     <Divider className={classes.divider}/>
-     
-     <div className={classes.container}>
-       <Paper className={classes.paper2}>
-         <h2 className="MidSubtitle">
+      
+      <div className={classes.divider}>
+          <h2 className="MidSubtitle">
          In this article we will take a look at the main consequences of climate change in nature:
          </h2>
-       </Paper>
-
-       
+      
+      <div className={classes.divider}>
        <Paper className={classes.factBox} elevation={10}>
-         <Box p={1}>
+         <Box m="2" p={1}>
           <Typography variant="subtitle1">
-            <h1 className="Fact"><b>Fact: </b>Ecosystems perform an important role in climate regulation. Nowadays it is known that <br>
+            <h1 className="Fact"><b><i>Fact: </i></b>Ecosystems perform an important role in climate regulation. Nowadays it is known that <br>
             </br>they absorb around half of CO2 emissions produced by humans
             </h1>
           </Typography>
         </Box>
        </Paper>
+     </div>
      </div>
 
      {/*1st Box*/}
