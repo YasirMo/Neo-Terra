@@ -37,18 +37,26 @@ function Learn() {
         width:"800px",
 
       };
+<<<<<<< HEAD
+      const Leaf = {
+        backgroundImage : "url(/images/leafsprout.jpg",
+        height: "500px",
+        width: "100%,"
+        
+=======
       const Fire = {
         backgroundImage : "url(/images/fires.jpg",
         height: "460px",
         width:"1900px",
 
+>>>>>>> f8f336976d93a0287a67a6f74952c183e00d6619
       };
     
   return (
       
     <div>
       <Typography variant="subtitle1" gutterBottom>
-      <div style={Fire}>
+      <div style={Leaf}>
                 <h1 className="TitleLearn">
                     What are the effects of climate<br/> change in nature?
                     <br/>
