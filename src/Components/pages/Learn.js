@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import './Learn.css'
 import { cyan, lightBlue } from '@material-ui/core/colors';
+import { FilledInput } from '@material-ui/core';
 
 function Learn() {
   
@@ -17,14 +18,16 @@ function Learn() {
         container: {
           display: 'grid',
           gridTemplateColumns: 'repeat(2, 2fr)',
-          gridGap: theme.spacing(15),
+          gridGap: theme.spacing(5),
         },
         paper: {
-          padding: theme.spacing(12),
+          padding: theme.spacing(15),
           textAlign: 'left',
           color: theme.palette.text.secondary,
           whiteSpace: 'nowrap',
-          marginBottom: theme.spacing(5),
+          marginBottom: theme.spacing(2),
+          marginTop: theme.spacing(1),
+          marginLeft: theme.spacing(1),
         },
         paper2: {
           height:'1h',
@@ -40,6 +43,7 @@ function Learn() {
           justifyContent: 'center',
           alignitems: 'center',
           width: '2h',
+          marginLeft: theme.spacing(1),
         },
 
 
@@ -96,14 +100,16 @@ function Learn() {
 
       const fires = {
         backgroundImage : "url(/images/fires.jpg)",
-        height: "390px",
+        height: "800px",
         width:"900px",
+        position: 'inline',
       };
 
       const forests = {
         backgroundImage : "url(/images/forests.png)",
         height: "390px",
         width:"900px",
+        
       };
 
       const Polar = {
@@ -126,18 +132,24 @@ function Learn() {
       };
     
       const Species = {
-        backgroundImage : "url(/images/speicies.jpg)",
-        height: "390px",
+        backgroundImage : "url(/images/species.jpg)",
+        height: "500px",
         width:"900px",
       };
       const Weather= {
         backgroundImage : "url(/images/weather.jpg)",
-        height: "390px",
-        width:"900px",
+        height: "500px",
+        width: "900px",
+        position: "inline",
+        resizeMethod: 'auto',
+        
       };
 
   return (
       
+   {/*NEED TO ADD SECTION DIVIDER FOR TWO DIFFERENT ARTICLES 
+      EFFECTS OF CLIMATE CHANGE & WAYS TO REDUCE CLIMATE CHANGE */},
+
     <div>
       <Typography variant="subtitle1" gutterBottom>
       <div style={Leaf}>
@@ -256,11 +268,15 @@ function Learn() {
         </Typography>
         <div className={classes.container}>
           <div >
-            <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-            Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+            <Paper className={classes.paper}> 
+               <h1 className="boxTitle"><b><i>Impact in Forests</i></b></h1>
+               <h5 className="boxText">Forests are vital for the planet. They constitute a main line of defence against climate<br></br> change, as their main role is to soak up carbon dioxide, the main greenhouse gas<br></br>responsible of global warming. This way forests help regulate the global temperatures.<br></br>They also are an important element in ecosystems as they become the home of many plant<br></br>and animal species.
+               
+              </h5>
+            </Paper>
           </div>
           <div >
-            <Paper className={classes.container}><div style={Ocean}></div></Paper>
+            <Paper className={classes.container}><div style={forests}></div></Paper>
           </div>
         </div>
 
@@ -270,11 +286,20 @@ function Learn() {
       </Typography>
       <div className={classes.container}>
         <div >
-          <Paper className={classes.container}><div style={Ocean}></div></Paper>
+          <Paper className={classes.container}><div style={Species}></div></Paper>
         </div>
         <div >
-          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+          <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Endangered Species (biodiversity) </i></b></h1>
+          <h5 className="boxText">
+          Global warming is likely to be the main cause of the extinction of many species this century.
+          <br></br>just increasing more than 2 degrees globally, most ecosystems will be threatened. Most
+          <br></br>of the threatened species live in areas affected by climate change. Desertification, rising 
+          <br></br>temperatures as well as deforestation are some of the different life conditions that prevent 
+          <br></br>species from adapting and contribute to the disastrous and irreversible changes that 
+          <br></br>are taking place in the habitat.
+          </h5> 
+          </Paper>
         </div>
       </div>
 
@@ -284,14 +309,45 @@ function Learn() {
         </Typography>
         <div className={classes.container}>
           <div >
-            <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-            Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+            <Paper className={classes.paper}>
+            <h1 className="boxTitle"><b><i>Extreme Weather Events</i></b></h1>
+            <h5 className="boxText">
+            The emission of greenhouse gases and the increase of temperatures, contributes to the spread of
+            <br></br>meteorological phenomena. By just increasing the global temperatures above 1.5 degrees, 
+            <br></br>it could lead to a further increase in extreme heat, torrential rains and the likelihood of droughts.
+            <br></br>In addition, the tropicalization of the oceans leads to a higher rate of evaporation which results 
+            <br></br>in an increase of cloud cover, facilitating the formation of stronger storms and other phenomena.
+            <br></br>Wetter winters and a warmer sea would increase the risk of floods in areas such as the Mediterranean.
+            </h5>
+            </Paper>
           </div>
           <div >
-            <Paper className={classes.container}><div style={Ocean}></div></Paper>
+            <Paper className={classes.container}><div style={Weather}></div></Paper>
           </div>
         </div>
 
+        <Divider className={classes.divider} />
+      <Typography variant="subtitle1" gutterBottom>
+
+      </Typography>
+      <div className={classes.container}>
+        <div >
+          <Paper className={classes.container}><div style={fires}></div></Paper>
+        </div>
+        <div >
+          <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Endangered Species (biodiversity) </i></b></h1>
+          <h5 className="boxText">
+          Global warming is likely to be the main cause of the extinction of many species this century.
+          <br></br>just increasing more than 2 degrees globally, most ecosystems will be threatened. Most
+          <br></br>of the threatened species live in areas affected by climate change. Desertification, rising 
+          <br></br>temperatures as well as deforestation are some of the different life conditions that prevent 
+          <br></br>species from adapting and contribute to the disastrous and irreversible changes that 
+          <br></br>are taking place in the habitat.
+          </h5> 
+          </Paper>
+        </div>
+      </div>
 
      </div>
   );
