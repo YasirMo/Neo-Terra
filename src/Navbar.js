@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { withTheme } from '@material-ui/core';
 function Navbar(pros) {
-
+    
 
     const [dropdownOpen, setOpen] = useState(false);
   
     const toggle = () => setOpen(!dropdownOpen);
+
   return (
     
     <>
@@ -42,17 +44,16 @@ function Navbar(pros) {
             </li>
                     
             <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-              <DropdownToggle caret>
-              Blog
+              <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
+                  Learn More Here!
               </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem header> Learn</DropdownItem>
-              
-                <DropdownItem><Link to='/Learn'  >
-             Learn
+              <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
+                <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!</DropdownItem>
+                <DropdownItem  className='itemLink'><Link to='/Learn'  >
+                  Effects of Climate Change
               </Link></DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Another Action</DropdownItem>
+                
+              <DropdownItem  className='itemLink'><Link to='/Learn'> Ways to Reduce Climate Change</Link></DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
             </ul>
@@ -61,6 +62,8 @@ function Navbar(pros) {
             Quiz
             </Link>
       </nav>
+
+      
     </>
   );
 }
