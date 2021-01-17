@@ -1,11 +1,15 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+function Navbar(pros) {
 
-function Navbar() {
 
-
-
+    const [dropdownOpen, setOpen] = useState(false);
+  
+    const toggle = () => setOpen(!dropdownOpen);
   return (
+    
     <>
       <nav className='navbar'>
 
@@ -21,12 +25,12 @@ function Navbar() {
                  Home
                   </Link>
                   </li>
-           
-
-            <li className='nav-item'>
-              <Link  to='/Learn' className='nav-links'>
-               Learn
+                  <li className='nav-item'>
+              
+              <Link to='/News' className='nav-links' >
+              News
               </Link>
+ 
             </li>
 
             <li className='nav-item'>
@@ -36,13 +40,21 @@ function Navbar() {
               </Link>
  
             </li>
-             <li className='nav-item'>
+                    
+            <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+              <DropdownToggle caret>
+              Blog
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem header> Learn</DropdownItem>
               
-              <Link to='/News' className='nav-links' >
-              News
-              </Link>
- 
-            </li>
+                <DropdownItem><Link to='/Learn'  >
+             Learn
+              </Link></DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
             </ul>
 
             <Link to='/Quiz' className='Button-link' >
