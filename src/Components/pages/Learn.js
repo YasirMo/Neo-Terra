@@ -12,14 +12,16 @@ function Learn() {
   
     
     const useStyles = makeStyles((theme) => ({
+      
+
         container: {
           display: 'grid',
           gridTemplateColumns: 'repeat(2, 2fr)',
           gridGap: theme.spacing(15),
         },
         paper: {
-          padding: theme.spacing(16),
-          textAlign: 'center',
+          padding: theme.spacing(12),
+          textAlign: 'left',
           color: theme.palette.text.secondary,
           whiteSpace: 'nowrap',
           marginBottom: theme.spacing(5),
@@ -29,9 +31,18 @@ function Learn() {
           display: 'flex',
           justifyContent: 'center',
           alignitems: 'center',
-         
+          width: '2h',
         },
-    
+
+        paper3: {
+          height:'1h',
+          display: 'inline-block',
+          justifyContent: 'center',
+          alignitems: 'center',
+          width: '2h',
+        },
+
+
         factBox:{
           backgroundColor: cyan[100],
           margin: theme.spacing(1),
@@ -55,14 +66,14 @@ function Learn() {
       
       const Temp = {
         backgroundImage : "url(/images/temprise.jpg)",
-        height: "400px",
+        height: "50vh",
         width: "900px",
-      }
+      };
 
       const Ocean = {
         backgroundImage : "url(/images/oceans.png)",
-        height: "390px",
-        width:"900px",
+        height: "50vh",
+        width:"1000px",
 
       };
       const Leaf = {
@@ -70,7 +81,60 @@ function Learn() {
         height: "700px",
         width:"1900px",
       };
+
+      const Deforestation = {
+        backgroundImage : "url(/images/Deforestation.jpg)",
+        height: "390px",
+        width:"900px",
+      };
       
+      const droughts = {
+        backgroundImage : "url(/images/droughts.jpg)",
+        height: "390px",
+        width:"900px",
+      };
+
+      const fires = {
+        backgroundImage : "url(/images/fires.jpg)",
+        height: "390px",
+        width:"900px",
+      };
+
+      const forests = {
+        backgroundImage : "url(/images/forests.png)",
+        height: "390px",
+        width:"900px",
+      };
+
+      const Polar = {
+        backgroundImage : "url(/images/polarregions.png)",
+        height: "50vh",
+        width:"900px",
+        
+      };
+
+      const SafeWater = {
+        backgroundImage : "url(/images/safewater.jpg)",
+        height: "390px",
+        width:"900px",
+      };
+      const SeaLevels = {
+        backgroundImage : "url(/images/sealevels.jpg)",
+        height: "49vh",
+        width:"800px",
+        
+      };
+    
+      const Species = {
+        backgroundImage : "url(/images/speicies.jpg)",
+        height: "390px",
+        width:"900px",
+      };
+      const Weather= {
+        backgroundImage : "url(/images/weather.jpg)",
+        height: "390px",
+        width:"900px",
+      };
 
   return (
       
@@ -96,7 +160,6 @@ function Learn() {
           <h2 className="MidSubtitle">
          In this article we will take a look at the main consequences of climate change in nature:
          </h2>
-      
       <div className={classes.paper2}>
        <Paper className={classes.factBox} elevation={10}>
          <Box m="2" p={1}>
@@ -108,8 +171,9 @@ function Learn() {
         </Box>
        </Paper>
      </div>
+     
      </div>
-
+    
      {/*1st Box*/}
       <Divider className={classes.divider} />
       <Typography variant="subtitle1" gutterBottom>
@@ -117,25 +181,15 @@ function Learn() {
       </Typography>
       <div className={classes.container}>
         <div >
-          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+          <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Rise of Temperatures</i></b></h1>
+          <h5 className="boxText">This is one of the most known consequences of climate change in the world.<br/>Due to global warming and our contribution with greenhouse gas emissions,<br></br> the global temperature has been increasing faster than it should.<br/> 
+          This will cause extreme weather events on certain areas of the world, where<br></br>countries will face situations like heatwaves, arid conditions as well as extreme<br></br>precipitation.<br></br> The increase of temperatures has been more pronounced in the last decades,<br></br>having between 1975 and 2007 an average rate of warming of about 0.5<br></br>degrees per decade and it is expected to rise as much as 6 degrees by 2100. 
+          </h5>
+          </Paper>
         </div>
         <div >
-          <Paper className={classes.container}><div style={Temp}></div></Paper>
-        </div>
-      </div>
-
-      <Divider className={classes.divider} />
-      <Typography variant="subtitle1" gutterBottom>
-
-      </Typography>
-      <div className={classes.container}>
-        <div >
-          <Paper className={classes.container}><div style={Ocean}></div></Paper>
-        </div>
-        <div >
-          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+          <Paper className={classes.paper2}><div style={Temp}></div></Paper>
         </div>
       </div>
 
@@ -145,11 +199,32 @@ function Learn() {
       </Typography>
       <div className={classes.container}>
         <div >
-          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+          <Paper className={classes.paper3}><div style={Polar}></div></Paper>
         </div>
         <div >
-          <Paper className={classes.container}><div style={Ocean}></div></Paper>
+        <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Impact on Polar Regions</i></b></h1>
+          <h5 className="boxText">This is one of the most known consequences of climate change in the world.<br/>Due to global warming and our contribution with greenhouse gas emissions,<br></br> the global temperature has been increasing faster than it should.<br/> 
+          This will cause extreme weather events on certain areas of the world, where<br></br>countries will face situations like heatwaves, arid conditions as well as extreme<br></br>precipitation.<br></br> The increase of temperatures has been more pronounced in the last decades,<br></br>having between 1975 and 2007 an average rate of warming of about 0.5<br></br>degrees per decade and it is expected to rise as much as 6 degrees by 2100. 
+          </h5>
+          </Paper>
+        </div>
+      </div>
+
+      <Divider className={classes.divider} />
+      <Typography variant="subtitle1" gutterBottom>
+
+      </Typography>
+      <div className={classes.container}>
+        <div >
+        <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Rising Sea Levels</i></b></h1>
+          <h5 className="boxText">With the melting of glacial ice from the polar regions and mountains, the<br/>Damount of water that flows into the world’s oceans increases, leading to<br></br>drastically rising sea levels, endangering many cities and ecosystems with<br></br> floods.<br></br>Scientists have speculated that if the ice in Antarctica, Greenland and the<br></br>Arctic melts at this rate, it could raise sea levels by more than 20 meters by<br></br>2100.
+          </h5>
+          </Paper>
+        </div>
+        <div >
+          <Paper className={classes.paper3}><div style={SeaLevels}></div></Paper>
         </div>
       </div>
    
@@ -160,11 +235,17 @@ function Learn() {
       </Typography>
       <div className={classes.container}>
         <div >
-          <Paper className={classes.container}><div style={Ocean}></div></Paper>
+          <Paper className={classes.paper3}><div style={Ocean}></div></Paper>
         </div>
         <div >
-          <Paper className={classes.paper}> Unwilling departure education is be dashwoods or an.<br/> Use off agreeable law unwilling sir deficient curiosity instantly.<br/> 
-          Easy mind life fact with see has bore ten.<br/> Parish any chatty can elinor direct for former.<br/> Up as meant widow equal an share least. </Paper>
+        <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Impact in Oceans</i></b></h1>
+          <h5 className="boxText">Oceans will have a big influence on climate change. They are known for<br></br>absorbing huge amounts of CO2 and preventing it from reaching the<br></br>the atmosphere. This along with the increase of water temperatures leads to a<br>
+          </br>higher PH which makes the oceans more acidic threatening marine species.
+          <br></br>
+          An example of this are coral reefs, being one of the great harmed. The<br></br>increase of temperature is causing their ecosystem to be destroyed and if no<br></br>action is taken, they could disappear by 2050.
+          </h5>
+          </Paper>
         </div>
       </div>
       

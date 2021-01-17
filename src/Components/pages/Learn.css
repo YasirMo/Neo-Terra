@@ -39,5 +39,18 @@
 .Fact{
     padding-top: 10px;
     font-size: 15px;
+    
 
 }
+
+.boxText{
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.boxTitle{
+    color: black;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
