@@ -4,6 +4,7 @@ function News() {
     return (
         <div>
             <img src="/images/News.jpg" alt="News" / >
+             
         </div>
     )
 }

@@ -90,18 +90,18 @@ export default function Quiz() {
 		
           
 			{showScore ? (
-				<div className='score-section'>
+				<div >
 					
-					<h1>
+					<h1 className='score-section'>
 					You scored {score} out of {questions.length}
-					
-					<button> <Link to="/Learn" style={{ textDecoration: 'none' , color: 'white'  } } >
+					</h1>
+					<button className="Quiz-btns2"> <Link to="/Learn" style={{ textDecoration: 'none' , color: 'white'  } }  >
             		 Learn More
             		  </Link>
 			  		</button>
-					  <button onClick={refreshPage}>Try Again</button>
+					  <button onClick={refreshPage} className="Quiz-btns2">Try Again</button>
 					  
-					</h1>
+				
 					
 				</div>
 				
@@ -130,7 +130,7 @@ export default function Quiz() {
 						
 						<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}className="Quiz-btns">{answerOption.answerText}</button>
 						))}
 					</div>
 						

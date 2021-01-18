@@ -1,11 +1,17 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { withTheme } from '@material-ui/core';
+function Navbar(pros) {
+    
 
-function Navbar() {
-
-
+    const [dropdownOpen, setOpen] = useState(false);
+  
+    const toggle = () => setOpen(!dropdownOpen);
 
   return (
+    
     <>
       <nav className='navbar'>
 
@@ -16,26 +22,17 @@ function Navbar() {
          </div>
             
          <ul className={ 'nav-menubar'}>
-       
-            <li className='nav-item'>
-
-              <Link to='/Learn' className='nav-links' >
-              Learn
+        <li className='nav-item'>
+                  <Link to='/' className='nav-links' >
+                 Home
+                  </Link>
+                  </li>
+                  <li className='nav-item'>
+              
+              <Link to='/News' className='nav-links' >
+              News
               </Link>
-            </li>
-
-            <li className='nav-item'>
-
-              <Link to='/TakeAction' className='nav-links'>
-               Take action
-              </Link>
-
-            </li>
-            
-            <li className='nav-item'>
-              <Link  to='/News' className='nav-links'>
-               News
-              </Link>
+ 
             </li>
 
             <li className='nav-item'>
@@ -45,19 +42,28 @@ function Navbar() {
               </Link>
  
             </li>
+                    
+            <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+              <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
+                  Learn More Here!
+              </DropdownToggle>
+              <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
+                <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!</DropdownItem>
+                <DropdownItem  className='itemLink'><Link to='/Learn'  >
+                  Effects of Climate Change
+              </Link></DropdownItem>
+                
+              <DropdownItem  className='itemLink'><Link to='/Learn'> Ways to Reduce Climate Change</Link></DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
             </ul>
-            <div className='Buttons'>
-              
-              <Link to='/Quiz' className='Button-link'>
-             Quiz
-              </Link>
- 
-            </div>
-           
-           
-          
-       
+
+            <Link to='/Quiz' className='Button-link' >
+            Quiz
+            </Link>
       </nav>
+
+      
     </>
   );
 }
