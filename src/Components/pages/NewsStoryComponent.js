@@ -1,6 +1,6 @@
 import React from 'react';
-import NewsService from '../Services/NewsService';
-
+import NewsService from './NewsService';
+import '../../App.css'
 class NewsStoryComponent extends React.Component {
 
     constructor(props) {
@@ -25,10 +25,11 @@ class NewsStoryComponent extends React.Component {
 
             <div>
 
-                <h1> News Stories</h1>
+                
 
-                <table>
-                    <tbody>
+                <table >
+                <h1 className="News-Stories"> News Stories</h1>
+                    <tbody >
 
                         {
 

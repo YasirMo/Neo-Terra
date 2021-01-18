@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-
+import '../../App.css';
 class AddStory extends React.Component {
 
     constructor(props) {
@@ -27,8 +27,8 @@ class AddStory extends React.Component {
         const { story_id, story_title, story_link } = this.state
 
         return (
-            <div>
-                <form onSubmit = {this.submitHandler}>
+            <div  >
+                <form onSubmit = {this.submitHandler} className="tables">
 
                 <div> 
                 <input type = "text" name = "story_id" value = {story_id} onChange = {this.changeHandler} />
@@ -42,7 +42,7 @@ class AddStory extends React.Component {
                 <input type = "text" name = "story_link" value = {story_link} onChange = {this.changeHandler} />
                 </div>
                 
-                <button type = "submit">Add Story</button>
+                <button type = "submit" className="sub-btn">Add Story</button>
                 </form>
 
             </div>
