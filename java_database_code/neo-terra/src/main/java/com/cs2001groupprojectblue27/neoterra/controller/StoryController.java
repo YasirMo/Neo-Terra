@@ -3,6 +3,7 @@ package com.cs2001groupprojectblue27.neoterra.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cs2001groupprojectblue27.neoterra.model.news_stories;
 import com.cs2001groupprojectblue27.neoterra.repository.StoryRepository;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/rest/web")
 public class StoryController {
