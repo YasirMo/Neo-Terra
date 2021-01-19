@@ -71,14 +71,14 @@ function Learn() {
       
       const Temp = {
         backgroundImage : "url(/images/temprise.jpg)",
-        height: "50vh",
+        height: "530px",
         width: "900px",
       };
 
       const Ocean = {
-        backgroundImage : "url(/images/oceans.png)",
-        height: "50vh",
-        width:"1000px",
+        backgroundImage : "url(/images/oceans.jpg)",
+        height: "500px",
+        width:"900px",
 
       };
       const Leaf = {
@@ -109,15 +109,15 @@ function Learn() {
       };
 
       const forests = {
-        backgroundImage : "url(/images/forests.png)",
-        height: "390px",
+        backgroundImage : "url(/images/forests.jpg)",
+        height: "460px",
         width:"900px",
         
       };
 
       const Polar = {
-        backgroundImage : "url(/images/polarregions.png)",
-        height: "50vh",
+        backgroundImage : "url(/images/polarregions.jpg)",
+        height: "530px",
         width:"900px",
         
       };
@@ -131,8 +131,8 @@ function Learn() {
       };
       const SeaLevels = {
         backgroundImage : "url(/images/sealevels.jpg)",
-        height: "49vh",
-        width:"800px",
+        height: "500px",
+        width:"900px",
         
       };
     
