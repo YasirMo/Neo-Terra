@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import './Learn.css'
 import { cyan, lightBlue } from '@material-ui/core/colors';
 import { FilledInput } from '@material-ui/core';
+import { notification } from 'antd';
 
 function Learn() {
   
@@ -88,21 +89,23 @@ function Learn() {
 
       const Deforestation = {
         backgroundImage : "url(/images/Deforestation.jpg)",
-        height: "390px",
+        height: "460px",
         width:"900px",
       };
       
       const droughts = {
         backgroundImage : "url(/images/droughts.jpg)",
-        height: "390px",
+        height: "460px",
         width:"900px",
       };
 
       const fires = {
         backgroundImage : "url(/images/fires.jpg)",
-        height: "800px",
+        height: "529px",
         width:"900px",
-        position: 'inline',
+        resizeMode: 'contain',
+        alignItems: 'center',
+        overflow: 'hidden',
       };
 
       const forests = {
@@ -121,8 +124,10 @@ function Learn() {
 
       const SafeWater = {
         backgroundImage : "url(/images/safewater.jpg)",
-        height: "390px",
-        width:"900px",
+        height: '500px',
+        width: '930px',
+        position: 'relative',
+        
       };
       const SeaLevels = {
         backgroundImage : "url(/images/sealevels.jpg)",
@@ -147,9 +152,6 @@ function Learn() {
 
   return (
       
-   {/*NEED TO ADD SECTION DIVIDER FOR TWO DIFFERENT ARTICLES 
-      EFFECTS OF CLIMATE CHANGE & WAYS TO REDUCE CLIMATE CHANGE */},
-
     <div>
       <Typography variant="subtitle1" gutterBottom>
       <div style={Leaf}>
@@ -192,7 +194,7 @@ function Learn() {
 
       </Typography>
       <div className={classes.container}>
-        <div >
+        <div>
           <Paper className={classes.paper}>
           <h1 className="boxTitle"><b><i>Rise of Temperatures</i></b></h1>
           <h5 className="boxText">This is one of the most known consequences of climate change in the world.<br/>Due to global warming and our contribution with greenhouse gas emissions,<br></br> the global temperature has been increasing faster than it should.<br/> 
@@ -297,7 +299,12 @@ function Learn() {
           <br></br>of the threatened species live in areas affected by climate change. Desertification, rising 
           <br></br>temperatures as well as deforestation are some of the different life conditions that prevent 
           <br></br>species from adapting and contribute to the disastrous and irreversible changes that 
-          <br></br>are taking place in the habitat.
+          <br></br>are taking place in the habitat. On the other hand, we find proliferation of invasive species,
+          <br></br> such as jellyfish or tiger mosquitoes, which harm other species such as sea snails.
+          <br></br>Birds are also changing their patterns, staying in warmer latitudes.In the sea, there is a 
+          <br></br>decrease in algae species, examples of this are the red algae in the Cantabrian Sea. 
+          <br></br>The Mediterranean coral reefs are severely affected. In addition, the increase of temperatures 
+          <br></br>has triggered the mortality rates of Posidonia.
           </h5> 
           </Paper>
         </div>
@@ -332,22 +339,94 @@ function Learn() {
       </Typography>
       <div className={classes.container}>
         <div >
-          <Paper className={classes.container}><div style={fires}></div></Paper>
+          <Paper className={classes.container}><div style={fires} resizeMode ={'cover'}></div></Paper>
         </div>
         <div >
           <Paper className={classes.paper}>
-          <h1 className="boxTitle"><b><i>Endangered Species (biodiversity) </i></b></h1>
+          <h1 className="boxTitle"><b><i>Heat waves and fires</i></b></h1>
           <h5 className="boxText">
-          Global warming is likely to be the main cause of the extinction of many species this century.
-          <br></br>just increasing more than 2 degrees globally, most ecosystems will be threatened. Most
-          <br></br>of the threatened species live in areas affected by climate change. Desertification, rising 
-          <br></br>temperatures as well as deforestation are some of the different life conditions that prevent 
-          <br></br>species from adapting and contribute to the disastrous and irreversible changes that 
-          <br></br>are taking place in the habitat.
+          Heat waves have become increasingly common. This is due to greenhouse gases being trapped 
+          <br></br>in the atmosphere. Studies indicate that these heat waves will continue to increase in the coming 
+          <br></br>years and become 100 times worse in the future. 
+          <br></br>
+          <br></br>These events could cause intense fires and contribute to greater deforestation due to the decrease
+          <br></br>of resilience of forests.
           </h5> 
           </Paper>
         </div>
       </div>
+
+      <Divider className={classes.divider} />
+        <Typography variant="subtitle1" gutterBottom>
+
+        </Typography>
+        <div className={classes.container}>
+          <div >
+            <Paper className={classes.paper}>
+            <h1 className="boxTitle"><b><i>Droughts</i></b></h1>
+            <h5 className="boxText">
+            It has become noticeable that various parts of the world are struggling due to droughts.
+            <br></br>The planet is warming and in turn, fresh water is diminishing which leads to poor 
+            <br></br>conditions, it could lead to a further increase in extreme heat, torrential rains and the 
+            <br></br>likelihood of droughts. There is a severe water shortage that is causing disruptions
+            <br></br> in global food production and hunger is becoming more widespread.
+            </h5>
+            </Paper>
+          </div>
+          <div >
+            <Paper className={classes.container}><div style={droughts}></div></Paper>
+          </div>
+        </div>
+
+        <Divider className={classes.divider} />
+      <Typography variant="subtitle1" gutterBottom>
+
+      </Typography>
+      <div className={classes.container}>
+        <div >
+          <Paper className={classes.container}><div style={SafeWater}></div></Paper>
+        </div>
+        <div >
+          <Paper className={classes.paper}>
+          <h1 className="boxTitle"><b><i>Access to safe water</i></b></h1>
+          <h5 className="boxText">
+          Climate change has a severe impact on water systems due to events such as floods and droughts. 
+          <br></br>Warmer air can hold higher amounts of water which makes rainfall patterns more extreme.
+          <br></br>Rivers and lakes supply drinking water to people and animals and are vital for farming and for the
+          <br></br>industry. Freshwater environments are already facing many problems such as drainage, dredging,
+          <br></br> damming, pollution, extraction, silting and invasive species. If we add climate change to the formula,
+          <br></br> the whole situation becomes worse as extreme weather events can cause displacement and conflict.
+          </h5>
+          </Paper>
+        </div>
+      </div>
+
+      <Divider className={classes.divider} />
+        <Typography variant="subtitle1" gutterBottom>
+
+        </Typography>
+        <div className={classes.container}>
+          <div >
+            <Paper className={classes.paper}>
+            <h1 className="boxTitle"><b><i>Destruction of ecosystems</i></b></h1>
+            <h5 className="boxText">
+            The increase of greenhouse gases is not only causing drastic changes in the atmosphere, 
+            <br></br>but it is causing struggles around the globe, affecting water supplies, clean air and agriculture, 
+            <br></br>as well as energy resources. As climate change affects ecosystems, plants and animals die or
+            <br></br>move to other habitats, when the ones on which they depend for survival are threatened.
+            <br></br>
+            <br></br>Climate change is a <b>reality</b> that must be accepted. Many species, ecosystems and natural
+            <br></br>processes are currently threatened by the drastic changes that have taken place in the last centuries.
+            </h5>
+            </Paper>
+          </div>
+          <div >
+            <Paper className={classes.container}><div style={Deforestation}></div></Paper>
+          
+          </div>
+        </div>
+       
+
 
      </div>
   );
