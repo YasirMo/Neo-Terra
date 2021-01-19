@@ -6,9 +6,9 @@ class AddStory extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            story_id: '',
-            story_title: '',
-            story_link: ''
+            storyTitle: '',
+            storyLink: '',
+            source: ''
 
         }
     }
@@ -19,27 +19,27 @@ class AddStory extends React.Component {
 
     submitHandler = e => {
         e.preventDefault()
-        axios.post('http://localhost:8080/rest/web/addStory', this.state)
+        axios.post('http://localhost:8080/news', this.state)
     }
 
     render() {
 
-        const { story_id, story_title, story_link } = this.state
+        const {storyTitle, storyLink, source} = this.state
 
         return (
             <div  >
                 <form onSubmit = {this.submitHandler} className="tables">
 
                 <div> 
-                <input type = "text" name = "story_id" value = {story_id} onChange = {this.changeHandler} />
+                <input type = "text" name = "storyTitle" value = {storyTitle} onChange = {this.changeHandler} />
                 </div>
 
                 <div> 
-                <input type = "text" name = "story_title" value = {story_title} onChange = {this.changeHandler} />
+                <input type = "text" name = "storyLink" value = {storyLink} onChange = {this.changeHandler} />
                 </div>
 
                 <div> 
-                <input type = "text" name = "story_link" value = {story_link} onChange = {this.changeHandler} />
+                <input type = "text" name = "source" value = {source} onChange = {this.changeHandler} />
                 </div>
                 
                 <button type = "submit" className="sub-btn">Add Story</button>
