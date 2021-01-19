@@ -1,12 +1,82 @@
 package com.cs2001groupprojectblue27.neoterra.model;
 
-import javax.persistence.Column;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name = "NewsStories")
+@EntityListeners(AuditingEntityListener.class)
+public class NewsStories implements Serializable {
+
+		private static final long serialVersionUID = 1L;
+
+		@Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+
+	    @NotBlank
+	    private String storyTitle;
+	    
+	    @NotBlank
+	    private String storyLink;
+	    
+	    @NotBlank
+	    private String source;
+
+	    public NewsStories() {
+	    	
+	    }
+	    public NewsStories(String storyTitle, String storyLink,  String source) 
+	    {
+	    	this.storyTitle = storyTitle;
+	    	this.storyLink = storyLink;
+	    	this.source = source;
+	    }
+	    
+	    //Getters and Setters 
+		public Long getId() {
+			return id;
+		}
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+		
+		public String getStoryTitle() {
+			return storyTitle;
+		}
+
+		public void setStoryTitle(String storyTitle) {
+			this.storyTitle = storyTitle;
+		}
+		
+		public String getStoryLink() {
+			return storyLink;
+		}
+
+		public void setStoryLink(String storyLink) {
+			this.storyLink = storyLink;
+		}
+		
+		public String getSource() {
+			return source;
+		}
+
+		public void setSource(String source) {
+			this.source = source;
+		}
+}		
+
+/*import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class news_stories {
+public class NewsStories {
 	
 	@Id
 	@GeneratedValue
@@ -22,7 +92,7 @@ public class news_stories {
 	@Column(name = "source")
 	private String source;
 	
-	public news_stories() {
+	public NewsStories() {
 		
 	} //
 
@@ -62,4 +132,4 @@ public class news_stories {
 	
 	
 
-}
+}*/

@@ -1,10 +1,17 @@
 package com.cs2001groupprojectblue27.neoterra.repository;
 
+import com.cs2001groupprojectblue27.neoterra.model.NewsStories;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.cs2001groupprojectblue27.neoterra.model.news_stories;
-
-public interface StoryRepository extends JpaRepository <news_stories, Integer> {
-	
+@Repository
+public interface NeoTerraRepository extends JpaRepository<NewsStories, Long>{
 
 }
+
+
+
+
+
+
+
