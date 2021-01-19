@@ -19,7 +19,7 @@ function Learn() {
         container: {
           display: 'grid',
           gridTemplateColumns: 'repeat(2, 2fr)',
-          gridGap: theme.spacing(5),
+          gridGap: theme.spacing(2),
         },
         paper: {
           padding: theme.spacing(15),
@@ -89,7 +89,7 @@ function Learn() {
 
       const Deforestation = {
         backgroundImage : "url(/images/Deforestation.jpg)",
-        height: "460px",
+        height: "525px",
         width:"900px",
       };
       
@@ -417,6 +417,8 @@ function Learn() {
             <br></br>
             <br></br>Climate change is a <b>reality</b> that must be accepted. Many species, ecosystems and natural
             <br></br>processes are currently threatened by the drastic changes that have taken place in the last centuries.
+            <br></br>It is important to take action now in order to reduce its effects and become able to adapt in time to the 
+            <br></br>new conditions that are being imposed.
             </h5>
             </Paper>
           </div>

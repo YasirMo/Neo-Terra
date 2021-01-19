@@ -48,12 +48,24 @@ function Navbar(pros) {
                   Learn More Here!
               </DropdownToggle>
               <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
-                <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!</DropdownItem>
-                <DropdownItem  className='itemLink'><Link to='/Learn'  >
-                  Effects of Climate Change
-              </Link></DropdownItem>
-                
-              <DropdownItem  className='itemLink'><Link to='/Learn'> Ways to Reduce Climate Change</Link></DropdownItem>
+                <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!
+                </DropdownItem>
+                <DropdownItem  className='itemLink'><Link to='/Learn' >
+                  Effects in <b>Nature</b>
+                </Link>
+                </DropdownItem>
+                  
+                <DropdownItem  className='itemLink'>
+                  <Link to='/LearnPageTwo'> </Link>
+                  Effects in <b>Society</b>
+                </DropdownItem>
+
+                <DropdownItem  className='itemLink'>
+                  <Link to='/'> </Link>
+                  Ways to <b>Reduce</b> Climate Change
+                </DropdownItem>
+
+
               </DropdownMenu>
             </ButtonDropdown>
             </ul>
