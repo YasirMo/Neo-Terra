@@ -7,6 +7,7 @@ import TakeAction from './Components/pages/TakeAction';
 import Footer from './Footer';
 import Learn from './Components/pages/Learn';
 import LearnPageTwo from './Components/pages/LearnPageTwo';
+import LearnPageThree from './Components/pages/LearnPageThree';
 import News from './Components/pages/News';
 import CarbonFootprint from './Components/pages/CarbonFootprint';
 import Quiz from './Components/pages/Quiz';
@@ -33,6 +34,7 @@ function App() {
     <Route path='/TakeAction' exact component={TakeAction} />
     <Route path='/Learn' exact component={Learn} />
     <Route path='/LearnPageTwo' exact component={LearnPageTwo} />
+    <Route path='/LearnPageThree' exact component={LearnPageThree}/>
     <Route path='/News' exact component={News} />
     <Route path='/CarbonFootprint' exact component={CarbonFootprint} />
      <Route path='/Quiz' exact component={Quiz} />
