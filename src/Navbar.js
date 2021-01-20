@@ -55,16 +55,19 @@ function Navbar(pros) {
                 </Link>
                 </DropdownItem>
                   
-                <DropdownItem  className='itemLink'>
-                  <Link to='/LearnPageTwo'> </Link>
+                <DropdownItem className='itemLink'>
+                  <Link to ='/LearnPageTwo'>
                   Effects in <b>Society</b>
+                  </Link>
                 </DropdownItem>
 
-                <DropdownItem  className='itemLink'>
-                  <Link to='/'> </Link>
+                      
+                <DropdownItem className='itemLink'>
+                  <Link to ='/'>
                   Ways to <b>Reduce</b> Climate Change
+                  </Link>
                 </DropdownItem>
-
+                
 
               </DropdownMenu>
             </ButtonDropdown>

@@ -7,8 +7,6 @@ import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import './Learn.css'
 import { cyan, lightBlue } from '@material-ui/core/colors';
-import { FilledInput } from '@material-ui/core';
-import { notification } from 'antd';
 
 function Learn() {
   
