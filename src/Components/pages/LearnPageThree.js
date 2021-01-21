@@ -116,18 +116,20 @@ function LearnPageThree() {
   return (
     <div>
       <Typography variant="subtitle1" gutterBottom>
-      <div style={Leaf}>
-                <h1 className="TitleLearn">
-                    Ways you can help to reduce<br/> climate change?
-                    <br/>
-                    <h4 className="Subheading">
-                    A new report published in September 2018, the world’s leading climate
-                    <br></br> scientists made their starkest warning so far: our current actions are not
-                    <br></br>enough for us to meet our target of 1.5C of warming. We need to do more.
-                    
-                    </h4>
-                    
-                    </h1>
+      <div className ="gradientBox">
+        <div style={Leaf}>
+                  <h1 className="TitleLearn">
+                      Ways you can help to reduce<br/> climate change?
+                      <br/>
+                      <h4 className="Subheading">
+                      A new report published in September 2018, the world’s leading climate
+                      <br></br> scientists made their starkest warning so far: our current actions are not
+                      <br></br>enough for us to meet our target of 1.5C of warming. We need to do more.
+                      
+                      </h4>
+                      
+                      </h1>
+        </div>
       </div>
       </Typography>
 

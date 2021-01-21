@@ -152,17 +152,19 @@ function Learn() {
       
     <div>
       <Typography variant="subtitle1" gutterBottom>
-      <div style={Leaf}>
-                <h1 className="TitleLearn">
-                    What are the effects of climate<br/> change in nature?
-                    <br/>
-                    <h4 className="Subheading">
-                      Climate change is a problem we are facing and it will affect the whole<br></br>planet in many ways.
-                    </h4>
-                    <h4 className="Subheading2">
-                    We are aware that ecosystems constitute an element that humans cannot<br></br>do without, since without their resources we are unable to survive. Yet, our<br></br>actions put their existence at risk.
-                    </h4>
-                </h1>
+      <div className ="gradientBox">
+        <div style={Leaf}>
+                  <h1 className="TitleLearn">
+                      What are the effects of climate<br/> change in nature?
+                      <br/>
+                      <h4 className="Subheading">
+                        Climate change is a problem we are facing and it will affect the whole<br></br>planet in many ways.
+                      </h4>
+                      <h4 className="Subheading2">
+                      We are aware that ecosystems constitute an element that humans cannot<br></br>do without, since without their resources we are unable to survive. Yet, our<br></br>actions put their existence at risk.
+                      </h4>
+                  </h1>
+        </div>
       </div>
       </Typography>
 

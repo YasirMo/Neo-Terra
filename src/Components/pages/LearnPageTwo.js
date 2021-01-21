@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import './LearnPageTwo.css'
 import { cyan } from '@material-ui/core/colors';
 
+
 function LearnPageTwo() {
 
   const useStyles = makeStyles((theme) => ({
@@ -34,7 +35,7 @@ function LearnPageTwo() {
       justifyContent: 'center',
       alignitems: 'center',
       width: '2h',
-      paddingTop: theme.spacing(5),
+      paddingTop: theme.spacing(7),
     },
 
     paper3: {
@@ -60,7 +61,6 @@ function LearnPageTwo() {
       margin: theme.spacing(0, 1),
     },
     
-
    
   
   }));
@@ -72,6 +72,7 @@ function LearnPageTwo() {
     backgroundImage : "url(/images/leafsprout.jpg",
     height: "700px",
     width:"1900px",
+
   };
 
   const Infrastructure = {
@@ -98,7 +99,9 @@ function LearnPageTwo() {
   return (
     <div>
       <Typography variant="subtitle1" gutterBottom>
-      <div style={Leaf}>
+      <div className ="gradientBox">
+        
+        <div style={Leaf}>
                 <h1 className="TitleLearn">
                     What are the effects of climate<br/> change in society?
                     <br/>
@@ -108,8 +111,8 @@ function LearnPageTwo() {
                     <br></br> water supply, transportation, and others—and are expected to become increasingly
                     <br></br>disruptive throughout this century and beyond.
                     </h4>
-                    
-                    </h1>
+                </h1>
+        </div>
       </div>
       </Typography>
 

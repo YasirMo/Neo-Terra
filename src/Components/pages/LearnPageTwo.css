@@ -44,3 +44,17 @@
     margin-top: 10px;
 }
 
+.gradientBox{
+    width:850px;
+    height: 700px;
+    background-size: cover;
+}
+
+.gradientBox:before{
+    content: "";
+    width:1100px;
+    height: 700px;
+    background: linear-gradient(225deg, hsla(0, 0%, 0%, 0.5) 11%, hsla(0, 0%, 0%, 1) 100%);
+    opacity: 0.5;
+    position: absolute;
+}
