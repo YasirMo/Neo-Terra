@@ -52,7 +52,7 @@ function Footer() {
           <p className="col-sm">
 
             &copy;2020 Neo-Terra | All rights reserved |
-             | Cookie policy 
+             Terms of use | Cookie policy 
             
           </p>
         </div>
