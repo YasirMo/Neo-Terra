@@ -27,7 +27,7 @@ function Carousels() {
                <Link to='/News' className='Carousels-Links'>  News </Link>
               </h1>
               <h4> 
-              Here at Neo-Terra we believe it is time to
+              Here at Neo-Terra we believe it is  to
               </h4>
               <h4>
               share postive and insightful news 
