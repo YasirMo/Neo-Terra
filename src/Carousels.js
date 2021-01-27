@@ -7,10 +7,9 @@ import NewsItem from "./NewsItem.js"
 import { Link } from 'react-router-dom';
 import './App.css';
 const breakPoints = [
-  { width: 50, itemsToShow: 1 },
   { width: 450, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 760, itemsToShow: 3 },
+  { width: 450, itemsToShow: 2 },
+  { width: 450, itemsToShow: 3 },
   ];
 function Carousels() {
     return (
@@ -23,10 +22,9 @@ function Carousels() {
        
             <div >
             
-               <h1>
                <Link to='/News' className='Carousels-Links'>  News </Link>
-              </h1>
               <h4> 
+                
               Here at Neo-Terra we believe it is time to
               </h4>
               <h4>
