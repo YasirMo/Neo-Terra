@@ -38,7 +38,7 @@ function Navbar(pros) {
             <li className='nav-item'>
               
               <Link to='/CarbonFootprint' className='nav-links' >
-              Carbon Footprint
+              Carbon Footprint test
               </Link>
  
             </li>
