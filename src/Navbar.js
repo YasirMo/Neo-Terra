@@ -73,9 +73,7 @@ function Navbar(pros) {
             </ButtonDropdown>
             </ul>
 
-            <Link to='/Quiz' className='Button-link' >
-            Quiz
-            </Link>
+           
       </nav>
 
       

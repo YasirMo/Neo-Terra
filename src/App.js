@@ -12,6 +12,7 @@ import News from './Components/pages/News';
 import CarbonFootprint from './Components/pages/CarbonFootprint';
 import Quiz from './Components/pages/Quiz';
 import Maps from './Components/pages/Maps';
+import About from './Components/pages/About';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
     <Route path='/CarbonFootprint' exact component={CarbonFootprint} />
      <Route path='/Quiz' exact component={Quiz} />
      <Route path='/Maps' exact component={Maps} />
+     <Route path='/About' exact component={About} />
 
      <Footer />
           </div>
