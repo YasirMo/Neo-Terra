@@ -20,29 +20,23 @@ function Navbar(pros) {
          <img className="navbar-Logo" src='/images/Logo.png' alt='logo' />
          </Link>
          </div>
-            
          <ul className={ 'nav-menubar'}>
-        <li className='nav-item'>
+            <li className='nav-item'>
                   <Link to='/' className='nav-links' >
                  Home
                   </Link>
                   </li>
-                  <li className='nav-item'>
-              
-              <Link to='/News' className='nav-links' >
-              News
-              </Link>
- 
-            </li>
-
             <li className='nav-item'>
-              
-              <Link to='/CarbonFootprint' className='nav-links' >
-              Carbon Footprint
-              </Link>
- 
-            </li>
-                    
+                  <Link to='/News' className='nav-links' >
+                 News
+                  </Link>
+                </li>
+            <li className='nav-item'>
+                  <Link to='/CarbonFootprint' className='nav-links' >
+                  CF Calculator
+                  </Link>
+                </li>
+          
             <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
               <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
                   Learn More Here!
@@ -73,6 +67,11 @@ function Navbar(pros) {
             </ButtonDropdown>
             </ul>
 
+            <div className="hamburger-toggle">
+                <i className="fas fa-bars fa-lg"></i>
+
+          </div>
+            
            
       </nav>
 
@@ -82,3 +81,5 @@ function Navbar(pros) {
 }
 
 export default Navbar
+
+
