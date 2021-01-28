@@ -5,6 +5,7 @@ import {questions}from './Questions'
 import Charts from './Charts'
 function CarbonFootprint(props)   {
 
+	var qA=[54,44,4];
 	
     const backgroundImage = {
         backgroundImage : "url(/images/peach-background.png)",
@@ -18,7 +19,8 @@ function CarbonFootprint(props)   {
 	 const [showScore, setShowScore] = useState(false);
 	 const [score, setScore] = useState(0);
 	 const handleAnswerOptionClick = (Answer) => {
-	
+		qA.push(Answer);
+		console.log(qA);
 		 if (Answer) {
 			  
 			 setScore(Answer);
