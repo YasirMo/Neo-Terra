@@ -1,36 +1,23 @@
 import React from 'react';
-import './App.css';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
-import Navbar from './Navbar';
 import  Home  from './Components/pages/Home';
 import TakeAction from './Components/pages/TakeAction';
-import Footer from './Footer';
-import Learn from './Components/pages/Learn';
-import LearnPageTwo from './Components/pages/LearnPageTwo';
-import LearnPageThree from './Components/pages/LearnPageThree';
-import News from './Components/pages/News';
-import CarbonFootprint from './Components/pages/CarbonFootprint';
+import Learn from './Components/pages/Learn Page/Learn';
+import LearnPageTwo from './Components/pages/Learn Page/LearnPageTwo';
+import LearnPageThree from './Components/pages/Learn Page/LearnPageThree';
+import News from './Components/pages/News Page/News';
+import CarbonFootprint from './Components/pages/CF calculator/CarbonFootprint';
 import Quiz from './Components/pages/Quiz';
-import Maps from './Components/pages/Maps';
+import Maps from './Components/pages/CF calculator/Maps';
 import About from './Components/pages/About';
-
 function App() {
   return (
   <>
-  <div className="App">
-  
   <Router>
-    
-  <Navbar/>
+  
     <Switch>
-    
    
     </Switch>
-   
-           <div className="page"> 
-            <div className="content">
-              
-       
           <Route path='/' exact component={Home} />
     <Route path='/TakeAction' exact component={TakeAction} />
     <Route path='/Learn' exact component={Learn} />
@@ -41,15 +28,11 @@ function App() {
      <Route path='/Quiz' exact component={Quiz} />
      <Route path='/Maps' exact component={Maps} />
      <Route path='/About' exact component={About} />
-
-     <Footer />
-          </div>
-         
-          </div>
-        
+     
+     
        </Router>
        
-    </div> 
+    
    
     
     </>

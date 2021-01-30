@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../App.css';
+import '../.././../Styles/App.css';
 import {questions}from './Questions'
 import Charts from './Charts'
+import Layout from '../../../Layout/Layout'
 function CarbonFootprint(props)   {
 
 	
@@ -42,7 +43,7 @@ function CarbonFootprint(props)   {
 		window.location.reload(false);
 	  }
     return (
-
+			<Layout> 
 		<div style={backgroundImage}  >
 		
 		<div  className="app-carbon">
@@ -109,7 +110,7 @@ function CarbonFootprint(props)   {
             
 		</div>
         </div>
-		
+		</Layout>
 	);
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsService from './NewsService';
-import '../../App.css'
+import '../.././../Styles/App.css';
 class NewsStoryComponent extends React.Component {
 
     constructor(props) {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './Quiz.css';
+import '../../Styles/Quiz.css';
 import { Link } from 'react-router-dom';
+import Layout from '../../Layout/Layout'
 export default function Quiz() {
 	  
     const backgroundImage = {
@@ -83,7 +84,7 @@ export default function Quiz() {
 		window.location.reload(false);
 	  }
 	return (
-		
+		<Layout> 
         <div style={backgroundImage}  >
 		
 		<div  className="app">
@@ -142,5 +143,6 @@ export default function Quiz() {
             
 		</div>
         </div>
+		</Layout> 
 	);
 }

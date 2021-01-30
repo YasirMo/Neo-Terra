@@ -5,10 +5,10 @@ import Item from "./Item.js";
 import MapItem from './MapItem.js';
 import NewsItem from "./NewsItem.js"
 import { Link } from 'react-router-dom';
-import './App.css';
+import './../Styles/App.css';
 const breakPoints = [
-  { width: 450, itemsToShow: 2 },
-  { width: 450, itemsToShow: 2 },
+  { width: 50, itemsToShow: 1 },
+  { width: 50, itemsToShow: 2 },
   { width: 450, itemsToShow: 3 },
   ];
 function Carousels() {

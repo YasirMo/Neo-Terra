@@ -14,3 +14,10 @@
 .Links-footer:hover{
     color: white;
 }
+.content-wrap{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 1rem;
+
+  
+}
