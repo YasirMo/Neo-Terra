@@ -20,23 +20,23 @@ function Footer() {
         
           <div className="col">
             
-            <h4><Link to='/' className="Links-footer" >  Home </Link></h4>
-            <h4><Link to ='/' className="Links-footer" >News</Link></h4>
+            <h5><Link to='/' className="Links-footer" >  Home </Link></h5>
+            <h5><Link to ='/' className="Links-footer" >News</Link></h5>
           </div>
           
           <div className="col">
-            <h4><Link to='/Learn' className="Links-footer">  Learn </Link></h4>
-            <h4> <Link to='/Quiz' className="Links-footer" >  Quiz </Link></h4>
+            <h5><Link to='/Learn' className="Links-footer">  Learn </Link></h5>
+            <h5> <Link to='/Quiz' className="Links-footer" >  Quiz </Link></h5>
           </div>
 
           <div className="col">
-            <h4><Link to='/TakeAction'className="Links-footer" >  Take action </Link></h4>
-            <h4><Link to='/Maps'className="Links-footer" >  Maps </Link></h4>
+            <h5><Link to='/TakeAction'className="Links-footer" >  Take action </Link></h5>
+            <h5><Link to='/Maps'className="Links-footer" >  Maps </Link></h5>
           </div>
         
           <div className="col">
-            <h4>Contact us</h4>
-            <h4><Link to='/About'className="Links-footer" > About us</Link></h4>
+            <h5>Contact us</h5>
+            <h5><Link to='/About'className="Links-footer" > About us</Link></h5>
 
           </div>
         </div>
