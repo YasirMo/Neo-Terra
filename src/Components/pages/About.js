@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../Layout/Layout'
-
+import '../../Styles/About Us.css';
 
 const backgroundImage = {
     backgroundImage : "url(/images/trees1.jpg)",
