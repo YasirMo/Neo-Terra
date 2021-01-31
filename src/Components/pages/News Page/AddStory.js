@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import '../../App.css';
+import '../.././../Styles/App.css';
 class AddStory extends React.Component {
 
     constructor(props) {

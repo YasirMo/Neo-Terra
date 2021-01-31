@@ -1,0 +1,23 @@
+.main {
+    background-color: #283953;
+    color: white;
+    position: relative;
+    padding-top: 3em;
+    bottom: 0;
+    width: 100%;
+}
+
+.Links-footer {
+    color: white;
+}
+
+.Links-footer:hover{
+    color: white;
+}
+.content-wrap{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 1rem;
+
+  
+}

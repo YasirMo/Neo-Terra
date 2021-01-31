@@ -4,7 +4,7 @@ import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
-import '../../App.css'
+import '../../.././Styles/App.css'
 
 export class GoogleMap extends Component {
   

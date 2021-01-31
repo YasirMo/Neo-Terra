@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Quiz.css';
+import '../../Styles/Quiz.css';
 import { Link } from 'react-router-dom';
 export default function Quiz() {
 	  
@@ -18,7 +18,7 @@ export default function Quiz() {
 				{ answerText: 'C02', isCorrect: false },
 				{ answerText: 'CH4', isCorrect: false },
 				{ answerText: 'Water Vapour', isCorrect: false },
-				{ answerText: 'Water Vapour', isCorrect: true },
+				{ answerText: 'All of the above', isCorrect: true },
 			],
 		},
 		{
@@ -83,7 +83,7 @@ export default function Quiz() {
 		window.location.reload(false);
 	  }
 	return (
-		
+	
         <div style={backgroundImage}  >
 		
 		<div  className="app">
@@ -142,5 +142,6 @@ export default function Quiz() {
             
 		</div>
         </div>
+		
 	);
 }

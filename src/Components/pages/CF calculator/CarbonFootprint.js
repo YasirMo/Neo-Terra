@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../App.css';
+import '../.././../Styles/App.css';
 import {questions}from './Questions'
 import Charts from './Charts'
+import Layout from '../../../Layout/Layout'
+
 function CarbonFootprint(props)   {
 	
     const backgroundImage = {
