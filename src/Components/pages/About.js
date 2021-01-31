@@ -11,7 +11,13 @@ function About () {
     return(
         <>
             <Layout>
-                <div style={backgroundImage}  ></div>
+            
+              <div style={backgroundImage}   >
+
+              <h1> WHO WE ARE </h1>
+              
+              </div>
+                
         </Layout>
         </>
     )
