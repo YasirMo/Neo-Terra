@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css'
 import { Fade } from 'react-slideshow-image';
 import '../../Styles/App.css';
-import Layout from '../../Layout/Layout'
 
 const fadeImages = [
     'images/nature.jpg',
@@ -15,7 +14,7 @@ const fadeImages = [
   
 function Home (){
     return (
-          <Layout>
+      
         <div className="slide-container">
             
           <Fade>
@@ -74,9 +73,9 @@ function Home (){
               </div>
             </div>
           </Fade>
-          <Carousels/>
+         
         </div>
-         </Layout>
+      
       )
     }
 
