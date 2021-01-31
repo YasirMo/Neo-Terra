@@ -4,7 +4,7 @@ import '../../Styles/About Us.css';
 
 const backgroundImage = {
     backgroundImage : "url(/images/trees1.jpg)",
-    height: "870px",
+    height: "880px",
     position: "fit",
     display: "flex",
   };
