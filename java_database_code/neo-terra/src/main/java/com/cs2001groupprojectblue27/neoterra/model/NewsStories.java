@@ -128,8 +128,4 @@ public class NewsStories {
 	public void setStory_link(String story_link) {
 		this.story_link = story_link;
 	}
-	
-	
-	
-
 }*/
