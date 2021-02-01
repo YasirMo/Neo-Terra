@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import {
   PieChart,
   Pie,
@@ -12,11 +12,25 @@ import {
 } from "recharts";
 import './CarbonFootprint'
 const Charts = (props) => {
+	const [ip, setIp] = useState(0);
+	fetch('https://api.ipify.org?format=json')
+	.then(response => response.json())
+	.then(data => setIp(data.ip));
+
+	const [finalScore,setFinalScore]=useState(0);
+	function getScore(){
+		
+		fetch('http://localhost:8080/users/'+ip)
+		.then(response => response.json())
+		.then(data => setFinalScore(data.score));
+	}
+  
   const data = [
     { name: "Uk Average", Carbon: 14.1 },
-    { name: "World Average", Carbon: 4.4 },
+    { name: "World Average", Carbon: 4.4},
+    { name: "Your Total", Carbon: finalScore},
   ];
-
+  getScore();
   return (
    
       <div>
@@ -28,7 +42,7 @@ const Charts = (props) => {
             cx={200}
             cy={200}
             outerRadius={80}
-            fill="#475db0"
+            fill="rgba(8, 114, 244, 0.6)"
             label
           />
           <Tooltip />
@@ -53,8 +67,8 @@ const Charts = (props) => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Bar dataKey="Carbon" fill="#8884d8" background={{ fill: "#eee" }} />
+          <CartesianGrid strokeDasharray="1 1" fill="#eee"/>
+          <Bar dataKey="Carbon" fill=" rgba(8, 114, 244, 0.6)" background={{ fill: "#eee" }} />
         </BarChart>
       </div>
     

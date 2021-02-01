@@ -8,11 +8,10 @@ import Layout from '../../../Layout/Layout'
 function CarbonFootprint(props)   {
 	
     const backgroundImage = {
-        backgroundImage : "url(/images/forest.jpg)",
+        backgroundImage : "url(/images/ForestPic.jpg)",
         height: "1000px",
-        position: "fit",
-        display: "flex",
-        
+		display: "flex",
+		width :"1900px"
 	};
 	const [ip, setIp] = useState(0);
 	fetch('https://api.ipify.org?format=json')
@@ -138,13 +137,13 @@ function CarbonFootprint(props)   {
 					<br/>
 					The Uk average is 14.1
 					</h1> 
-					
-					<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
 					<button  className='Start-btn' >
-					<Link to='/Maps' className="map-btn" >
-				Maps
+					<Link to='/Learn' className="map-btn" >
+				Learn More
 				</Link>
 				</button>
+					<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
+					
 				</div>
 				
 			) : (

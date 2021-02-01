@@ -23,7 +23,7 @@ function Navbar(pros) {
          <ul className={ 'nav-menubar'}>
             <li className='nav-item'>
                   <Link to='/' className='nav-links' >
-                 Home
+                 Quiz
                   </Link>
                   </li>
             <li className='nav-item'>
