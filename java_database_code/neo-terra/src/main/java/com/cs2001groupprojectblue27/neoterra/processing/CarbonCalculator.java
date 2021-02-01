@@ -22,8 +22,9 @@ public class CarbonCalculator{
 		{
 			switch(i)
 			{
+			
 				case 0:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						houseHold=1;
@@ -40,7 +41,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 1://question2
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+0.927/houseHold;
@@ -57,7 +58,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 2://question 3
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						car=0;
@@ -74,7 +75,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 3:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						carType=35;
@@ -88,7 +89,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 4:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+((6/carType)*14.3)/car;
@@ -104,7 +105,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 5:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						food=food+0.7;
@@ -121,7 +122,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 6:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						food=food+0.6;
@@ -141,7 +142,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 7:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						food=food+0.5;
@@ -158,7 +159,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 8:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						food=food+0.6;
@@ -175,7 +176,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 9:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						food=food+0.11;
@@ -189,7 +190,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 10:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=food+food*0.1;
@@ -206,7 +207,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 11:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+(0*0.93)/1000;
@@ -223,7 +224,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 12:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+(0*2.05)/1000;
@@ -240,7 +241,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 13:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						flights=1;
@@ -257,7 +258,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 14://WORK ON IT!~!!!!!!~!
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+flights*3*0.5;
@@ -276,7 +277,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 15:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total+5;
@@ -293,7 +294,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 16:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total-0.7;
@@ -304,7 +305,7 @@ public class CarbonCalculator{
 					}
 					break;
 				case 17:
-					switch(i)
+					switch(answers[i])
 					{
 					case 1:
 						total=total-0.14;
