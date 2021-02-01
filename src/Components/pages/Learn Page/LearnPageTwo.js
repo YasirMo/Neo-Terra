@@ -4,8 +4,9 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import Box from "@material-ui/core/Box";
-import Grid from '@material-ui/core/Grid';
-import './LearnPageTwo.css'
+// import Grid from '@material-ui/core/Grid';
+import '../../../Styles/LearnPageTwo.css'
+import Layout from '../../../Layout/Layout'
 import { cyan } from '@material-ui/core/colors';
 
 
@@ -65,7 +66,7 @@ function LearnPageTwo() {
   
   }));
 
-  {/* IMAGES */}
+ 
   const classes = useStyles();
 
   const Leaf = {
@@ -97,6 +98,7 @@ function LearnPageTwo() {
 
 
   return (
+    <Layout> 
     <div>
       <Typography variant="subtitle1" gutterBottom>
       <div className ="gradientBox">
@@ -238,6 +240,7 @@ function LearnPageTwo() {
 
 
       </div>
+      </Layout>
     );
 
 

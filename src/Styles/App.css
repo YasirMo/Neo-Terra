@@ -9,16 +9,16 @@
 
   .QuizTitle{
     position: absolute;
-    bottom: 910px;
-    left: 590px;
+    bottom: 890px;
+    left: 560px;
     font-size: 40px;
     font-weight: 50;
   }
     
   .QuizTitle-2{
     position: absolute;
-    bottom: 800px;
-    left: 760px;
+    bottom: 780px;
+    left: 750px;
     font-size: 35px;
   }
 
@@ -70,7 +70,6 @@
   }
 
   .Quiz-component {
-    background: url(tropical-plants.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 1000px;
 }
