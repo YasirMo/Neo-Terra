@@ -1,3 +1,13 @@
+Neo-Terra🌲🌳🌳🌲
+Project:
+Neo-Terra is a group of students who work together to fight against climate changes all over the United Kingdom. We share the news relating the climate changing, we offer you the possibility to check your carbon footprint thanks to our calculator and finally, we have a quiz that you can find on the website to test your knowledge on the subject. We aim to create a new generation of young people who are aware of the situation, educated about society and the change we need, to change the system we live in. Neo-Terra is our proposal as a team to build a web application that will address climate change, one of the UN sustainable development goals.
+
+# Running the Front End
+To run the front end enter the 'npm run' or 'yarn start' in the terminal window. Make sure you have node installed as well as installing React. To install React enter 'npm i react'.
+# Running the Back End
+Please make sure you are connected to the Brunel VPN first. Once connected run the 'NeoTerraApplication.java' file under the 'java_database_code' folder. 
+Path: java_database_code>src>main>java. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
