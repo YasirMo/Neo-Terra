@@ -320,8 +320,8 @@ public class CarbonCalculator{
 			}
 		}
 		//after loop
-		//repository.save(new Users(id, email, answers, score));
-		return new Users(id, email, answers, total);
+		double roundedTotal = Math.round(total * 100.0) / 100.0;
+		return new Users(id, email, answers, roundedTotal);
 		
 	}
 }
