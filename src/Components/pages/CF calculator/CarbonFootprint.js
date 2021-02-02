@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../.././../Styles/App.css';
-import {questions}from './Questions'
+import {questions}from './Questions';
+import axios from 'axios';
 import Charts from './Charts'
 import Layout from '../../../Layout/Layout'
 
@@ -13,30 +14,45 @@ function CarbonFootprint(props)   {
 		display: "flex",
 		width :"1900px"
 	};
+
 	const [ip, setIp] = useState(0);
-	fetch('https://api.ipify.org?format=json')
-	.then(response => response.json())
-	.then(data => setIp(data.ip));
-
 	const [finalScore,setFinalScore]=useState(0);
-	function getScore(){
-		
-		fetch('http://localhost:8080/users/'+ip)
-		.then(response => response.json())
-		.then(data => setFinalScore(data.score));
-	}
-
 	const [answersArray, setAnswersArray] = useState([]);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 	const [temp, setTemp] = useState(false);
 
+	useEffect(() => {
+		if(ip==0||ip==null)
+		{
+			axios.get('https://api.ipify.org?format=json')
+			.then((response) => {
+				console.log(response.data);
+				setIp(response.data.ip);});
+		}
+		if(showScore==true&&(finalScore==0||finalScore==null))
+		{
+			axios.get('http://localhost:8080/users/'+ip)
+			.then((response) => {
+				console.log(response.data);
+				setFinalScore(response.data.score);});
+		}
+	})
+
+	// function getScore(){
+		
+	// 	fetch('http://localhost:8080/users/'+ip)
+	// 	.then(response => response.json())
+	// 	.then(data => setFinalScore(data.score));
+	// }
+
 	const handleAnswerOptionClick = (Value) => 
 	{
 		if (Value) {
 			answersArray.push(Value);
 			setScore(Value);
+			console.log(showScore);
 		}
 		console.log(answersArray);
 		if (score > 0) {
@@ -50,6 +66,7 @@ function CarbonFootprint(props)   {
 		{
 			if(currentQuestion==3&&answersArray[2]==1)
 			{
+				
 				answersArray.push(10);
 				answersArray.push(10);
 				console.log("Skipped 2 questions related to cars");
@@ -78,7 +95,7 @@ function CarbonFootprint(props)   {
 					this.props.onRouteChange('home');
 				}
 			})
-			setShowScore(score);
+			setShowScore(true);
 		}
 	};
 
@@ -127,11 +144,11 @@ function CarbonFootprint(props)   {
 			{showScore ? (
 				<div >
 					<p>
-					<Charts/>	
+					<Charts finalScore={finalScore.toFixed(2)}/>	
 					</p>
-					<h1 className='score-section-carbon' onload={getScore()}>
+					<h1 className='score-section-carbon' >
 					
-					Your total is:  {finalScore} 
+					Your total is:  {finalScore.toFixed(2)} 
 					<br/>
 					The world average is 4.4
 					<br/>

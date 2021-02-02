@@ -12,25 +12,12 @@ import {
 } from "recharts";
 import './CarbonFootprint'
 const Charts = (props) => {
-	const [ip, setIp] = useState(0);
-	fetch('https://api.ipify.org?format=json')
-	.then(response => response.json())
-	.then(data => setIp(data.ip));
-
-	const [finalScore,setFinalScore]=useState(0);
-	function getScore(){
-		
-		fetch('http://localhost:8080/users/'+ip)
-		.then(response => response.json())
-		.then(data => setFinalScore(data.score));
-	}
   
   const data = [
     { name: "Uk Average", Carbon: 14.1 },
     { name: "World Average", Carbon: 4.4},
-    { name: "Your Total", Carbon: finalScore},
+    { name: "Your Total", Carbon: props.finalScore},
   ];
-  getScore();
   return (
    
       <div>

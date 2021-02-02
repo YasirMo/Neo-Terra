@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\pages"
+    "\\src\\Components\\pages",
+    "\\src\\Components\\pages\\CF calculator"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\Components\\pages\\CF calculator\\Questions.js",
   "PreviewInSolutionExplorer": false
 }

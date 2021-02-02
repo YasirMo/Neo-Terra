@@ -1,6 +1,7 @@
 package com.cs2001groupprojectblue27.neoterra.processing;
 
 import org.springframework.stereotype.Component;
+
 import com.cs2001groupprojectblue27.neoterra.model.Users;
 
 @Component("carbonCalculator")
@@ -320,8 +321,7 @@ public class CarbonCalculator{
 			}
 		}
 		//after loop
-		double roundedTotal = Math.round(total * 100.0) / 100.0;
-		return new Users(id, email, answers, roundedTotal);
 		
+		return new Users(id, email, answers, total);
 	}
 }
