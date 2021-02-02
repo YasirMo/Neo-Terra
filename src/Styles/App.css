@@ -101,7 +101,8 @@
   text-align: center;
   display: grid;
   text-decoration: none;
-  color: white;
+  color: rgb(28, 26, 26);
+  background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
 }
 .Quiz-btns{
   margin-left: 110px;
