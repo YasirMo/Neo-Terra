@@ -78,7 +78,7 @@ class Footer extends Component {
           </div>
         
           <div className="col">
-            <h5>Contact us</h5>
+            <h5>Contact Us</h5>
             <h5><Link to='/About'className="Links-footer" > About us</Link></h5>
 
           </div>
@@ -96,7 +96,7 @@ class Footer extends Component {
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All rights reserved |
-             Terms of use | Cookie policy | FAQs | Instagram | Contact us
+             Terms of use | Cookie policy | FAQs | Instagram 
           </p>
         </div>
       </div>

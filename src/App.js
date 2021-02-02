@@ -10,6 +10,8 @@ import CarbonFootprint from './Components/pages/CF calculator/CarbonFootprint';
 import Quiz from './Components/pages/Quiz';
 import Maps from './Components/pages/CF calculator/Maps';
 import About from './Components/pages/About';
+import ThanksForSubcribing from './Components/pages/ThanksForSubscribing';
+import ThanksForSubscribing from './Components/pages/ThanksForSubscribing';
 function App() {
   return (
   <>
@@ -28,6 +30,7 @@ function App() {
       <Route path='/Quiz' exact component={Quiz} />
       <Route path='/Maps' exact component={Maps} />
       <Route path='/About' exact component={About} />
+      <Route path='/ThanksForSubscribing' exact component={ThanksForSubscribing} />
       
      
   </Router>
