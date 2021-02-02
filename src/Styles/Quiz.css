@@ -52,7 +52,7 @@
   }
   
 
-  .Quiz-btns{
+  .Quiz-btns2{
     font-size: 1.5rem;
     width: 30rem;
     text-align: center;
@@ -63,7 +63,7 @@
     border-radius: 4px;
   }
 
-.Quiz-btns:hover{
+.Quiz-btns2:hover{
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
   transition: transform 150ms;
