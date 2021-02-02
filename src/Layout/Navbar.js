@@ -14,7 +14,6 @@ function Navbar(pros) {
     
     <>
       <nav className='navbar'>
-
     <div className='navbar-container'> 
     <Link to ='/'> 
          <img className="navbar-Logo" src='/images/Logo.png' alt='logo' />

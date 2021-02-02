@@ -18,19 +18,19 @@ function App() {
     <Switch>
    
     </Switch>
-          <Route path='/' exact component={Home} />
-    <Route path='/TakeAction' exact component={TakeAction} />
-    <Route path='/Learn' exact component={Learn} />
-    <Route path='/LearnPageTwo' exact component={LearnPageTwo} />
-    <Route path='/LearnPageThree' exact component={LearnPageThree}/>
-    <Route path='/News' exact component={News} />
-    <Route path='/CarbonFootprint' exact component={CarbonFootprint} />
-     <Route path='/Quiz' exact component={Quiz} />
-     <Route path='/Maps' exact component={Maps} />
-     <Route path='/About' exact component={About} />
+      <Route path='/' exact component={Home} />
+      <Route path='/TakeAction' exact component={TakeAction} />
+      <Route path='/Learn' exact component={Learn} />
+      <Route path='/LearnPageTwo' exact component={LearnPageTwo} />
+      <Route path='/LearnPageThree' exact component={LearnPageThree}/>
+      <Route path='/News' exact component={News} />
+      <Route path='/CarbonFootprint' exact component={CarbonFootprint} />
+      <Route path='/Quiz' exact component={Quiz} />
+      <Route path='/Maps' exact component={Maps} />
+      <Route path='/About' exact component={About} />
+      
      
-     
-       </Router>
+  </Router>
        
     
    
