@@ -95,11 +95,11 @@ export default function Quiz() {
 					<h1 className='score-section'>
 					You scored {score} out of {questions.length}
 					</h1>
-					<button className="Quiz-btns2"> <Link to="/Learn" style={{ textDecoration: 'none' , color: 'white'  } }  >
+					<button className="Quiz-btns2"> <Link to="/Learn"   >
             		 Learn More
             		  </Link>
 			  		</button>
-					  <button onClick={refreshPage} className="Quiz-btns2">Try Again</button>
+					  <button onClick={refreshPage} className="Quiz-btns2"style={{ textDecoration: 'none' , color: 'white'  } }>Try Again</button>
 					  
 				
 					
