@@ -1,0 +1,12 @@
+.centerText {
+    margin: auto;
+    width: 60%;   
+    padding: 10px;
+    color:white;
+  }
+
+.centerText h1 {
+  color: yellowgreen;
+  font-size:38px;
+  text-align: center;
+}
