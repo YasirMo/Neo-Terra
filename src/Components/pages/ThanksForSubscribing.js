@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../../Layout/Layout'
 import '../../Styles/ThanksForSubscribing.css';
+import { Link } from 'react-router-dom';
+import {Button} from 'antd'
 
 const backgroundImage = {
     backgroundImage : "url(/images/ForestPic.jpg)",
@@ -18,7 +20,12 @@ function ThanksForSubscribing () {
               <div class="centerText">
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
+                <h1>
+                <button className="continueButton"> <Link to="/Learn"> Continue To Website</Link>
+                </button>
+            </h1>
               </div>
+              
               </div>  
          </Layout>
 
