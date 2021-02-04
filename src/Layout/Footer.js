@@ -23,7 +23,7 @@ class Footer extends Component {
       }
         handelSendEmail = email =>{
            this.handleLoadingState(true);
-           axios.post(`$ {apiUrl}/subscribe`, {
+           axios.post(`${apiUrl}/subscribe`, {
             email : email
            }).then(res => {
               if (res.data.success){
