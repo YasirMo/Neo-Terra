@@ -34,7 +34,7 @@ export default function Newsletter() {
                             <input type="email" className="form-control" placeholder="Email Address" name="email"/>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                            <input type="submit" className="btn btn-info" value="Send"></input>
                         </div>
                     </div>
                 </form>
