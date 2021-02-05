@@ -1,22 +1,44 @@
-import React from 'react'
-import {Form, Input, Button} from 'antd'
+import emailjs from "emailjs-com";
+import React from 'react';
 import '../../../Styles/Newsletter.css'
-import validator from 'validator'
-import { Link } from 'react-router-dom';
+import Typical from 'react-typical'
 
-const Newsletter = ({email,handleOnChangeEmail,handelSendEmail})=>{
-    return (
-        <Form layout="inline" className="newsletter-form" method="POST">
-          <Form.Item>
-              <Input  onChange={({target}) => handleOnChangeEmail(target.value)}
-              placeholder="Email" value={email}/>
-          </Form.Item>
-          <Form.Item>
-              <Link to='/ThanksForSubscribing'><Button onClick={() => handelSendEmail(email)}  disabled={!validator.isEmail(email)}
-               htmlType="submit" type="primary" className="btnEmail">Send</Button></Link>
-          </Form.Item>
-          </Form>
-    );
+export default function Newsletter() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+    emailjs.sendForm('service_gsx7wwj', "template_6t7nara" , e.target, "user_WaNJvmIOzXMDStLaoV2zx")
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    }
+    return(
+        <div>
+            <div className="container">
+            <form onSubmit={sendEmail}>
+                    <div className="row pt-5 mx-auto">
+                        <div className="col-8 form-group mx-auto">
+                                  <Typical
+                                  className="NewsletterTitle"
+                                    steps={['Hi 👋', 2000, ' Subscribe To Our Newsletter! 😃', 1500]}
+                                    loop={Infinity}
+                                    wrapper="p"
+                                  />
+                            <input type="text" className="form-control" placeholder="Name" name="name"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                        </div>
+                        <div className="col-8 pt-3 mx-auto">
+                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
 }
-
-export default Newsletter

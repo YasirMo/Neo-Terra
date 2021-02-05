@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../../Layout/Layout'
 import '../../Styles/ThanksForSubscribing.css';
 import { Link } from 'react-router-dom';
-import {Button} from 'antd'
 
 const backgroundImage = {
     backgroundImage : "url(/images/ForestPic.jpg)",

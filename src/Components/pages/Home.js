@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousels from '../../Carousels/Carousels';
 import { Link } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css'
 import { Fade } from 'react-slideshow-image';
