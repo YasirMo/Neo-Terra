@@ -1,6 +1,15 @@
 import React from 'react';
 import NewsService from './NewsService';
-import '../.././../Styles/App.css';
+//import '../.././../Styles/App.css';
+
+import '../.././../Styles/NewsStory.css';
+
+const Newsstory = {
+
+    backgroundImage : "url(/images/forest.jpg)",
+   
+};
+
 class NewsStoryComponent extends React.Component {
 
     constructor(props) {
@@ -20,12 +29,14 @@ class NewsStoryComponent extends React.Component {
 
     }
 
+    
+
     render () {
         return (
 
-            <div>
+            /*
 
-                
+            <div>
 
                 <table >
                 <h1 className="News-Stories"> News Stories</h1>
@@ -49,6 +60,52 @@ class NewsStoryComponent extends React.Component {
                     </tbody>
 
                 </table>
+
+            </div>
+            */
+
+
+            //First <div> element with class "newscard" is a dummy
+            //Also all cards redirect to BBC
+            <div class = "newsgrid">
+
+                <div class = "newscard">
+
+                    <div style = {Newsstory} class = "newsimage"></div>
+                    <div class = "newscontent">
+
+                        <h2>Test Post</h2>
+                        <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
+                        <span>Source</span>
+                        <span>Date of Upload</span>
+                        <a href="https://www.bbc.co.uk/news" target ="_blank">Learn More</a>
+            
+                    </div>
+
+                </div>
+                
+                {
+
+                this.state.News.map(
+
+                News=>
+                <div class = "newscard">
+
+                    <div style = {Newsstory} class = "newsimage"></div>
+                    <div class = "newscontent">
+
+                        <h2>{News.story_title}</h2>
+                        <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
+                        <span>{News.story_link}</span>
+                        <span>Date of Upload</span>
+                        <a href="https://www.bbc.co.uk/news" target ="_blank">Open Story</a>
+            
+                    </div>
+
+                </div>
+                )
+
+                }
 
             </div>
 
