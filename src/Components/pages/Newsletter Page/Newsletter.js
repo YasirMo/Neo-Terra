@@ -15,6 +15,7 @@ export default function Newsletter() {
             console.log(error.text);
         });
         e.target.reset()
+        window.location.href = '/ThanksForSubscribing';
     }
     return(
         <div>

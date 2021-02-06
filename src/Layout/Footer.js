@@ -28,7 +28,7 @@ class Footer extends Component {
           <div className="col">
             
             <h5><Link to='/' className="Links-footer" >  Home </Link></h5>
-            <h5><Link to ='/' className="Links-footer" >News</Link></h5>
+            <h5><Link to ='News' className="Links-footer" >News</Link></h5>
           </div>
           
           <div className="col">
