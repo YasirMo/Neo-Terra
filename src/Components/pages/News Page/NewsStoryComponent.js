@@ -111,7 +111,7 @@ class NewsStoryComponent extends React.Component {
                         <span>{News.story_link}</span>
                         <span>Date of Upload</span>
                         <a href="https://www.bbc.co.uk/news" target ="_blank">Open Story</a>
-                        <button id = {News.story_id} onClick = {this.deleteHandler}>DELETE</button>
+                        <button id = {News.id} onClick = {this.deleteHandler}>DELETE</button>
             
                     </div>
 
