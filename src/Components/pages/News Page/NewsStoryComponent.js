@@ -3,6 +3,7 @@ import NewsService from './NewsService';
 //import '../.././../Styles/App.css';
 
 import '../.././../Styles/NewsStory.css';
+import axios from 'axios';
 
 const Newsstory = {
 
@@ -10,12 +11,14 @@ const Newsstory = {
    
 };
 
+
 class NewsStoryComponent extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            News:[]
+            News:[],
+            story_id:''
         }
     }
 
@@ -26,6 +29,15 @@ class NewsStoryComponent extends React.Component {
             this.setState({News: response.data})
 
         } );
+
+    }
+
+    deleteHandler = e => {
+
+        e.preventDefault()
+
+        this.setState({story_id: e.target.id})
+        axios.delete('http://localhost:8080/news/', {params: {id: this.state.story_id}})
 
     }
 
@@ -99,6 +111,7 @@ class NewsStoryComponent extends React.Component {
                         <span>{News.story_link}</span>
                         <span>Date of Upload</span>
                         <a href="https://www.bbc.co.uk/news" target ="_blank">Open Story</a>
+                        <button id = {News.story_id} onClick = {this.deleteHandler}>DELETE</button>
             
                     </div>
 
