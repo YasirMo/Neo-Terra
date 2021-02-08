@@ -21,7 +21,7 @@ function Navbar(pros) {
          </div>
          <ul className={ 'nav-menubar'}>
             <li className='nav-item'>
-                  <Link to='/' className='nav-links' >
+                  <Link to='/Quiz' className='nav-links' >
                  Quiz
                   </Link>
                   </li>

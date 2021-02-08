@@ -26,10 +26,11 @@ const Charts = (props) => {
             dataKey="Carbon"
             isAnimationActive={false}
             data={data}
-            cx={200}
+            cx={300}
             cy={200}
             outerRadius={80}
             fill="rgba(8, 114, 244, 0.6)"
+            // pie chart color
             label
           />
           <Tooltip />
@@ -54,7 +55,7 @@ const Charts = (props) => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <CartesianGrid strokeDasharray="1 1" fill="#eee"/>
+          <CartesianGrid strokeDasharray="0 0" fill=""/>
           <Bar dataKey="Carbon" fill=" rgba(8, 114, 244, 0.6)" background={{ fill: "#eee" }} />
         </BarChart>
       </div>
