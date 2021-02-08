@@ -28,7 +28,9 @@
     margin-right: 200px;
     margin-bottom: 200px;
     color: white;
-     display: felx;
+    display: felx;
+    position: relative;
+    bottom: 100px;
    
 
   }
@@ -36,6 +38,8 @@
   .question-count {
     margin-bottom: 30px;
     font-size: 50px;
+    position: relative;
+    bottom: 50px;
     
   }
   

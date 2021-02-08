@@ -11,6 +11,7 @@ import Quiz from './Components/pages/Quiz';
 import Maps from './Components/pages/CF calculator/Maps';
 import About from './Components/pages/About';
 import ThanksForSubscribing from './Components/pages/ThanksForSubscribing';
+import ContactUs from './Components/pages/ContactUs';
 function App() {
   return (
   <>
@@ -30,6 +31,7 @@ function App() {
       <Route path='/Maps' exact component={Maps} />
       <Route path='/About' exact component={About} />
       <Route path='/ThanksForSubscribing' exact component={ThanksForSubscribing} />
+      <Route path='/ContactUs' exact component={ContactUs} />
       
      
   </Router>
