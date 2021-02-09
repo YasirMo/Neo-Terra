@@ -52,7 +52,7 @@ class Footer extends Component {
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
-             Terms of use | Cookies policy | FAQs | Instagram 
+             Terms Of Use | Cookies policy | FAQs | Instagram 
           </p>
         </div>
       </div>
