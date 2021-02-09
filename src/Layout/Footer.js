@@ -51,8 +51,8 @@ class Footer extends Component {
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;2020 Neo-Terra | All rights reserved |
-             Terms of use | Cookie policy | FAQs | Instagram 
+            &copy;2020 Neo-Terra | All Rights Reserved |
+             Terms of use | Cookies policy | FAQs | Instagram 
           </p>
         </div>
       </div>
