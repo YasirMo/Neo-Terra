@@ -1,6 +1,7 @@
 import Layout from '../../../Layout/Layout'
 import {CreateBox, CreateFact} from './ArticleBox';
 import {ArticleBanner} from './Banner';
+import { Link } from 'react-router-dom';
 
 const article2 = {
     title: 'What are the consequences of climate change in society?',
@@ -23,6 +24,7 @@ const article2 = {
         It is estimated air pollution kills 7 million people worldwide every year         
         according to the World Health Organisation. Between 2030 and 2050 climate change
         is expected to cause 250000 additional deaths per year from malnutrition and heat stress. <br/>
+        <br/>
         Warmer temperatures are linked to a 2 percent increase in mental health issues such as stress,
         anxiety and PTSD. Changes in climate change strongly affect water borne diseases and increases
         the transmissions of disease through insects. Malaria kills over 400000 people a year. <br/>
@@ -47,6 +49,7 @@ const article2 = {
         The world bank is warning that if we don’t do something immediately climate cause 100 million people into poverty. <br/>
         Heatwaves make us less able to work and reduce productivity. Insurance firms would have to raise premiums to cover rising 
         costs from extreme weather. This would make insurance too expensive for most people. <br/>
+        <br/>
         Efforts to stop climate change would create many jobs. Agricultural yields are sensitive to weather conditions as our 
         climate becomes more extreme this will result in a reduction of crop yields in areas where food production is vital. <br/>
         Climate change will affect tourism. A warming climate and changes to precipitation patterns will decrease the number of days 
@@ -70,6 +73,7 @@ const article2 = {
         Water quality will suffer in areas experiencing a large amount of rainfall. Heavy rain downpours
         can increase the number of pollutants, animal waste, trash and other materials that would make
         the water unsafe or in need of water treatment. <br/>
+        <br/>
         Hydroelectric plants will be unable to function from the higher temperatures as this decreases
         the water present in lakes and rivers. Overgrown algae occur from the increased pollution.
         This makes treating the water a strenuous task.
@@ -95,6 +99,9 @@ const article2 = {
               {CreateBox(Economy)}
               {CreateBox(Water)}
               </div>
+
+              <p class="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Found out <Link to='/LearnPageThree' class="link">  what you can do. </Link></p>
+              <br/>
           </Layout>
       );
   }

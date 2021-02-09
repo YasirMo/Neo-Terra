@@ -20,3 +20,16 @@ html, body
     text-align: justify;
     padding: 0 120px;
 }
+
+.ending {
+    margin: 2em 0;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 120px;
+}
+
+.link {
+    color:turquoise;
+    
+    
+}
