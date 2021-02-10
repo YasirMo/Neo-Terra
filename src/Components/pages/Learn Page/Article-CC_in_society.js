@@ -100,7 +100,7 @@ const article2 = {
               {CreateBox(Water)}
               </div>
 
-              <p class="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Found out <Link to='/LearnPageThree' class="link">  what you can do. </Link></p>
+              <p class="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <Link to='/LearnPageThree' class="link">  what you can do. </Link></p>
               <br/>
           </Layout>
       );
