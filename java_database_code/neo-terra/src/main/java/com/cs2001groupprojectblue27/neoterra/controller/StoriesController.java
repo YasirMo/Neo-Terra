@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cs2001groupprojectblue27.neoterra.model.NewsStories;
@@ -45,10 +46,24 @@ public class StoriesController
     {
         return repository.findById(Id).orElseThrow(RuntimeException::new);
     }
-
+    
+    
+    /*
     @DeleteMapping("/news/{id}")
     void deleteJob(@PathVariable(value = "id") Long Id) 
     {
     	repository.deleteById(Id);
+    } */
+    
+    @DeleteMapping("/news")
+    void deleteJob(@RequestParam(name = "id") Long Id) 
+    {
+    	//Integer id_del = Math.toIntExact(Id);
+    	
+    	repository.deleteById(Id);
+    	//System.out.println(Id);
+    	//System.out.println("Delete is being called");
     }
+    
+    
 }
