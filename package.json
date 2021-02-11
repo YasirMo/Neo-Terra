@@ -11,6 +11,7 @@
     "antd": "^4.11.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
     "google-maps-react": "^2.0.6",
     "leaflet": "^1.7.1",

@@ -1,5 +1,6 @@
 package com.cs2001groupprojectblue27.neoterra.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cs2001groupprojectblue27.neoterra.model.NewsStories;
+import com.cs2001groupprojectblue27.neoterra.processing.AutomatedNews;
 import com.cs2001groupprojectblue27.neoterra.repository.StoriesRepository;
 
 @RestController
@@ -20,6 +22,9 @@ import com.cs2001groupprojectblue27.neoterra.repository.StoriesRepository;
 public class StoriesController 
 
 {
+	@Autowired
+    AutomatedNews automate;
+	
 	@Autowired
 	StoriesRepository repository;
 	
@@ -29,6 +34,16 @@ public class StoriesController
         return repository.findAll();
     }
 	
+	@PostMapping("/autoNews")
+	public NewsStories automateStory(@RequestParam String newsSite) {
+        try {
+        	repository.save(automate.getNews(newsSite));
+        	return automate.getNews(newsSite);
+        } catch(IOException ie) {
+            return null;
+        } 
+	}
+    
 	@PostMapping("/news")
 	public NewsStories addStory(@RequestBody NewsStories news_story) {
 		repository.save(news_story);
@@ -41,7 +56,7 @@ public class StoriesController
 //        "storyLink": "random2",
 //        "source": "random3"
 //    }
-    @GetMapping("/news/{id}")
+    @GetMapping("/news/{id}")	
     public NewsStories getNoteById(@PathVariable(value = "id") Long Id)
     {
         return repository.findById(Id).orElseThrow(RuntimeException::new);
