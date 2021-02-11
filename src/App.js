@@ -12,6 +12,7 @@ import About from './Components/pages/About';
 import ThanksForSubscribing from './Components/pages/ThanksForSubscribing';
 import ContactUs from './Components/pages/ContactUs';
 import Article_2 from './Components/pages/Learn Page/Article-CC_in_society';
+import Admin from './Components/pages/News Page/Admin';
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
       <Route path='/Maps' exact component={Maps} />
       <Route path='/About' exact component={About} />
       <Route path='/ThanksForSubscribing' exact component={ThanksForSubscribing} />
-      <Route path='/ContactUs' exact component={ContactUs} />
+      <Route path='/Admin' exact component={Admin} />
+
       
   </Router>
   );
