@@ -1,4 +1,3 @@
-import './../../../Styles/Blog.css';
 import Layout from '../../../Layout/Layout'
 import {CreateBox, CreateFact} from './ArticleBox';
 import {PageBanner, ArticleBanner} from './Banner';
