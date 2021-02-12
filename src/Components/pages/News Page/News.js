@@ -14,7 +14,6 @@ function News() {
         <Layout>
         <div style={News}>
             <NewsStoryComponent />
-           
         </div>
         </Layout>
     )

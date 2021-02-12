@@ -32,17 +32,6 @@ class NewsStoryComponent extends React.Component {
 
     }
 
-    deleteHandler = e => {
-
-        e.preventDefault()
-
-        this.setState({story_id: e.target.id})
-        axios.delete('http://localhost:8080/news/', {params: {id: this.state.story_id}})
-
-    }
-
-    
-
     render () {
         return (
 
@@ -58,7 +47,7 @@ class NewsStoryComponent extends React.Component {
 
                             this.state.News.map(
 
-                                News => 
+                                News => //Change the Underscores if ever enabling this piece of code
                                 <tr key = {News.story_id}>
                                     <td> {News.story_title} </td>
                                     <td> {News.story_link} </td>
@@ -106,12 +95,11 @@ class NewsStoryComponent extends React.Component {
                     <div style = {Newsstory} class = "newsimage"></div>
                     <div class = "newscontent">
 
-                        <h2>{News.story_title}</h2>
+                        <h2>{News.storyTitle}</h2>
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
-                        <span>{News.story_link}</span>
+                        <span>{News.storyLink}</span>
                         <span>Date of Upload</span>
-                        <a href="https://www.bbc.co.uk/news" target ="_blank">Open Story</a>
-                        <button id = {News.id} onClick = {this.deleteHandler}>DELETE</button>
+                        <a href={News.storyLink} target ="_blank">Open Story</a>
             
                     </div>
 
