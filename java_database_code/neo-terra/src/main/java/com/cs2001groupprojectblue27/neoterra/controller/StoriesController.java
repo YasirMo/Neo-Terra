@@ -63,12 +63,12 @@ public class StoriesController
     }
     
     
-    /*
+
     @DeleteMapping("/news/{id}")
-    void deleteJob(@PathVariable(value = "id") Long Id) 
+    void deleteJob_1(@PathVariable(value = "id") Long Id) 
     {
     	repository.deleteById(Id);
-    } */
+    } 
     
     @DeleteMapping("/news")
     void deleteJob(@RequestParam(name = "id") Long Id) 
