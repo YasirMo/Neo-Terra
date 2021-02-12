@@ -62,8 +62,6 @@ public class StoriesController
         return repository.findById(Id).orElseThrow(RuntimeException::new);
     }
     
-    
-    
     @DeleteMapping("/news/{id}")
     void deleteJob_1(@PathVariable(value = "id") Long Id) 
     {
