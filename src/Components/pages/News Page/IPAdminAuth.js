@@ -36,10 +36,8 @@ class IPAdminAuth extends React.Component {
     {   
         
         switch (IP.ip) {
-
                                                 //DEVELOPERS ADD YOUR IP ADDRESSES HERE!!!!!!!!
             case "90.212.113.193":
-
                 return (
 
                     <div class = "newsgrid">
@@ -49,7 +47,12 @@ class IPAdminAuth extends React.Component {
                     </div>
         
                 )
-        
+            case "134.83.252.34":
+                return (
+                    <div class = "newsgrid">
+                        <AdminNSComponent/>   
+                    </div>
+                )
             default:
                 
                 return (
