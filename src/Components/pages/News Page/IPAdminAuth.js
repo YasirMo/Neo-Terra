@@ -53,6 +53,16 @@ class IPAdminAuth extends React.Component {
                         <AdminNSComponent/>   
                     </div>
                 )
+
+            case "134.83.3.147":
+                return (
+
+                    <div class = "newsgrid">
+                        <AdminNSComponent/>
+                    </div>
+
+                )
+
             default:
                 
                 return (
