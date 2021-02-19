@@ -24,7 +24,7 @@
   .quiz-purpose {
     display: flex;
     font-size: 25px;
-    align-items: center;
+    text-align:center;
     color: white;
     margin-right: 200px;
   }
