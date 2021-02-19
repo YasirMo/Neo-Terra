@@ -23,8 +23,8 @@
   }
   .quiz-purpose {
     display: flex;
-    font-size: 20px;
-    align-items: center;
+    font-size: 25px;
+    text-align:center;
     color: white;
     margin-right: 200px;
   }
