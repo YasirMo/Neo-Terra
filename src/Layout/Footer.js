@@ -24,29 +24,40 @@ class Footer extends Component {
 
             </h2>
           </div>
+          <div className="com">  
+             <h2>Neo Terra Project</h2>
+           </div> 
         
-          <div className="col">
-            
+          <div className="home">           
             <h5><Link to='/' className="Links-footer" >  Home </Link></h5>
-            <h5><Link to ='News' className="Links-footer" >News</Link></h5>
           </div>
           
-          <div className="col">
+          <div className="learn">
             <h5><Link to='/Learn' className="Links-footer">  Learn </Link></h5>
-            <h5> <Link to='/Quiz' className="Links-footer" >  Quiz </Link></h5>
           </div>
 
-          <div className="col">
+          <div className="action">
             <h5><Link to='/TakeAction'className="Links-footer" >  Take action </Link></h5>
-            <h5><Link to='/CarbonFootprint'className="Links-footer" >  CF Calculator </Link></h5>
           </div>
         
-          <div className="col">
+          <div className="about">
             <h5><Link to='/About'className="Links-footer" > About us</Link></h5>
           </div>
-          <hr/>
+
+          <div className="news">
+          <h5><Link to ='News' className="Links-footer" >News</Link></h5>
+          </div>
+
+          <div className="quiz">
+          <h5> <Link to='/Quiz' className="Links-footer" >  Quiz </Link></h5>
+          </div>
+
+          <div className="cf">
+          <h5><Link to='/CarbonFootprint'className="Links-footer" >  CF Calculator </Link></h5>
+          </div>
+          
         </div>
-        <hr className="line"/>
+        <hr />
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |

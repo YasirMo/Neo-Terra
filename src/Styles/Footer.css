@@ -4,15 +4,16 @@
     padding-top: 0rem;
     bottom: 0;
     width: 100%;
-
+    height: 400px;
 }
+
 
 .Links-footer {
     color: white;
 }
 
 .Links-footer:hover{
-    color: white;
+    color: grey;
 }
 .content-wrap{
     margin: 0 auto;
@@ -33,17 +34,70 @@
 
 .col-sm {
     position: relative;
-    right: 300px;
-    top: 140px
+    right: 700px;
+    top: 240px
 }
 
 .list {
     position: relative;
-    right: 400px;
+    right: 330px;
+    top: 100px;
 }
 
-.line {
+hr {
     position: relative;
-    right: 300px;
-    top: 140px
+    right: 700px;
+    top: 240px;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    width: 1000px;
+}
+
+.com {
+    position: relative;
+    right: 890px;
+    top: 140px;
+}
+
+.home {
+    position: relative;
+    right: 930px;
+    top: 330px;
+}
+
+.learn {
+    position: relative;
+    right: 910px;
+    top: 330px;
+}
+
+.action {
+    position: relative;
+    right: 890px;
+    top: 330px;
+}
+
+.about {
+    position: relative;
+    right: 870px;
+    top: 330px;
+}
+
+.news {
+    position: relative;
+    right: 100px;
+    top: 210px;
+}
+
+.quiz {
+    position: relative;
+    right: 80px;
+    top: 210px;
+}
+
+.cf {
+    position: relative;
+    right: 60px;
+    top: 210px;
 }
