@@ -1,10 +1,10 @@
 .main {
     background-color: #283953;
     color: white;
-    position: relative;
-    padding-top: 3em;
+    padding-top: 0rem;
     bottom: 0;
     width: 100%;
+
 }
 
 .Links-footer {
@@ -21,6 +21,29 @@
 }
 
 .row-newsletter{
-    margin-left: 200px;
+    position: relative;
+    left: 200px;
 }
 
+.col {
+    position: relative;
+    right: 370px;
+    top: 140px
+}
+
+.col-sm {
+    position: relative;
+    right: 300px;
+    top: 140px
+}
+
+.list {
+    position: relative;
+    right: 400px;
+}
+
+.line {
+    position: relative;
+    right: 300px;
+    top: 140px
+}

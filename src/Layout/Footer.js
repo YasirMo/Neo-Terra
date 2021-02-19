@@ -10,7 +10,7 @@ class Footer extends Component {
   
   render(){
   return (
-   <div> 
+  
       
     <div className="main">
       <div className="container">
@@ -38,27 +38,26 @@ class Footer extends Component {
 
           <div className="col">
             <h5><Link to='/TakeAction'className="Links-footer" >  Take action </Link></h5>
-            <h5><Link to='/Maps'className="Links-footer" >  Maps </Link></h5>
+            <h5><Link to='/CarbonFootprint'className="Links-footer" >  CF Calculator </Link></h5>
           </div>
         
           <div className="col">
-            <h5><Link to='/ContactUs' className="Links-footer" > Contact us</Link></h5>
             <h5><Link to='/About'className="Links-footer" > About us</Link></h5>
           </div>
           <hr/>
         </div>
-        <Newsletter/>
-        <hr />
+        <hr className="line"/>
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
              Terms Of Use | Cookies Policy | FAQs | Instagram 
           </p>
         </div>
+        <Newsletter/>
       </div>
     </div>
     </div>
-    </div>
+
   );
 }
 }

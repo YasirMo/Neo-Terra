@@ -58,19 +58,10 @@
   color: black;
 }
   
-  .Carousels-Links {
-    color: #FFF;
-    font-size: 40px;
-  }
-  .Carousels-Links:hover {
-     color: rgb(255, 255, 255);
-     transition: all 0.2s ease-out;
-     text-decoration: none;
-  }
 
-  .Quiz-component {
-  background-size: cover;
-  height: 1000px;
+.Quiz-component {
+background-size: cover;
+height: 1000px;
 }
 
 
