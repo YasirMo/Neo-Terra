@@ -21,6 +21,13 @@
     color: white;
     margin-right: 200px;
   }
+  .quiz-purpose {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    color: white;
+    margin-right: 200px;
+  }
   
   .question-section {
     width: 150%;

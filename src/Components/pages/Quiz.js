@@ -95,7 +95,7 @@ export default function Quiz() {
 					<h1 className='score-section'>
 					You scored {score} out of {questions.length}
 					</h1>
-					<h2>
+					<h2 className= 'quiz-purpose'>
 					The purpose of the quiz is to test your knowledge about Climate change and if you want to learn more about the subject,
 
 					</h2>
