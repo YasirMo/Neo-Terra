@@ -3,39 +3,53 @@ import { Link } from 'react-router-dom';
 import "../././Styles/Navbar.css"
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 // import { withTheme } from '@material-ui/core';
+
 function Navbar(pros) {
     
 
-    const [dropdownOpen, setOpen] = useState(false);
-  
-    const toggle = () => setOpen(!dropdownOpen);
+  const [dropdownOpen, setOpen] = useState(false);
 
-  return (
+  const toggle = () => setOpen(!dropdownOpen);
+
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
+
+
+return (
+  
+  <div>
     
-    <>
-      <nav className='navbar'>
-    <div className='navbar-container'> 
-    <Link to ='/'> 
-         <img className="navbar-Logo" src='/images/Logo.png' alt='logo' />
-         </Link>
-         </div>
-         <ul className={ 'nav-menubar'}>
-            <li className='nav-item'>
-                  <Link to='/Quiz' className='nav-links' >
-                 Quiz
-                  </Link>
-                  </li>
-            <li className='nav-item'>
-                  <Link to='/News' className='nav-links' >
-                 News
-                  </Link>
-                </li>
-            <li className='nav-item'>
-                  <Link to='/CarbonFootprint' className='nav-links' >
-                  CF Calculator
-                  </Link>
-                </li>
-          
+      <div className='navbar-container'> 
+        <div className="navbar-Logo">
+          <Link to ='/'> 
+            <img className="navbar-Logo" src='/images/Logo.png' alt='logo' />
+          </Link>
+        </div>
+
+        <div className="RightSection"></div>
+        
+          <ul className={click ? "nav-menubar active" : "nav-menubar"}>
+          <li className='nav-item'>
+            <Link to='/Quiz'  className='nav-links' onClick={handleClick}>
+                Quiz
+            </Link>
+           
+          </li>
+          <li className='nav-item'>
+            <Link to='/News' className='nav-links' onClick={handleClick}>
+                News
+            </Link>
+           
+          </li>
+          <li className='nav-item'>
+            <Link to='/CarbonFootprint' className='nav-links' onClick={handleClick} >
+                CF Calculator
+            </Link>
+            
+          </li>
+                
             <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
               <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
                   Learn More Here!
@@ -64,19 +78,22 @@ function Navbar(pros) {
 
               </DropdownMenu>
             </ButtonDropdown>
-            </ul>
+          
+          
+          </ul>
 
-            <div className="hamburger-toggle">
-                <i className="fas fa-bars fa-lg"></i>
-
+          <div className="menu-closeicon" onClick={handleClick}>
+            <i className={click ? "fas fa-times":"fas fa-bars"}></i>
+ 
+           </div>
           </div>
-            
-           
-      </nav>
 
-      
-    </>
-  );
+    </div>
+  
+
+    
+
+);
 }
 
 export default Navbar
