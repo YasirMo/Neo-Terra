@@ -95,10 +95,10 @@ export default function Quiz() {
 					<h1 className='score-section'>
 					You scored {score} out of {questions.length}
 					</h1>
-					<h2 className= 'quiz-purpose'>
+					<p className= 'quiz-purpose'>
 					The purpose of the quiz is to test your knowledge about Climate change and if you want to learn more about the subject,please press on the button below 'Learn More' or if you want to retry press 'Try Again'.
 
-					</h2>
+					</p>
 					
 					<button  className='Quiz-btns2' >
 					<Link to='/Learn' className="map-btn" >
