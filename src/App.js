@@ -13,13 +13,13 @@ import ContactUs from './Components/pages/ContactUs';
 import Article_2 from './Components/pages/Learn Page/Article-CC_in_society';
 import Admin from './Components/pages/News Page/Admin';
 import Article_3 from './Components/pages/Learn Page/Article-Ways_to_reduce'
+import ScrollToTop from './Components/pages/Learn Page/ScrollToTop';
 
 function App() {
   return (
   <Router>
-  
-    <Switch></Switch>
-
+    <ScrollToTop>
+    
       <Route path='/' exact component={Home} />
       <Route path='/TakeAction' exact component={TakeAction} />
       <Route path='/Learn' exact component={Article_1} />
@@ -33,6 +33,7 @@ function App() {
       <Route path='/ThanksForSubscribing' exact component={ThanksForSubscribing} />
       <Route path='/Admin' exact component={Admin} />
 
+    </ScrollToTop>
       
   </Router>
   );
