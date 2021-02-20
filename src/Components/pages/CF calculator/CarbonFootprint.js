@@ -29,14 +29,18 @@ function CarbonFootprint(props)   {
 			axios.get('https://api.ipify.org?format=json')
 			.then((response) => {
 				console.log(response.data);
-				setIp(response.data.ip);});
-		}
-		if(showScore==true&&(finalScore==0||finalScore==null))
-		{
-			axios.get('http://localhost:8080/users/'+ip)
-			.then((response) => {
-				console.log(response.data);
-				setFinalScore(response.data.score);});
+				setIp(response.data.ip);})
+			.then(() =>{
+				if(showScore==true&&(finalScore==0||finalScore==null))
+				{
+					axios.get('http://localhost:8080/users/'+ip)
+					.then((response) => {
+						console.log(response.data);
+						setFinalScore(response.data.score);});
+					setScreen();
+				}}
+			)
+
 		}
 	})
 
@@ -165,8 +169,8 @@ function CarbonFootprint(props)   {
 				
 			) : (
 				<>
-					<div className='question-sections' onload={setScreen()}>
-					<h2 className="Question-length-carbon" onload="setScreen()"> 
+					<div className='question-sections' onLoad={setScreen()}>
+					<h2 className="Question-length-carbon" onLoad="setScreen()"> 
 						<span >Question {currentQuestion } </ span  >/{questions.length -1 }
 						</h2>
 				

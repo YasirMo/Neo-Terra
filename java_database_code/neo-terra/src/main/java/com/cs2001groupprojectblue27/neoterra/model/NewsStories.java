@@ -25,15 +25,19 @@ public class NewsStories implements Serializable {
 	    
 	    @NotBlank
 	    private String source;
+	    
+	    @NotBlank
+	    private String date;
 
 	    public NewsStories() {
 	    	
 	    }
-	    public NewsStories(String storyTitle, String storyLink,  String source) 
+	    public NewsStories(String storyTitle, String storyLink,  String source, String date) 
 	    {
 	    	this.storyTitle = storyTitle;
 	    	this.storyLink = storyLink;
 	    	this.source = source;
+	    	this.date = date;
 	    }
 	    
 	    //Getters and Setters 
@@ -44,6 +48,16 @@ public class NewsStories implements Serializable {
 		public void setId(Long id) {
 			this.id = id;
 		}
+		
+		public String getDate() {
+			return date;
+		}
+
+		public void setDate(String date) {
+			this.date = date;
+		}
+		
+		////
 		
 		public String getStoryTitle() {
 			return storyTitle;

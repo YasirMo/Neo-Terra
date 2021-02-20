@@ -4,11 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.cs2001groupprojectblue27.neoterra.model.NewsStories;
-import com.cs2001groupprojectblue27.neoterra.model.Users;
 import com.cs2001groupprojectblue27.neoterra.repository.StoriesRepository;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -31,13 +29,14 @@ public class AutomatedNews {
 		case "bbc":
 			return bbc();
 		default:
-			return new NewsStories(newsSite, "Empty", "Empty");
+			return new NewsStories(newsSite, "Empty", "Empty", "Empty");
 		}
     }
 	public NewsStories bbc() throws IOException
 	{
 		String titleName="blank";
-		String urlName="blank";
+		String urlName="blank"; 
+		String dateName="blank"; 
 		boolean alreadyExists=false;
 		
 		long nr=1;
@@ -68,19 +67,21 @@ public class AutomatedNews {
 						.first();
 				String url = link.attr("abs:href");
 				
-				Elements description = doc.select("#main-content > div > div.ssrcss-1v7bxtk-StyledContainer.eu4yxp60 > div > div > ul > li:nth-child("+nr+") > div > div > div.ssrcss-v4rel9-PromoContent.e1f5wbog0 > div.ssrcss-l100ew-PromoContentSummary.e1f5wbog1 > p:nth-child(2)");
+				//Elements description = doc.select("#main-content > div > div.ssrcss-1v7bxtk-StyledContainer.eu4yxp60 > div > div > ul > li:nth-child("+nr+") > div > div > div.ssrcss-v4rel9-PromoContent.e1f5wbog0 > div.ssrcss-l100ew-PromoContentSummary.e1f5wbog1 > p:nth-child(2)");
 				
+				dateName=date.toString();
 				urlName=url;
 				alreadyExists=true;
 			}
 			else nr++;
 		}
-		return new NewsStories(titleName, urlName, "BBC");
+		return new NewsStories(titleName, urlName, "BBC", dateName);
 	}
 	public NewsStories newYorkTimes() throws IOException
 	{
 		String titleName="blank";
 		String urlName="blank";
+		String dateName="blank"; 
 		boolean alreadyExists=false;
 		
 		long nr=1;
@@ -101,13 +102,14 @@ public class AutomatedNews {
 						.first();
 				String url = link.attr("abs:href");
 				
-				Elements description = doc.select("#site-content > div > div:nth-child(2) > div.css-46b038 > ol > li:nth-child("+nr+") > div > div > div > a > p.css-16nhkrn");
+				//Elements description = doc.select("#site-content > div > div:nth-child(2) > div.css-46b038 > ol > li:nth-child("+nr+") > div > div > div > a > p.css-16nhkrn");
 				
+				dateName=date.toString();
 				urlName=url;
 				alreadyExists=true;
 			}
 			else nr++;
 		}
-		return new NewsStories(titleName, urlName, "New York Times");
+		return new NewsStories(titleName, urlName, "New York Times", dateName);
 	}
 }
