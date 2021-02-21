@@ -16,10 +16,28 @@ class NewsStoryComponent extends React.Component {
 
     constructor(props) {
         super(props)
+        this.toggleSortDate = this.toggleSortDate.bind(this)
         this.state = {
             News:[],
-            story_id:''
+            story_id:'',
+            isOldestFirst: true
         }
+        
+    }
+
+    //Sorting Code implemeneted by Hamza
+    sortByDate () {
+        const {News} = this.state
+        let newNews = News
+        const sortedNews = News.sort((a, b) => a.date - b.date)
+        this.setState({
+            isOldestFirst: !this.state.isOldestFirst,
+            News: newNews
+        })
+    }
+    
+    toggleSortDate (event) {
+        this.sortByDate()
     }
 
     componentDidMount() {
@@ -69,6 +87,7 @@ class NewsStoryComponent extends React.Component {
             //First <div> element with class "newscard" is a dummy
             //Also all cards redirect to BBC
             <div class = "newsgrid">
+                <button onClick={this.toggleSortDate}>Order by date</button>
 
                 <div class = "newscard">
 
@@ -98,7 +117,7 @@ class NewsStoryComponent extends React.Component {
                         <h2>{News.storyTitle}</h2>
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
                         <span>{News.storyLink}</span>
-                        <span>Date of Upload</span>
+                        <span>{News.date}</span>
                         <a href={News.storyLink} target ="_blank">Open Story</a>
             
                     </div>
