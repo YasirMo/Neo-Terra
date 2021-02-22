@@ -14,7 +14,6 @@ class Footer extends Component {
       
     <div className="main">
       <div className="container">
-      <div className="content-wrap">
         
         <div className="row">
           <div className="col">
@@ -25,7 +24,7 @@ class Footer extends Component {
             </h2>
           </div>
           <div className="com">  
-             <h2>Neo Terra Project</h2>
+             <h1>Neo Terra Project</h1>
            </div> 
         
           <div className="home">           
@@ -57,15 +56,15 @@ class Footer extends Component {
           </div>
           
         </div>
+       
         <hr />
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
              Terms Of Use | Cookies Policy | FAQs | Instagram 
           </p>
-        </div>
+        </div>     
         <Newsletter/>
-      </div>
     </div>
     </div>
 

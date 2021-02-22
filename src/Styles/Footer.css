@@ -28,13 +28,13 @@
 
 .col {
     position: relative;
-    right: 370px;
+    left: 180px;
     top: 140px
 }
 
 .col-sm {
     position: relative;
-    right: 700px;
+    right: 150px;
     top: 240px
 }
 
@@ -46,7 +46,7 @@
 
 hr {
     position: relative;
-    right: 700px;
+    right: 200px;
     top: 240px;
     height: 1px;
     background-color: #ccc;
@@ -56,48 +56,51 @@ hr {
 
 .com {
     position: relative;
-    right: 890px;
-    top: 140px;
+    right: 468px;
+    top: 170px;
+    font-size: 2rem;
 }
 
 .home {
     position: relative;
-    right: 930px;
-    top: 330px;
+    right: 500px;
+    top: 310px;
 }
 
 .learn {
     position: relative;
-    right: 910px;
-    top: 330px;
+    right: 480px;
+    top: 310px;
 }
 
 .action {
     position: relative;
-    right: 890px;
-    top: 330px;
+    right: 213px;
+    top: 310px;
 }
 
 .about {
     position: relative;
-    right: 870px;
-    top: 330px;
+    right: 420px;
+    top: 310px;
 }
 
 .news {
     position: relative;
-    right: 100px;
-    top: 210px;
+    right: 640px;
+    top: 310px;
 }
 
 .quiz {
     position: relative;
-    right: 80px;
-    top: 210px;
+    right: 620px;
+    top: 310px;
 }
 
 .cf {
     position: relative;
-    right: 60px;
-    top: 210px;
+    right: 350px;
+    top: 310px;
 }
+
+
