@@ -4,6 +4,7 @@ import NewsService from './NewsService';
 
 import '../.././../Styles/NewsStory.css';
 import axios from 'axios';
+import SplitDate from './SplitDate.js'
 
 const Newsstory = {
 
@@ -20,18 +21,19 @@ class NewsStoryComponent extends React.Component {
         this.state = {
             News:[],
             story_id:'',
-            isOldestFirst: true
+            isOldestFirst: true,
+            
         }
         
     }
 
-    //Sorting Code implemeneted by Hamza
+    //Sorting Code implemeneted by Hamza (Sorts by Ascending)
     sortByDate () {
         const {News} = this.state
         let newNews = News
-        const sortedNews = News.sort((a, b) => a.date - b.date)
+        const sortedNews = News.sort((a, b) => SplitDate(a.date) - SplitDate(b.date))
         this.setState({
-            isOldestFirst: !this.state.isOldestFirst,
+            isOldestFirst: !this.state.isOldestFirst, //This code was originally for Descending
             News: newNews
         })
     }
@@ -87,6 +89,7 @@ class NewsStoryComponent extends React.Component {
             //First <div> element with class "newscard" is a dummy
             //Also all cards redirect to BBC
             <div class = "newsgrid">
+
                 <button onClick={this.toggleSortDate}>Order by date</button>
 
                 <div class = "newscard">
