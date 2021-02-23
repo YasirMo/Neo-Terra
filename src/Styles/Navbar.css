@@ -1,7 +1,7 @@
 
 .navbar-container{
   width: 100%;
-  height: 90px;
+  height: 80px;
   box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
   align-items: center;
   padding: 0 1.5em;
   flex: 2;
-
+  background-color: transparent;
 }
 
 .navbar-Logo {
@@ -26,34 +26,38 @@
   display: flex;
   list-style: none;
   margin-right: 2rem;
+  padding-top: 15px;
   padding-right: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   justify-content: center;
   align-items: center;
+ 
   }
   
   .nav-links {
     color: rgb(0, 0, 0);
     padding: 0.5rem 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
-    border-bottom: 3px solid transparent;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 400;
+    /* border-bottom: 3px solid transparent; */
     text-decoration: none;
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    transition: all 0.2s ease-out;
-    color: rgb(0, 0, 0);
     text-decoration: none;
   
   }
 
+  
   .fa-code{
     margin-left: 1rem;
   }
   
   .nav-item{
-    
     line-height: 40px;
     margin-right: 1rem;
   }
@@ -64,22 +68,63 @@
     height: 3px;
     width: 0;
     background: transparent;
+    transition: width 0.8s ease, background-color 0.5s ease;
   }
+
+  .nav-item:hover:after{
+    width: 100%;
+    background: black;
+   }
 
   
-  .menu-closeicon{
-    display: none;
+  .BlogDropDown{
+    background-color:  #7BE0AD;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 20px 60px;
+    font-size: 18px;
+    justify-content: space-between;
+    border-radius: 10px;
+  }  
+    
+  .BlogDropDown:hover{
+    transition: all 0.2s ease-out;
+    color:rgb(255, 255, 255);
+    
+
+  }
+  .itemLink{
+    background-color: inherit;
+    list-style: none;
+  } 
+
+  .itemLink a{
+    text-decoration: none;
+    list-style: none;
+ 
+  } 
+
+  .itemLink:hover{
+    transition: width 0.8s ease, background-color 0.5s ease;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    
   }
 
+    .menu-closeicon{
+      display: none;
+    }
 
-  .RightSection{
-    display:flex;
-    flex: 2;
-    height: 100%;
 
-  }
+    /* .MidSection{
+      display: inline;
+      flex: 1;
+      height: 100%;
+      
+    }
+    */
 
-  
+
 
 @media only screen and (max-width: 960px){
     
@@ -103,7 +148,7 @@
     z-index: 1;
 
   } 
-/* 
+
   .nav-links{
     padding: 1.5rem;
     width: 100%;
@@ -113,7 +158,7 @@
   .nav-menubar .navbar-Logo{
     left: 0;
     position: fixed;
-  } */
+  } 
 
   .menu-closeicon{
     display: block;
