@@ -1,81 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'react-slideshow-image/dist/styles.css'
-import { Fade } from 'react-slideshow-image';
-import '../../Styles/App.css';
+import '../../Styles/Home.css';
 
-const fadeImages = [
-    'images/nature.jpg',
-    'images/Nature3.jpg',
-    'images/Nature4.jpg'
-    
-  ];
-  
-function Home (){
-    return (
-      
-        <div className="slide-container">
-            
-          <Fade>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[0]} alt="img1" />
-                <h1 className="QuizTitle">
-            How aware are you about Climate Change?
-            </h1>
-            <h2 className="QuizTitle-2">
-                Put yourself to the test
-                <br/>
-            <h2>
+/**
+ //Home function: creates the home page -- Quiz Introduction
 
-            </h2>
-            <Link to='/Quiz' className='Button-link' >
-                    Take Our Quiz
-            </Link>
-            </h2>
-              </div>
-            </div>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[1]} alt="img1" />
-                <h1 className="QuizTitle">
-            How aware are you about Climate Change?
-            </h1>
-            <h2 className="QuizTitle-2">
-                Put yourself to the test
-                <br/>
-            <h2>
+ Note: Important changes have been made to this function:
+ - Before the slider was made using the "Fade" component. Now it uses only JSX and CSS. This decision is due to remove the slider controls that the Fade component
+   creates and to crop the image to fit the viewport only.
+ - The slider is controlled inside the CSS file: "Home.css"
+ - If you want to add more images to the slider, make sure the aspect ratio is 3/2 (Width / Height) or near.
 
-            </h2>
-            <Link to='/Quiz' className='Button-link' >
-                    Take Our Quiz
-            </Link>
-            </h2>
-              </div>
-            </div>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[2]} alt="img1" />
-                <h1 className="QuizTitle">
-            How aware are you about Climate Change?
-            </h1>
-            <h2 className="QuizTitle-2">
-                Put yourself to the test
-                <br/>
-            <h2>
+ - A background has been added to the "content" <div> for better visualization.
+ - Now the page has the web title to let users know they are in the NeoTerra Website.
 
-            </h2>
-            <Link to='/Quiz' className='Button-link' >
-                    Take Our Quiz
-            </Link>
-            </h2>
-              </div>
-            </div>
-          </Fade>
-         
-        </div>
-      
-      )
-    }
+ */
+
+function Home()
+{
+  return(
+    <div class="slider">
+      <div class="Name">
+        <i>NeoTerra: <span class="sub">Towards a healthier world</span></i>
+      </div>
+      <div class="content">
+        <h1>How aware are you about climate change?</h1>
+        <h2><i>Put yourself to the test</i></h2>
+        <Link to='/Quiz'>
+        Take Our Quiz
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 export default Home;

@@ -3,6 +3,9 @@ import {CreateBox, CreateFact} from './ArticleBox';
 import {PageBanner, ArticleBanner} from './Banner';
 import Paper from '@material-ui/core/Paper';
 
+//This css file modifies some parts of the content.
+import '../../../Styles/Blog.css'; 
+
 
 /* 
 Here you can write the Article's content/body.
@@ -285,36 +288,36 @@ function Article_1() {
   return(
     <Layout>
         <div>
-      {/* Page Banner */}
-      {ArticleBanner(article1, '/images/leafsprout.jpg')}
+            {/* Page Banner */}
+            {ArticleBanner(article1, '/images/leafsprout.jpg')}
 
-      {/* Article Intro */}
-      <p class="subtitle">In this article we will look at the main consequences of climate change in nature:</p>
+            {/* Article Intro */}
+            <p class="subtitle">In this article we will look at the main consequences of climate change in nature:</p>
 
-      {/* Article fact */}
-      {CreateFact(fact)}
+            {/* Article fact */}
+            {CreateFact(fact)}
 
-      {/*Article body */}
-      {CreateBox(Temp)}
-      {CreateBox(Polar)}
-      {CreateBox(Sea)}
-      {CreateBox(Ocean)}
-      {CreateBox(Forest)}
-      {CreateBox(Species)}
-      {CreateBox(Weather)}
-      {CreateBox(Fires)}
-      {CreateBox(Droughts)}
-      {CreateBox(SafeWater)}
-      {CreateBox(Ecosystems)}
+            {/*Article body */}
+            {CreateBox(Temp)}
+            {CreateBox(Polar)}
+            {CreateBox(Sea)}
+            {CreateBox(Ocean)}
+            {CreateBox(Forest)}
+            {CreateBox(Species)}
+            {CreateBox(Weather)}
+            {CreateBox(Fires)}
+            {CreateBox(Droughts)}
+            {CreateBox(SafeWater)}
+            {CreateBox(Ecosystems)}
 
-      {/* Conclusion */}
-      <i><h1 class="title">Conclusion</h1></i>
-      <p class="subtitle">
-        Climate change is a reality that must be accepted. Many species, ecosystems and natural processes are currently threatened by the drastic changes that
-        have taken place in the last centuries.
-        It is important to take action now in order to reduce its effects and become able to adapt in time to the new conditions that are being imposed.
-      </p>
-    </div>
+            {/* Conclusion */}
+            <i><h1 class="title">Conclusion</h1></i>
+            <p class="subtitle">
+            Climate change is a reality that must be accepted. Many species, ecosystems and natural processes are currently threatened by the drastic changes that
+            have taken place in the last centuries.
+            It is important to take action now in order to reduce its effects and become able to adapt in time to the new conditions that are being imposed.
+            </p>
+        </div>
     </Layout>
     );
 }

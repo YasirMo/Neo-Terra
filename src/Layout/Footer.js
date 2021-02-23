@@ -1,6 +1,7 @@
 import React from "react";
-// import '../Styles/App.css';
+//import '../Styles/App.css';
 import "../././Styles/Footer.css"
+//FIX the file Footer.css
 import { Link } from 'react-router-dom';
 import   '../Components/pages/Newsletter Page/Newsletter'
 import Newsletter from "../Components/pages/Newsletter Page/Newsletter";

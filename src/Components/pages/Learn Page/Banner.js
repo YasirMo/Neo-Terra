@@ -1,11 +1,11 @@
 /*
 
-//PageBanner function:
-This function will create a banner for a specific page (the one you are developing in a separate JS file).
+    PageBanner function:
+    This function will create a banner for a specific page (the one you are developing in a separate JS file).
 
-This method requires two arguments:
-- pageTitle: the name of the page the user is currently at. This value is passed strictly as a String.
-- img: an object containing the path for the image to be used as background.
+    This method requires two arguments:
+    - pageTitle: the name of the page the user is currently at. This value is passed strictly as a String.
+    - img: an object containing the path for the image to be used as background.
 
 */
 
@@ -54,18 +54,18 @@ export function PageBanner(pageTitle, img)
 
 /* 
 
-//ArticleBanner function:
-This function will create an article header, similar to a page banner (see PageBanner function).
+    ArticleBanner function:
+    This function will create an article header, similar to a page banner (see PageBanner function).
 
-ATTENTION!!: This function is still in development. It works as intended, but it might require more code economisation.
+    ATTENTION!!: This function is still in development. It works as intended, but it might require more code economisation.
 
-This method requires two arguments:
-- head: an object containing the following parameters:
-    * title: String
-    * subtitle: JSX (<p> is recommended )
-- img: object (it should contain the path of the image. Use import in the main article JS file)
+    This method requires two arguments:
+    - head: an object containing the following parameters:
+        * title: String
+        * subtitle: JSX (<p> is recommended )
+    - img: object (it should contain the path of the image. Use import in the main article JS file)
 
-NOTE: please use the property names displayed above.
+    NOTE: please use the property names displayed above.
 
 */
 
