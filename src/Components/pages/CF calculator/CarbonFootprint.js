@@ -4,7 +4,6 @@ import '../.././../Styles/App.css';
 import {questions}from './Questions';
 import axios from 'axios';
 import Charts from './Charts'
-import Layout from '../../../Layout/Layout'
 
 function CarbonFootprint(props)   {
 	
@@ -21,35 +20,44 @@ function CarbonFootprint(props)   {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
-	const [temp, setTemp] = useState(false);
 
-	useEffect(() => {
-		if(ip==0||ip==null)
+	useEffect(() => {	
+		if(ip===0||ip===null)
 		{
-			axios.get('https://api.ipify.org?format=json')
+			axios
+			.get('https://api.ipify.org?format=json')
 			.then((response) => {
-				console.log(response.data);
-				setIp(response.data.ip);})
-			.then(() =>{
-				if(showScore==true&&(finalScore==0||finalScore==null))
-				{
-					axios.get('http://localhost:8080/users/'+ip)
-					.then((response) => {
-						console.log(response.data);
-						setFinalScore(response.data.score);});
-					setScreen();
-				}}
-			)
-
+				setIp(response.data.ip);
+			})
 		}
-	})
-
-	// function getScore(){
-		
-	// 	fetch('http://localhost:8080/users/'+ip)
-	// 	.then(response => response.json())
-	// 	.then(data => setFinalScore(data.score));
-	// }
+	},[ip])
+	useEffect(() => {
+		if(currentQuestion<1&&ip!==0)
+		{
+			fetch('http://localhost:8080/users/'+ip)
+				.then(function(response) {
+					if (!response.ok) {
+						throw Error(response.statusText);
+					}
+					return response;
+				}).then(function(response) {
+					console.log("ok");
+					setShowScore(true);
+				}).catch(function(error) {
+					console.log(error);
+				});
+		}
+	}, [ip,currentQuestion]);
+	
+	useEffect(() => {
+			if(showScore===true&&(finalScore===0||finalScore===null))
+			{
+				axios.get('http://localhost:8080/users/'+ip)
+				.then((response) => {
+					setFinalScore(response.data.score);
+				});
+			}
+	}, [showScore,finalScore,ip]);
 
 	const handleAnswerOptionClick = (Value) => 
 	{
@@ -68,7 +76,7 @@ function CarbonFootprint(props)   {
 
 		if (nextQuestion < questions.length) 
 		{
-			if(currentQuestion==3&&answersArray[2]==1)
+			if(currentQuestion===3&&answersArray[2]===1)
 			{
 				
 				answersArray.push(10);
@@ -76,7 +84,7 @@ function CarbonFootprint(props)   {
 				console.log("Skipped 2 questions related to cars");
 				setCurrentQuestion(nextQuestion+2)
 			}
-			else if(currentQuestion==14&&answersArray[13]==1)
+			else if(currentQuestion===14&&answersArray[13]===1)
 			{
 				answersArray.push(10);
 				console.log("Skipped 2 questions related to cars");
@@ -102,34 +110,6 @@ function CarbonFootprint(props)   {
 			setShowScore(true);
 		}
 	};
-
-	function setScreen(){
-		if(currentQuestion<1)
-		{
-			fetch('http://localhost:8080/users/'+ip)
-				.then(function(response) {
-					if (!response.ok) {
-						throw Error(response.statusText);
-					}
-					return response;
-				}).then(function(response) {
-					console.log("ok");
-					setTemp(true);
-					console.log(temp);
-				}).catch(function(error) {
-					console.log(error);
-				});
-			if (temp==true)
-			{
-				setShowScore(true);
-			}
-		}
-	}
-
-	function refreshPage() 
-	{
-	window.location.reload(false);
-	}
 
 	function deleteUser()
 	{
@@ -169,8 +149,8 @@ function CarbonFootprint(props)   {
 				
 			) : (
 				<>
-					<div className='question-sections' onLoad={setScreen()}>
-					<h2 className="Question-length-carbon" onLoad="setScreen()"> 
+					<div className='question-sections'>
+					<h2 className="Question-length-carbon"> 
 						<span >Question {currentQuestion } </ span  >/{questions.length -1 }
 						</h2>
 				
