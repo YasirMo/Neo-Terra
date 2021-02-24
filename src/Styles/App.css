@@ -42,7 +42,9 @@
   
   }
   .main {
-    padding-top: 10em;
+    /* need to change class name, as its used in footer too */
+    /* padding-top: 10em; */
+    
   }
   
   

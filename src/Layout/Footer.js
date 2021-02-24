@@ -1,5 +1,5 @@
 import React from "react";
-// import '../Styles/App.css';
+import '../Styles/App.css';
 import "../././Styles/Footer.css"
 //FIX the file Footer.css
 import { Link } from 'react-router-dom';
@@ -62,7 +62,7 @@ class Footer extends Component {
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
-             Terms Of Use | Cookies Policy | FAQs | Instagram 
+             Terms Of Use | Cookies Policy | FAQs | <a class="ig-tag"href="https://www.instagram.com/neo_terra/">Instagram</a>
           </p>
         </div>     
         <Newsletter/>
