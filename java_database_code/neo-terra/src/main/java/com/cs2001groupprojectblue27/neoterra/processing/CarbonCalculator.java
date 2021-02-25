@@ -6,19 +6,18 @@ import com.cs2001groupprojectblue27.neoterra.model.Users;
 
 @Component("carbonCalculator")
 public class CarbonCalculator{
-	private double total=0;
-	private int houseHold=1;
-	private int car=1;
-	private int carType=1;
-	private double food=0;
-	private int flights=1;
-
 	public CarbonCalculator()
 	{
 		
 	}
 	
 	public Users Calculate(String id, String email,  int[] answers, double score){
+		double total=0;
+		int houseHold=1;
+		int car=1;
+		int carType=1;
+		double food=0;
+		int flights=1;
 		for(int i=1;i<18;i++)
 		{
 			switch(i)
@@ -320,8 +319,6 @@ public class CarbonCalculator{
 					break;
 			}
 		}
-		//after loop
-		
 		return new Users(id, email, answers, total);
 	}
 }

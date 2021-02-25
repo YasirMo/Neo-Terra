@@ -19,7 +19,7 @@ function Navbar(pros) {
 
 return (
   
-  <div>
+  
     
       <div className='navbar-container'> 
         <div className="navbar-Logo">
@@ -28,16 +28,16 @@ return (
           </Link>
         </div>
 
-        <div className="RightSection"></div>
+        {/* <div className="MidSection"></div> */}
         
           <ul className={click ? "nav-menubar active" : "nav-menubar"}>
           <li className='nav-item'>
-            <Link to='/Quiz'  className='nav-links' onClick={handleClick}>
+            <Link to='/Quiz' className='nav-links' onClick={handleClick}>
                 Quiz
             </Link>
            
           </li>
-          <li className='nav-item'>
+          <li className='nav-item' >
             <Link to='/News' className='nav-links' onClick={handleClick}>
                 News
             </Link>
@@ -50,45 +50,48 @@ return (
             
           </li>
                 
+  
+       
             <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-              <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
-                  Learn More Here!
-              </DropdownToggle>
-              <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
-                <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!
-                </DropdownItem>
-                <DropdownItem  className='itemLink'><Link to='/Learn' >
-                  Effects in <b>Nature</b>
-                </Link>
-                </DropdownItem>
+                <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
+                    Learn More Here!
+                </DropdownToggle>
+                <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
+                  <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!
+                  </DropdownItem>
+                  <DropdownItem  className='itemLink'><Link to='/Learn' >
+                    Effects in <b>Nature</b>
+                  </Link>
+                  </DropdownItem>
+                    
+                  <DropdownItem className='itemLink'>
+                    <Link to ='/LearnPageTwo'>
+                    Effects in <b>Society</b>
+                    </Link>
+                  </DropdownItem>
+
+                        
+                  <DropdownItem className='itemLink'>
+                    <Link to ='/LearnPageThree'>
+                    Ways to <b>Reduce</b> Climate Change
+                    </Link>
+                  </DropdownItem>
                   
-                <DropdownItem className='itemLink'>
-                  <Link to ='/LearnPageTwo'>
-                  Effects in <b>Society</b>
-                  </Link>
-                </DropdownItem>
 
-                      
-                <DropdownItem className='itemLink'>
-                  <Link to ='/LearnPageThree'>
-                  Ways to <b>Reduce</b> Climate Change
-                  </Link>
-                </DropdownItem>
-                
-
-              </DropdownMenu>
-            </ButtonDropdown>
-          
-          
+                </DropdownMenu>
+              </ButtonDropdown>
           </ul>
-
+        
+        
           <div className="menu-closeicon" onClick={handleClick}>
             <i className={click ? "fas fa-times":"fas fa-bars"}></i>
- 
-           </div>
+  
           </div>
-
     </div>
+
+        
+
+
   
 
     

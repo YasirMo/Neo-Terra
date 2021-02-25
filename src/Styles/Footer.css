@@ -1,11 +1,12 @@
 .main {
     background-color: #283953;
     color: white;
-    padding-top: 0rem;
-    bottom: 0;
     width: 100%;
-    height: 400px;
+    min-height: 50vh;
+    padding-top: 1rem;
+   
 }
+
 
 
 .Links-footer {
@@ -103,4 +104,13 @@ hr {
     top: 310px;
 }
 
+.ig-tag {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+.ig-tag:hover{
+    text-decoration: none;
+    color: grey;
+}
