@@ -90,7 +90,7 @@ height: 1000px;
   font-size: 25px;
   margin-bottom: 44px;
   width: 40%;
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   text-align: center;
   display: grid;
@@ -155,7 +155,7 @@ height: 1000px;
   margin-top: -500px;
   padding:20px;
   display: grid;
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   color: #006400;
   background-color:white;
@@ -167,7 +167,7 @@ height: 1000px;
   font-weight: bold;
   margin:10px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 15px;
   color: #006400;
   background-color:white;
 
@@ -221,6 +221,11 @@ position: relative;
 display: flex;
 top: 750px;
 color: white;
+text-align: center;
+border-radius: 15px;
+color: #006400;
+background-color:white;
+width: 325px;
 }
 
 
