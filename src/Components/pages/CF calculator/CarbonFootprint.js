@@ -157,7 +157,7 @@ function CarbonFootprint(props)   {
 				<>
 					<div className='question-sections'>
 					<h2 className="Question-length-carbon"> 
-						<span >Question {currentQuestion } </ span  >/{questions.length -1 }
+						<span >Question {currentQuestion } </ span  > , out of {questions.length -1 }
 						</h2>
 				
 						<div className='question-count'>
