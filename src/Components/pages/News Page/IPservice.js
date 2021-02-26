@@ -1,4 +1,3 @@
-import axios from 'axios'
 
 const IP_API_URL = 'https://api.ipify.org/?format=json';
 

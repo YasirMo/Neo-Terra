@@ -16,7 +16,7 @@ function CarbonFootprint(props)   {
 
 	const [ip, setIp] = useState(0);
 	const [finalScore,setFinalScore]=useState(0);
-	const [answersArray, setAnswersArray] = useState([]);
+	const [answersArray] = useState([]);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);

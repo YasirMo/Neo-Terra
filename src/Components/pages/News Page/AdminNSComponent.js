@@ -1,6 +1,5 @@
 import React from 'react';
 import NewsService from './NewsService';
-import IPservice from './IPservice';
 //import '../.././../Styles/App.css';
 import AdminCard from './AdminCard'
 import '../.././../Styles/NewsStory.css';
@@ -67,7 +66,7 @@ class AdminNSComponent extends React.Component {
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
                         <span>{News.storyLink}</span>
                         <span>Date of Upload</span>
-                        <a href={News.storyLink} target ="_blank">Open Story</a>
+                        <a href={News.storyLink} target ="_blank" rel="noreferrer">Open Story</a>
                         <button id = {News.id} onClick = {this.deleteHandler}>DELETE</button>
             
                     </div>

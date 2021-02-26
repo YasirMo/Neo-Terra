@@ -1,11 +1,8 @@
 import React from 'react';
 import AdminNSComponent from './AdminNSComponent';
-import AdminCard from './AdminCard'
 import IPservice from './IPservice';
 //import '../.././../Styles/App.css';
 
-import axios from 'axios';
-import Admin from './Admin';
 
 
 class IPAdminAuth extends React.Component {

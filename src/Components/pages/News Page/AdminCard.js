@@ -3,7 +3,6 @@ import React from 'react';
 import '../.././../Styles/Admin.css';
 import AddStory from './AddStory'
 import AutoAdd from './AutoAdd';
-import axios from 'axios';
 
 class AdminCard extends React.Component {
 
@@ -13,7 +12,6 @@ class AdminCard extends React.Component {
     }
 
     adminMenu = () => { //Main Admin Menu is represented by 1
-        const {action} = this.state;
         this.setState(
             {action: 1}
         );

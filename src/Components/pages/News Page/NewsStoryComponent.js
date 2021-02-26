@@ -3,7 +3,6 @@ import NewsService from './NewsService';
 //import '../.././../Styles/App.css';
 
 import '../.././../Styles/NewsStory.css';
-import axios from 'axios';
 import SplitDate from './SplitDate.js'
 
 const Newsstory = {
@@ -101,7 +100,7 @@ class NewsStoryComponent extends React.Component {
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
                         <span>Source</span>
                         <span>Date of Upload</span>
-                        <a href="https://www.bbc.co.uk/news" target ="_blank">Learn More</a>
+                        <a  rel="noreferrer" href="https://www.bbc.co.uk/news" target ="_blank">Learn More</a>
             
                     </div>
 
@@ -121,7 +120,7 @@ class NewsStoryComponent extends React.Component {
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
                         <span>{News.storyLink}</span>
                         <span>{News.date}</span>
-                        <a href={News.storyLink} target ="_blank">Open Story</a>
+                        <a href={News.storyLink}  rel="noreferrer" target ="_blank">Open Story</a>
             
                     </div>
 

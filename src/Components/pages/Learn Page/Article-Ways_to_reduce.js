@@ -1,7 +1,6 @@
 import Layout from '../../../Layout/Layout'
 import {CreateBox, CreateFact} from './ArticleBox';
-import {PageBanner, ArticleBanner} from './Banner';
-import Paper from '@material-ui/core/Paper';
+import {ArticleBanner} from './Banner';
 
     const article3 = {
     title: 'Things you can do to help reduce the effects of climate change',
@@ -86,7 +85,7 @@ import Paper from '@material-ui/core/Paper';
                 <br></br>
                 <li>For trips within the same country or continent take the train.</li>
                 <br></br>
-                <li>When flying is unavoidable pay a little extra for carbon offsetting. <a target="_blank" href="https://www.myclimate.org/carbon-offset/"><i>myClimate</i></a> compares carbon emissions of flights</li>
+                <li>When flying is unavoidable pay a little extra for carbon offsetting. <a target="_blank" rel="noreferrer" href="https://www.myclimate.org/carbon-offset/"><i>myClimate</i></a> compares carbon emissions of flights</li>
                </ul>
           </p>
         ),

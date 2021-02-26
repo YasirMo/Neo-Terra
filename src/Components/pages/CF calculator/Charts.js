@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   PieChart,
-  Pie,
   Tooltip,
   BarChart,
   XAxis,

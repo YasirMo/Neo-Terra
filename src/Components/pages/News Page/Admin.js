@@ -1,10 +1,5 @@
-import React, { useState} from 'react'
-import NewsStoryComponent from './NewsStoryComponent'
-import AdminNSComponent from './AdminNSComponent'
-import AddStory from './AddStory'
-import AdminCard from './AdminCard'
+import React from 'react'
 import Layout from '../../../Layout/Layout'
-import { Container } from 'reactstrap';
 import IPAdminAuth from './IPAdminAuth'
 
 function Admin() {

@@ -1,7 +1,6 @@
 import Layout from '../../../Layout/Layout'
 import {CreateBox, CreateFact} from './ArticleBox';
-import {PageBanner, ArticleBanner} from './Banner';
-import Paper from '@material-ui/core/Paper';
+import {ArticleBanner} from './Banner';
 
 //This css file modifies some parts of the content.
 import '../../../Styles/Blog.css'; 
