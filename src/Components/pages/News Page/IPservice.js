@@ -6,7 +6,7 @@ class IPservice {
 
     getIPaddress(){
 
-        return axios.get(IP_API_URL);
+        return (IP_API_URL);
 
     }
 

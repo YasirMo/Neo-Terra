@@ -20,43 +20,37 @@ const Charts = (props) => {
   ];
   return (
    
-      <div>
-        <PieChart width={400} height={400}>
-          <Pie
-            dataKey="Carbon"
-            isAnimationActive={false}
-            data={data}
-            cx={300}
-            cy={200}
-            outerRadius={80}
-            fill="rgba(8, 114, 244, 0.6)"
-            // pie chart color
-            label
-          />
+      <div >
+        <PieChart  width={300} height={300}>
+
           <Tooltip />
         </PieChart>
         <BarChart
+          className='charts'
           width={500}
           height={300}
           data={data}
           margin={{
-            top: 5,
-            right: 30,
-            left: 80,
-            bottom: 5,
+            top: 20,
+            right: 50,
+            left: 30,
+            bottom: 10,
           }}
           barSize={20}
         >
           <XAxis
+            stroke="#006400"
             dataKey="name"
             scale="point"
-            padding={{ left: 100, right: 100 }}
+            padding={{ left: 50, right: 50 }}
           />
-          <YAxis />
+          <YAxis 
+          stroke="#006400"
+          />
           <Tooltip />
           <Legend />
-          <CartesianGrid strokeDasharray="0 0" fill=""/>
-          <Bar dataKey="Carbon" fill=" rgba(8, 114, 244, 0.6)" background={{ fill: "#eee" }} />
+          <CartesianGrid strokeDasharray="0 0" fill="#006400"/>
+          <Bar dataKey="Carbon" fill="black" background={{ fill: "#eee" }} />
         </BarChart>
       </div>
     

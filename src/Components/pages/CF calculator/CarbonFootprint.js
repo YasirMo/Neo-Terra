@@ -8,10 +8,10 @@ import Charts from './Charts'
 function CarbonFootprint(props)   {
 	
     const backgroundImage = {
-        backgroundImage : "url(/images/ForestPic.jpg)",
+        backgroundImage : "url(/images/finalF.jpg)",
         height: "1000px",
 		display: "flex",
-		width :"1900px"
+		width :"1900px",
 	};
 
 	const [ip, setIp] = useState(0);
@@ -50,14 +50,19 @@ function CarbonFootprint(props)   {
 	}, [ip,currentQuestion]);
 	
 	useEffect(() => {
-			if(showScore===true&&(finalScore===0||finalScore===null))
-			{
-				axios.get('http://localhost:8080/users/'+ip)
-				.then((response) => {
-					setFinalScore(response.data.score);
-				});
-			}
+		getFinalScore();
 	}, [showScore,finalScore,ip]);
+
+	const getFinalScore = () =>
+	{
+		if(showScore===true&&(finalScore===0||finalScore===null))
+		{
+			axios.get('http://localhost:8080/users/'+ip)
+			.then((response) => {
+				setFinalScore(response.data.score);
+			});
+		}
+	}
 
 	const handleAnswerOptionClick = (Value) => 
 	{
@@ -107,6 +112,7 @@ function CarbonFootprint(props)   {
 					this.props.onRouteChange('home');
 				}
 			})
+			getFinalScore();
 			setShowScore(true);
 		}
 	};
@@ -131,12 +137,12 @@ function CarbonFootprint(props)   {
 					<Charts finalScore={finalScore.toFixed(2)}/>	
 					</p>
 					<h1 className='score-section-carbon' >
-					
-					Your total is:  {finalScore.toFixed(2)} 
-					<br/>
-					The world average is 4.4
-					<br/>
-					The Uk average is 14.1
+						
+						Your total is:  {finalScore.toFixed(2)} 
+						<br/>
+						The world average is 4.4
+						<br/>
+						The Uk average is 14.1
 					</h1> 
 					<button  className='Start-btn' >
 					<Link to='/LearnPageThree' className="map-btn" >
