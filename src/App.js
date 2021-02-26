@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import  Home  from './Components/pages/Home';
-import TakeAction from './Components/pages/TakeAction';
 import Article_1 from './Components/pages/Learn Page/Article-CC_in_nature';
 import News from './Components/pages/News Page/News';
 import CarbonFootprint from './Components/pages/CF calculator/CarbonFootprint';
@@ -19,7 +18,6 @@ function App() {
     <ScrollToTop>
     
       <Route path='/' exact component={Home} />
-      <Route path='/TakeAction' exact component={TakeAction} />
       <Route path='/Learn' exact component={Article_1} />
       <Route path='/LearnPageTwo' exact component={Article_2} />
       <Route path='/LearnPageThree' exact component={Article_3}/>
