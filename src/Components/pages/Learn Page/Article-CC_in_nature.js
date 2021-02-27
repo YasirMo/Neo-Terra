@@ -291,7 +291,7 @@ function Article_1() {
             {ArticleBanner(article1, '/images/leafsprout.jpg')}
 
             {/* Article Intro */}
-            <p class="subtitle">In this article we will look at the main consequences of climate change in nature:</p>
+            <p className="subtitle">In this article we will look at the main consequences of climate change in nature:</p>
 
             {/* Article fact */}
             {CreateFact(fact)}
@@ -310,8 +310,8 @@ function Article_1() {
             {CreateBox(Ecosystems)}
 
             {/* Conclusion */}
-            <i><h1 class="title">Conclusion</h1></i>
-            <p class="subtitle">
+            <i><h1 className="title">Conclusion</h1></i>
+            <p className="subtitle">
             Climate change is a reality that must be accepted. Many species, ecosystems and natural processes are currently threatened by the drastic changes that
             have taken place in the last centuries.
             It is important to take action now in order to reduce its effects and become able to adapt in time to the new conditions that are being imposed.

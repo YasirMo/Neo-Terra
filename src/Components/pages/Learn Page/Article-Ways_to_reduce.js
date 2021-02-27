@@ -155,7 +155,7 @@ import {ArticleBanner} from './Banner';
               <Layout>
                   <div>
                   {ArticleBanner(article3, '/images/leafsprout.jpg')}
-                  <p class="subtitle">In this article we will discuss the steps you should take in order to help this ever-growing battle:</p>
+                  <p className="subtitle">In this article we will discuss the steps you should take in order to help this ever-growing battle:</p>
 
                   {CreateFact(fact)}
                   {CreateBox(Meat)}

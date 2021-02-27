@@ -47,7 +47,7 @@ class AdminNSComponent extends React.Component {
 
         return (
 
-            <div class = "newsgrid">
+            <div className = "newsgrid">
 
                 <AdminCard />   
                 
@@ -56,10 +56,10 @@ class AdminNSComponent extends React.Component {
                 this.state.News.map(
 
                 News=>
-                <div class = "newscard">
+                <div className = "newscard">
 
-                    <div style = {Newsstory} class = "newsimage"></div>
-                    <div class = "newscontent">
+                    <div style = {Newsstory} className = "newsimage"></div>
+                    <div className = "newscontent">
 
                         <h3>{News.story_id}</h3>
                         <h2>{News.storyTitle}</h2>

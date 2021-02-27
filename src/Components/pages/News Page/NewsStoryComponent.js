@@ -87,14 +87,14 @@ class NewsStoryComponent extends React.Component {
 
             //First <div> element with class "newscard" is a dummy
             //Also all cards redirect to BBC
-            <div class = "newsgrid">
+            <div className = "newsgrid">
 
                 <button onClick={this.toggleSortDate}>Order by date</button>
 
-                <div class = "newscard">
+                <div className = "newscard">
 
-                    <div style = {Newsstory} class = "newsimage"></div>
-                    <div class = "newscontent">
+                    <div style = {Newsstory} className = "newsimage"></div>
+                    <div className = "newscontent">
 
                         <h2>Test Post</h2>
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
@@ -111,10 +111,10 @@ class NewsStoryComponent extends React.Component {
                 this.state.News.map(
 
                 News=>
-                <div class = "newscard">
+                <div className = "newscard">
 
-                    <div style = {Newsstory} class = "newsimage"></div>
-                    <div class = "newscontent">
+                    <div style = {Newsstory} className = "newsimage"></div>
+                    <div className = "newscontent">
 
                         <h2>{News.storyTitle}</h2>
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>

@@ -92,7 +92,7 @@ const article2 = {
               <div>
               {ArticleBanner(article2, '/images/leafsprout.jpg')}
 
-              <p class="subtitle">In this article we will look at the main consequences of climate change  on people and the society we live in:</p>
+              <p className="subtitle">In this article we will look at the main consequences of climate change  on people and the society we live in:</p>
 
               {CreateFact(fact)}
               {CreateBox(Health)}
@@ -100,7 +100,7 @@ const article2 = {
               {CreateBox(Water)}
               </div>
 
-              <p class="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <Link to='/LearnPageThree' class="link">  what you can do. </Link></p>
+              <p className="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <Link to='/LearnPageThree' className="link">  what you can do. </Link></p>
               <br/>
           </Layout>
       );

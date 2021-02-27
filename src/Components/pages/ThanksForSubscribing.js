@@ -16,7 +16,7 @@ function ThanksForSubscribing () {
          <Layout>
         
          <div style={backgroundImage}>
-              <div class="centerText">
+              <div className="centerText">
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
                 <h1>

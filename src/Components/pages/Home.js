@@ -19,11 +19,11 @@ import '../../Styles/Home.css';
 function Home()
 {
   return(
-    <div class="slider">
-      <div class="Name">
-        <i>NeoTerra: <span class="sub">Towards a healthier world</span></i>
+    <div className="slider">
+      <div className="Name">
+        <i>NeoTerra: <span className="sub">Towards a healthier world</span></i>
       </div>
-      <div class="content">
+      <div className="content">
         <h1>How aware are you about climate change?</h1>
         <h2><i>Put yourself to the test</i></h2>
         <Link to='/Quiz'>

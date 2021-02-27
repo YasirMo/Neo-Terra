@@ -76,21 +76,21 @@ export default function Quiz()
 
 
     return(
-        <div class="background">
-            <div class="opacity">
+        <div className="background">
+            <div className="opacity">
                 {showScore ? (
                     /* Result Box */
-                    <div class="result-box">
-                    <div class="score-text">
+                    <div className="result-box">
+                    <div className="score-text">
                         <span>You scored <p>{score}</p>out of<p>{questions.length}</p></span>
                     </div>
-                    <div class="complete-text">
+                    <div className="complete-text">
                     The purpose of this quiz is to test your knowledge on Climate Change and give you a little introduction to our website.<br/>
                     You probably would like to know more about the topic (<b>Learn More</b>), however you are welcome to restart the quiz.
                     </div>
-                    <div class="buttons">
-                        <button class="restart" onClick={refreshPage}>Restart Quiz</button>
-                        <button class="quit">
+                    <div className="buttons">
+                        <button className="restart" onClick={refreshPage}>Restart Quiz</button>
+                        <button className="quit">
                             <Link to="/Learn">Learn More</Link>
                         </button>
                     </div>
@@ -98,33 +98,33 @@ export default function Quiz()
                 ):(
                     <div>
                         {/* Start Quiz Button */}
-                        <div class="start-btn">
+                        <div className="start-btn">
                             <button>Start Quiz</button>
                         </div>
 
                         {/* Quiz Box */}
-                        <div class="quiz-box">
+                        <div className="quiz-box">
                             <header>
-                                <div class="title">Climate Change Quiz</div>
-                                <div class="score">
-                                    <div class="score-text"><i>Score</i></div>
-                                    <div class="score-num">{score}</div>
+                                <div className="title">Climate Change Quiz</div>
+                                <div className="score">
+                                    <div className="score-text"><i>Score</i></div>
+                                    <div className="score-num">{score}</div>
                                 </div>
                             </header>
                             <section>
-                                <div class="que-text">
+                                <div className="que-text">
                                     {questions[currentQuestion].questionText}
                                 </div>
-                                <div class="option-list">
+                                <div className="option-list">
                                     {questions[currentQuestion].answerOptions.map((answerOption) => (
-                                        <div class="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+                                        <div className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
                                             <span>{answerOption.answerText}</span>
                                         </div>
                                     ))}
                                 </div>
                             </section>
                             <footer>
-                                <div class="total-que">
+                                <div className="total-que">
                                     <span><p>{currentQuestion + 1}</p>of<p>{questions.length}</p>Questions</span>
                                 </div>
                             </footer>

@@ -40,10 +40,10 @@ class AdminCard extends React.Component {
                 
                 return (
 
-                    <div class = "admincard">
+                    <div className = "admincard">
 
-                        <button class = "addButton" onClick = {this.addManually}>Add Manually</button> 
-                        <button class = "autoButton" onClick = {this.addAuto}>Add Automatically</button>
+                        <button className = "addButton" onClick = {this.addManually}>Add Manually</button> 
+                        <button className = "autoButton" onClick = {this.addAuto}>Add Automatically</button>
                     
                     </div>
         
@@ -52,7 +52,7 @@ class AdminCard extends React.Component {
             case 2:
 
                 return (
-                    <div class = "admincard"> 
+                    <div className = "admincard"> 
                          <AddStory/>
                          <button onClick={this.adminMenu}>[X]</button>
                     </div>
@@ -61,7 +61,7 @@ class AdminCard extends React.Component {
             case 3:
 
                 return (
-                    <div class = "admincard"> 
+                    <div className = "admincard"> 
                          <AutoAdd/>
                          <button onClick={this.adminMenu}>[X]</button>
                     </div>

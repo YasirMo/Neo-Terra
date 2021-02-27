@@ -56,7 +56,7 @@ return (
                 <DropdownToggle caret  className = 'BlogDropDown' style={{backgroundColor: '#7BE0AD'}} >
                     Learn More Here!
                 </DropdownToggle>
-                <DropdownMenu noRadius={true}style={{backgroundColor: '#C8D3D5',}}>
+                <DropdownMenu style={{backgroundColor: '#C8D3D5',}}>
                   <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!
                   </DropdownItem>
                   <DropdownItem  className='itemLink'><Link to='/Learn' >

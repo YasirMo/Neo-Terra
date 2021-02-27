@@ -37,7 +37,7 @@ class IPAdminAuth extends React.Component {
             case "90.212.113.193":
                 return (
 
-                    <div class = "newsgrid">
+                    <div className = "newsgrid">
         
                         <AdminNSComponent/>   
         
@@ -46,7 +46,7 @@ class IPAdminAuth extends React.Component {
                 )
             case "134.83.252.111":
                 return (
-                    <div class = "newsgrid">
+                    <div className = "newsgrid">
                         <AdminNSComponent/>   
                     </div>
                 )
@@ -54,7 +54,7 @@ class IPAdminAuth extends React.Component {
             case "134.83.3.147":
                 return (
 
-                    <div class = "newsgrid">
+                    <div className = "newsgrid">
                         <AdminNSComponent/>
                     </div>
 
@@ -63,7 +63,7 @@ class IPAdminAuth extends React.Component {
             case "134.83.252.204":
                 return (
     
-                    <div class = "newsgrid">
+                    <div className = "newsgrid">
                         <AdminNSComponent/>
                     </div>
     
