@@ -38,18 +38,18 @@ const Charts = (props) => {
           barSize={20}
         >
           <XAxis
-            stroke="#006400"
+            stroke="white"
             dataKey="name"
             scale="point"
             padding={{ left: 50, right: 50 }}
           />
           <YAxis 
-          stroke="#006400"
+          stroke="white"
           />
           <Tooltip />
           <Legend />
           <CartesianGrid strokeDasharray="0 0" fill="#006400"/>
-          <Bar dataKey="Carbon" fill="black" background={{ fill: "#eee" }} />
+          <Bar dataKey="Carbon" fill="white" background={{ fill: "grey" }} />
         </BarChart>
       </div>
     

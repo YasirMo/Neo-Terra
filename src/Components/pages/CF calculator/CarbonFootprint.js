@@ -65,7 +65,8 @@ function CarbonFootprint(props)   {
 	}
 
 	const handleAnswerOptionClick = (Value) => 
-	{
+	{ 
+
 		if (Value) {
 			answersArray.push(Value);
 			setScore(Value);
@@ -126,61 +127,59 @@ function CarbonFootprint(props)   {
 	}
 
     return (
-		
 		<div style={backgroundImage}>
-		
-		<div  className="app-carbon">
-		
-			{showScore ? (
-				<div >
-					<p>
-					<Charts finalScore={finalScore.toFixed(2)}/>	
-					</p>
-					<h1 className='score-section-carbon' >
-						
-						Your total is:  {finalScore.toFixed(2)} 
+			<div  className="app-carbon">
+				{showScore ? (
+					<div >
+						<p>
+						<Charts finalScore={finalScore.toFixed(2)}/>	
+						</p>
+						<h1 className='score-section-carbon' >
+							Your total is:  {finalScore.toFixed(2)} 
+							<br/>
+							The world average is 4.4
+							<br/>
+							The Uk average is 14.1
+							
+						</h1> 
 						<br/>
-						The world average is 4.4
-						<br/>
-						The Uk average is 14.1
-					</h1> 
-					<button  className='Start-btn' >
-					<Link to='/LearnPageThree' className="map-btn" >
-				Learn More
-				</Link>
-				</button>
-					<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
-					
-				</div>
-				
-			) : (
-				<>
-					<div className='question-sections'>
-					<h2 className="Question-length-carbon"> 
-						<span >Question {currentQuestion } </ span  > , out of {questions.length -1 }
-						</h2>
-				
-						<div className='question-count'>
-						<div className='question-carbon'>{questions[currentQuestion].CarbonFootprint} 
-						<br/>		
-						<p className="messure-carbon">{questions[currentQuestion].CarbonFootprint2} </p>
-						</div>
-					</div>
-					<div className='questionaire-carbon'>
-					
-						</div>
 						
-                        <div  className="questionaire-carbon">{questions[currentQuestion].questionText}</div>
-						
-						<div >
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.Value)} className="Start-btn">{answerOption.answerText}</button>
-						))}
+						<button  className='Start-btn' >
+							<Link to='/LearnPageThree' className="map-btn" >
+							Learn More
+							</Link>
+						</button>
+						<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
 					</div>
-					</div>
-				</>
-			)}
-		</div>
+				) : (
+					<>
+						<div className='question-sections'>
+							{currentQuestion === 0 ? (
+							<span className="product-remaining">{currentQuestion} remaining</span>
+							) : (
+							<h2 className="Question-length-carbon"> 
+							<span >Question {currentQuestion }&nbsp;</ span  >out of {questions.length-1}
+							</h2>
+							
+							)}
+								<div className='question-count'>
+									<div className='question-carbon'>{questions[currentQuestion].CarbonFootprint} 
+										<br/>		
+										<p className="messure-carbon">{questions[currentQuestion].CarbonFootprint2} </p>
+									</div>
+								</div>
+							<div className='questionaire-carbon'>
+							</div>
+							<div  className="questionaire-carbon">{questions[currentQuestion].questionText}</div>
+							<div >
+								{questions[currentQuestion].answerOptions.map((answerOption) => (
+								<button onClick={() => handleAnswerOptionClick(answerOption.Value)} className="Start-btn">{answerOption.answerText}</button>
+								))}
+							</div>
+						</div>
+					</>
+				)}
+			</div>
         </div>
 	);
 }
