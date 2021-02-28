@@ -27,21 +27,21 @@ class AddStory extends React.Component {
 
         return (
             <div>
-                <form onSubmit = {this.submitHandler} className="tables">
+                <form onSubmit = {this.submitHandler} >
 
-                <div> 
-                <input type = "text" name = "storyTitle" value = {storyTitle} placeholder = "Story Title" onChange = {this.changeHandler} />
-                </div>
-
-                <div> 
-                <input type = "text" name = "storyLink" value = {storyLink} placeholder = "Story Link" onChange = {this.changeHandler} />
-                </div>
-
-                <div> 
-                <input type = "text" name = "source" value = {source} placeholder = "Story Source" onChange = {this.changeHandler} />
-                </div>
                 
-                <button type = "submit" className="sub-btn">Add Story</button>
+                <input type = "text" name = "storyTitle" value = {storyTitle} placeholder = "Story Title" onChange = {this.changeHandler} />
+                
+
+                 
+                <input type = "text" name = "storyLink" value = {storyLink} placeholder = "Story Link" onChange = {this.changeHandler} />
+                
+
+                
+                <input type = "text" name = "source" value = {source} placeholder = "Story Source" onChange = {this.changeHandler} />
+                
+                
+                <button type = "submit">Add Story</button>
                 </form>
 
             </div>
