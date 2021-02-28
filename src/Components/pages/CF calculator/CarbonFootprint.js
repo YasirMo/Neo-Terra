@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import '../.././../Styles/App.css';
 import {questions}from './Questions';
 import axios from 'axios';
 import Charts from './Charts'
-
+import Solutions from '../Solutions/Solutions'
 function CarbonFootprint(props)   {
 	
     const backgroundImage = {
@@ -144,11 +143,7 @@ function CarbonFootprint(props)   {
 						</h1> 
 						<br/>
 						
-						<button  className='Start-btn' >
-							<Link to='/LearnPageThree' className="map-btn" >
-							Learn More
-							</Link>
-						</button>
+							<Solutions  finalScore={finalScore.toFixed(2)}/>
 						<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
 					</div>
 				) : (
