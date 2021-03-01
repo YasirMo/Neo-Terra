@@ -3,8 +3,6 @@ import AdminNSComponent from './AdminNSComponent';
 import IPservice from './IPservice';
 //import '../.././../Styles/App.css';
 
-
-
 class IPAdminAuth extends React.Component {
 
     constructor(props) {
@@ -34,7 +32,7 @@ class IPAdminAuth extends React.Component {
         
         switch (IP.ip) {
                                                 //DEVELOPERS ADD YOUR IP ADDRESSES HERE!!!!!!!!
-            case "90.212.113.193":
+            case "90.217.179.169":
                 return (
 
                     <div className = "newsgrid">
