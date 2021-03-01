@@ -120,7 +120,7 @@ export function ArticleBanner(head, img)
         <div style={banner.main}>
             <div style={banner.header}>
                 <div style={{padding: '50px 100px'}}>
-                    <p style={banner.link}><a style={banner.link} href="/">{"<"} Back</a></p>
+                    <p style={banner.link}><a class="go-back" href="/">{"<"} Back</a></p>
                     <div style={banner.title}><h1 style={{margin: 0}}>{head.title}</h1></div>
                     <div style={banner.content}>{head.subtitle}</div>
                 </div>

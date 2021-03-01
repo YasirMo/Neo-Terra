@@ -24,8 +24,9 @@ import {ArticleBanner} from './Banner';
         <br/>
         Things you can try:    
               <ul> 
+                <br></br>
                 <li>Notice how many meals you eat with meat and cut that by 25%. Try to buy local produce
-                <br></br>as this cut carbon dioxide emissions from transportation, preservation and prolonged refrigeration.</li>
+                    as this cut carbon dioxide emissions from transportation, preservation and prolonged refrigeration.</li>
                 <br></br>
                 <li>High fibre, plant-based diets are also better for your health.</li>
                 <br></br>
@@ -155,7 +156,7 @@ import {ArticleBanner} from './Banner';
               <Layout>
                   <div>
                   {ArticleBanner(article3, '/images/leafsprout.jpg')}
-                  <p className="subtitle">In this article we will discuss the steps you should take in order to help this ever-growing battle:</p>
+                  <p className="article-body">In this article we will discuss the steps you should take in order to help this ever-growing battle:</p>
 
                   {CreateFact(fact)}
                   {CreateBox(Meat)}

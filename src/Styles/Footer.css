@@ -7,13 +7,11 @@
    
 }
 
-
-
-.Links-footer {
+a.Links-footer{
     color: white;
 }
 
-.Links-footer:hover{
+a.Links-footer:hover{
     color: grey;
 }
 .content-wrap{
