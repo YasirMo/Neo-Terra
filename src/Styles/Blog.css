@@ -18,13 +18,7 @@ p a.go-back:hover
     color: grey;
 }
 
-.conclusion-title
-{
-    margin: 1em 0;
-    text-align: justify;
-    padding: 0 120px;
-}
-
+/* Article body Style (text outside the boxes) */
 .article-body
 {
     margin: 2em 0;
@@ -33,18 +27,21 @@ p a.go-back:hover
     padding: 0 120px;
 }
 
+/* Adds margin to the title inside the boxes */
 i.box-title h1
 {
     margin-bottom: 2rem;
 }
 
-.ending {
-    margin: 2em 0;
-    font-size: 18px;
+/* Conclusion Style */
+.conclusion-title
+{
+    margin: 1em 0;
     text-align: justify;
     padding: 0 120px;
 }
 
+/* Article links style */
 .link {
     color:turquoise;
     
