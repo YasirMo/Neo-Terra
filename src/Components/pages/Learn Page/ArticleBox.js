@@ -64,7 +64,7 @@ export function CreateBox(content)
         return (
             <div id={content.id} style={box.div_2}>
                 <Paper style={box.content}>
-                    <i>{content.title}</i>
+                    <i class="box-title">{content.title}</i>
                     {content.txt}
                 </Paper>
                 <Paper style={box.img} square></Paper>
@@ -77,7 +77,7 @@ export function CreateBox(content)
             <div id={content.id} style={box.div_1}>
                 <Paper style={box.img} square></Paper>
                 <Paper style={box.content}>
-                    <i>{content.title}</i>
+                    <i class="box-title">{content.title}</i>
                     {content.txt}
                 </Paper>
             </div>
@@ -103,7 +103,7 @@ export function CreateFact(content)
         padding: '20px',
         backgroundColor: 'rgb(204, 235, 255)',
         margin: '1em',
-        width: '80vh',
+        width: '40vw',
         position: 'relative',
         left: '50%',
         transform: 'translateX(-50%)',

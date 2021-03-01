@@ -92,7 +92,7 @@ const article2 = {
               <div>
               {ArticleBanner(article2, '/images/leafsprout.jpg')}
 
-              <p className="subtitle">In this article we will look at the main consequences of climate change  on people and the society we live in:</p>
+              <p className="article-body">In this article we will look at the main consequences of climate change  on people and the society we live in:</p>
 
               {CreateFact(fact)}
               {CreateBox(Health)}
