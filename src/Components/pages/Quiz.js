@@ -89,7 +89,7 @@ export default function Quiz()
                     You probably would like to know more about the topic (<b>Learn More</b>), however you are welcome to restart the quiz.
                     </div>
                     <div className="buttons">
-                        <button className="restart" onClick={refreshPage} data-testid="restart-button">Restart Quiz</button>
+                        <button className="restart" onClick={refreshPage}>Restart Quiz</button>
                         <button className="quit">
                             <Link to="/Learn">Learn More</Link>
                         </button>
@@ -116,8 +116,8 @@ export default function Quiz()
                                     {questions[currentQuestion].questionText}
                                 </div>
                                 <div className="option-list">
-                                    {questions[currentQuestion].answerOptions.map((answerOption, i) => (
-                                        <div key={'answer', i} className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+                                    {questions[currentQuestion].answerOptions.map((answerOption) => (
+                                        <div className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
                                             <span>{answerOption.answerText}</span>
                                         </div>
                                     ))}
