@@ -116,8 +116,8 @@ export default function Quiz()
                                     {questions[currentQuestion].questionText}
                                 </div>
                                 <div className="option-list">
-                                    {questions[currentQuestion].answerOptions.map((answerOption) => (
-                                        <div className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+                                    {questions[currentQuestion].answerOptions.map((answerOption, i) => (
+                                        <div key={'answer', i}className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
                                             <span>{answerOption.answerText}</span>
                                         </div>
                                     ))}
