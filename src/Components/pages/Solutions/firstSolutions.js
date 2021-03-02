@@ -5,11 +5,9 @@ import SolutionsService from './SolutionsService';
 import IPservice from '../.././../Components/pages/News Page/IPservice.js';
 import '../.././../Styles/Solutions.css';
 
-const ElectricCarSolution = {
-
-    backgroundImage : "url(/images/EV.jpg)",
-   
-};
+const ElectricCarSolution = {backgroundImage : "url(/images/EV.jpg)",};
+const CompostSolution = {backgroundImage : "url(/images/plant.jpg)",};
+const FashionSolution = {backgroundImage : "url(/images/recycle.jpg)",};
 
 class firstSolutions extends React.Component {
 
@@ -40,20 +38,45 @@ class firstSolutions extends React.Component {
             return (
                 <div>
                     <Layout>
-                    <div>
+                    
                     First Solutions PAGE
-                        <div class = "electricCarCard">
 
-                        <div style = {ElectricCarSolution} className = "solutionImage" ></div>
+                    <div>
+
+                        <div class = "solutionCard">
+                            <div style = {ElectricCarSolution} className = "solutionImage" ></div>
+                                
+                                <div class = "solutionContent">
+                                    <h2 class = "solutionContentTitle">Buy an Electric Car</h2>
+                                    <span class = "solutionContentCO2">CO2 Emissions Prevented: {answers[4] * 169.4} grams</span>
+                                    <span class = "solutionContentFuel">Fuel Savings: £{(0.3 * answers[4]) * 0.12}</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class = "solutionCard">
+                            <div style = {CompostSolution} className = "solutionImage" ></div>
                             
                             <div class = "solutionContent">
-                                <h2 class = "solutionContentTitle">Buy an Electric Car</h2>
-                                <span class = "solutionContentCO2">CO2 Emissions Prevented: {answers[4] * 169.4} grams</span>
-                                <span class = "solutionContentFuel">Fuel Savings: £{(0.3 * answers[4]) * 0.12}</span>
+                                <h2 class = "solutionContentTitle">Compost Your Waste</h2>
+                                <span class = "solutionContentCO2">CO2 Emissions Prevented: {29500 /answers[8]} grams</span>
                             </div>
 
                         </div>
-                    </div>
+
+                        <div class = "solutionCard">
+                            <div style = {FashionSolution} className = "solutionImage" ></div>
+                            
+                            <div class = "solutionContent">
+                                <h2 class = "solutionContentTitle">Buy from Charity/ Thrift Shops</h2>
+                                <span class = "solutionContentCO2">CO2 Emissions Prevented: {15000 /answers[13]} grams</span>
+                                <span class = "solutionContentCO2">Savings Made: £{answers[13] * 210}</span>
+                            </div>
+
+                        </div>
+
                     </Layout>
                 </div>
             )

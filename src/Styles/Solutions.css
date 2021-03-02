@@ -16,7 +16,7 @@
      font-weight: 100;
    }
 
-.electricCarCard {
+.solutionCard {
 
   display: grid;
   grid-template-rows: 150px 250px;
