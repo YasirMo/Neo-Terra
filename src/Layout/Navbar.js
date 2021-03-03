@@ -23,30 +23,30 @@ return (
     
       <div className='navbar-container'> 
         <div className="navbar-Logo">
-          <Link to ='/'> 
+          <a href ='/'> 
             <img className="navbar-Logo" src='/images/Logo.png' alt='logo' />
-          </Link>
+          </a>
         </div>
 
         {/* <div className="MidSection"></div> */}
         
           <ul className={click ? "nav-menubar active" : "nav-menubar"}>
           <li className='nav-item'>
-            <Link to='/Quiz' className='nav-links' onClick={handleClick}>
+            <a  href='/Quiz' className='nav-links' onClick={handleClick}>
                 Quiz
-            </Link>
+            </a>
            
           </li>
           <li className='nav-item' >
-            <Link to='/News' className='nav-links' onClick={handleClick}>
+            <a href='/News' className='nav-links' onClick={handleClick}>
                 News
-            </Link>
+            </a>
            
           </li>
           <li className='nav-item'>
-            <Link to='/CarbonFootprint' className='nav-links' onClick={handleClick} >
+            <a href='/CarbonFootprint' className='nav-links' onClick={handleClick} >
                 CF Calculator
-            </Link>
+            </a>
             
           </li>
                 
@@ -59,22 +59,22 @@ return (
                 <DropdownMenu style={{backgroundColor: '#C8D3D5',}}>
                   <DropdownItem header style={{backgroundColor: 'white',}}>Learn about Climate Change Below!
                   </DropdownItem>
-                  <DropdownItem  className='itemLink'><Link to='/Learn' >
+                  <DropdownItem  className='itemLink'><a href='/Learn' >
                     Effects in <b>Nature</b>
-                  </Link>
+                  </a>
                   </DropdownItem>
                     
                   <DropdownItem className='itemLink'>
-                    <Link to ='/LearnPageTwo'>
+                    <a href ='/LearnPageTwo'>
                     Effects in <b>Society</b>
-                    </Link>
+                    </a>
                   </DropdownItem>
 
                         
                   <DropdownItem className='itemLink'>
-                    <Link to ='/LearnPageThree'>
+                    <a href ='/LearnPageThree'>
                     Ways to <b>Reduce</b> Climate Change
-                    </Link>
+                    </a>
                   </DropdownItem>
                   
 

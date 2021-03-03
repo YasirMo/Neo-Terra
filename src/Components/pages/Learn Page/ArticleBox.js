@@ -64,7 +64,7 @@ export function CreateBox(content)
         return (
             <div id={content.id} style={box.div_2}>
                 <Paper style={box.content}>
-                    <i class="box-title">{content.title}</i>
+                    <i className="box-title">{content.title}</i>
                     {content.txt}
                 </Paper>
                 <Paper style={box.img} square></Paper>
@@ -77,7 +77,7 @@ export function CreateBox(content)
             <div id={content.id} style={box.div_1}>
                 <Paper style={box.img} square></Paper>
                 <Paper style={box.content}>
-                    <i class="box-title">{content.title}</i>
+                    <i className="box-title">{content.title}</i>
                     {content.txt}
                 </Paper>
             </div>

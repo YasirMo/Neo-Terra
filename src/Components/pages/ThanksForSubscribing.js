@@ -20,7 +20,7 @@ function ThanksForSubscribing () {
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
                 <h1>
-                <button className="continueButton"> <Link to="/Learn"> Continue To Website</Link>
+                <button className="continueButton"> <a href="/Learn"> Continue To Website</a>
                 </button>
             </h1>
               </div>

@@ -26,9 +26,9 @@ function Home()
       <div className="content">
         <h1>How aware are you about climate change?</h1>
         <h2><i>Put yourself to the test</i></h2>
-        <Link to='/Quiz'>
+        <a href='/Quiz'>
         Take Our Quiz
-        </Link>
+        </a>
       </div>
     </div>
   );
