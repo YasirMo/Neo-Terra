@@ -27,31 +27,31 @@ class Footer extends Component {
            </div> 
         
           <div className="home">           
-            <h5><Link to='/' className="Links-footer" >  Home </Link></h5>
+            <h5><a href='/' className="Links-footer" >  Home </a></h5>
           </div>
           
           <div className="learn">
-            <h5><Link to='/Learn' className="Links-footer">  Learn </Link></h5>
+            <h5><a href='/Learn' className="Links-footer">  Learn </a></h5>
           </div>
 
           <div className="action">
-            <h5><Link to='/TakeAction'className="Links-footer" >  Take action </Link></h5>
+            <h5><a href='/TakeAction'className="Links-footer" >  Take action </a></h5>
           </div>
         
           <div className="about">
-            <h5><Link to='/About'className="Links-footer" > About us</Link></h5>
+            <h5><a href='/About'className="Links-footer" > About us</a></h5>
           </div>
 
           <div className="news">
-          <h5><Link to ='News' className="Links-footer" >News</Link></h5>
+          <h5><a href='News' className="Links-footer" >News</a></h5>
           </div>
 
           <div className="quiz">
-          <h5> <Link to='/Quiz' className="Links-footer" >  Quiz </Link></h5>
+          <h5> <a href='/Quiz' className="Links-footer" >  Quiz </a></h5>
           </div>
 
           <div className="cf">
-          <h5><Link to='/CarbonFootprint'className="Links-footer" >  CF Calculator </Link></h5>
+          <h5><a href='/CarbonFootprint'className="Links-footer" >  CF Calculator </a></h5>
           </div>
           
         </div>

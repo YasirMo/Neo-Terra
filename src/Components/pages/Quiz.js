@@ -91,7 +91,7 @@ export default function Quiz()
                     <div className="buttons">
                         <button className="restart" onClick={refreshPage}>Restart Quiz</button>
                         <button className="quit">
-                            <Link to="/Learn">Learn More</Link>
+                            <a href="/Learn">Learn More</a>
                         </button>
                     </div>
                     </div>

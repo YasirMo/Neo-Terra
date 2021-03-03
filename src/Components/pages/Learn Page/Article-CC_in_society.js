@@ -1,7 +1,7 @@
 import Layout from '../../../Layout/Layout'
 import {CreateBox, CreateFact} from './ArticleBox';
 import {ArticleBanner} from './Banner';
-import { Link } from 'react-router-dom';
+
 
 const article2 = {
     title: 'What are the consequences of climate change in society?',
@@ -100,7 +100,7 @@ const article2 = {
               {CreateBox(Water)}
               </div>
 
-              <p className="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <Link to='/LearnPageThree' className="link">  what you can do. </Link></p>
+              <p className="ending">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <a href='/LearnPageThree' className="link">  what you can do. </a></p>
               <br/>
           </Layout>
       );
