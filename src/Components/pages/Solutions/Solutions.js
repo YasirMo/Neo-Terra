@@ -1,5 +1,6 @@
 import React from 'react'
-import '../../../Styles/Solutions.css'
+//As the style is now handled by CarbonFootprint.css I thought this was irrelevant.
+//import '../../../Styles/Solutions.css'
 
 const Solutions = (props) => {
     const  HandleSolutions =()=>{
@@ -11,9 +12,11 @@ const Solutions = (props) => {
         }
     }
     return (
-        <div>
-           <button onClick={HandleSolutions} className='Solutions-btn'> Solutions </button>
-        </div>
+        /* 
+            Removed div container as it was irrelevant,
+            as it returns a single element.
+         */
+        <button onClick={HandleSolutions} className='Solutions-btn'> Solutions </button>
     )
 }
 

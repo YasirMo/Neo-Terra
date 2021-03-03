@@ -1,13 +1,13 @@
 const questions = [
-		
-    {
+	/* NOTE: No longer needed this empty object as it is now considered a separate entity whithin the carbon footprint JSX */
+    /*{
         CarbonFootprint: 'Carbon Footprint Calculator' ,
         CarbonFootprint2:'Measure your carbon footprint by answering our questionnaire.',
         answerOptions: [
             { answerText: 'Start' },
             
         ],
-    },
+    },*/
     {
         questionText: 'How many people are in your household?',
         answerOptions: [

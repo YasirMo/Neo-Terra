@@ -1,20 +1,9 @@
-.Solutions-btn{
-    margin-left: 700px;
-    margin-right: 100px;
-     font-size: 25px;
-     margin-bottom: 44px;
-     width: 40%;
-     height:45px;
-     border-radius: 15px;
-     border: none;
-     text-align: center;
-     display: grid;
-     text-decoration: none;
-     color:white;
-     background: #006400;
-     text-align: center;
-     font-weight: 100;
-   }
+/* 
+  //NOTE: .solutions-btn style has been removed 
+
+  Now the button styling will be carried out in the respective webpage.css file
+  in order to keep consistency beetween elements (If the case needed to have a different style on 2 pages).
+*/
 
 .solutionCard {
 

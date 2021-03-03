@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import '../.././../Styles/App.css';
+//import '../.././../Styles/App.css';
+//Temporarily Commented this import, it causes conflict with another css file
 
 //Code Developed and Implemented by David in Admin.js originally
 

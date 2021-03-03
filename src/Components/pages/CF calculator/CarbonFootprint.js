@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import '../.././../Styles/App.css';
 import {questions}from './Questions';
 import axios from 'axios';
 import Charts from './Charts'
 import Solutions from '../Solutions/Solutions'
+
+import './../../../Styles/CarbonFootprint.css';
+
 function CarbonFootprint(props)   {
 	
+	/* Small fixes on the background display */
     const backgroundImage = {
         backgroundImage : "url(/images/finalF.jpg)",
-        height: "1000px",
+        height: "100vh",
 		display: "flex",
-		width :"1900px",
+		width :"100%",
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'cover'
 	};
 
 	const [ip, setIp] = useState(0);
@@ -125,54 +130,85 @@ function CarbonFootprint(props)   {
 		window.location.reload(false);
 	}
 
+	/* 
+		//Changes on CarbonFootprint.js: Improved on Yasir's original code structure
+
+		- Now the start window is defined as a separate entity and a respective function is created to simulate the previous interaction
+		- Now questions.js only contains the CF questionnaire
+		- Some classNames have been renamed to improve hierarchy. Older names are commented in case there was a need to rename them as before.
+		  Make Sure you RENAME the references inside the css file later!!!
+		- Structure has been extended with newer containers and elements
+		- A few classNames have been removed as they were no longer necessary.
+		- A few tags have been modified to keep content style.
+	*/
+
+	/* 
+		//Start Function 
+		Allows to show the question-box div while hiding the start-box div
+	*/
+	const start = () => {
+		const question = document.getElementById("carbon-question-box");
+		question.style.opacity = '1';
+		question.style.pointerEvents = 'auto';
+	
+		const start = document.getElementById("carbon-start-box");
+		start.style.opacity = '0';
+		start.style.pointerEvents = 'none';
+	}
+
     return (
 		<div style={backgroundImage}>
-			<div  className="app-carbon">
+			<div  className="carbon-app">
 				{showScore ? (
-					<div >
-						<p>
-						<Charts finalScore={finalScore.toFixed(2)}/>	
-						</p>
-						<h1 className='score-section-carbon' >
-							Your total is:  {finalScore.toFixed(2)} 
-							<br/>
-							The world average is 4.4
-							<br/>
-							The Uk average is 14.1
-							
-						</h1> 
-						<br/>
-						
-							<Solutions  finalScore={finalScore.toFixed(2)}/>
-						<button onClick={deleteUser}  className="Start-btn">Retake Quiz</button>
-					</div>
-				) : (
-					<>
-						<div className='question-sections'>
-							{currentQuestion === 0 ? (
-							<span className="product-remaining">{currentQuestion} remaining</span>
-							) : (
-							<h2 className="Question-length-carbon"> 
-							<span >Question {currentQuestion }&nbsp;</ span  >out of {questions.length-1}
-							</h2>
-							
-							)}
-								<div className='question-count'>
-									<div className='question-carbon'>{questions[currentQuestion].CarbonFootprint} 
-										<br/>		
-										<p className="messure-carbon">{questions[currentQuestion].CarbonFootprint2} </p>
-									</div>
-								</div>
-							<div className='questionaire-carbon'>
-							</div>
-							<div  className="questionaire-carbon">{questions[currentQuestion].questionText}</div>
-							<div >
-								{questions[currentQuestion].answerOptions.map((answerOption) => (
-								<button onClick={() => handleAnswerOptionClick(answerOption.Value)} className="Start-btn">{answerOption.answerText}</button>
-								))}
+					<div>
+						<div class="graph" style={{opacity: 1, pointerEvents: 'auto'}}>
+							<Charts finalScore={finalScore.toFixed(2)}/>	
+						</div>
+						{/* Before: score-section-carbon */}
+						<div className="carbon-result">
+							<span>Your total is:  {finalScore.toFixed(2)}</span>
+							<span>The world average is 4.4</span>
+							<span>The Uk average is 14.1</span>
+							<div class="buttons">
+								<Solutions finalScore={finalScore.toFixed(2)}/>
+								<button onClick={deleteUser}>Retake Quiz</button>
 							</div>
 						</div>
-					</>
+					</div>
+				) : (
+					<div>
+						{/* Before: question-count */}
+						<div id="carbon-start-box" className="carbon-start-box">
+							{/* Before: question-carbon */}
+							<p className="carbon-title">Carbon Footprint Calculator</p>
+							{/* Before: messure-carbon */}
+							<p className="carbon-desc">Measure your carbon footprint by answering this questionnaire</p>
+							<button onClick={start}>Start</button>
+						</div>
+						{/* Before: question-sections */}
+						<div id="carbon-question-box" className="carbon-question-box">
+							<section>
+								{/* Before: questionnaire-carbon */}
+								<div className="carbon-que-text">{questions[currentQuestion].questionText}</div>
+								<div className="carbon-option-list">
+								{questions[currentQuestion].answerOptions.map((answerOption) => (
+								/* Before: start-btn (type: button) */
+								<div onClick={() => handleAnswerOptionClick(answerOption.Value)} className="c-option">
+									<span>
+										{answerOption.answerText}
+									</span>
+								</div>
+								))}
+								</div> 
+							</section>
+							<footer>
+								{/* Before: question-length-carbon (type: h2) */}
+								<div className="carbon-question-count">
+									<span>Question<p>{currentQuestion + 1}</p>out of<p>{questions.length}</p></span>
+								</div>
+							</footer>
+						</div>
+					</div>					
 				)}
 			</div>
         </div>

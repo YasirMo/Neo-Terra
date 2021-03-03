@@ -1,5 +1,6 @@
 
-import '../.././../Styles/App.css';
+//import '../.././../Styles/App.css';
+//Temporarily commented this import as it causes conflict with another css file
 
 function SplitDate(date) {
 

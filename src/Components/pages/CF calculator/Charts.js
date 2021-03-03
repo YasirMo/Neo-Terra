@@ -19,11 +19,8 @@ const Charts = (props) => {
   ];
   return (
    
-      <div >
-        <PieChart  width={300} height={300}>
-
-          <Tooltip />
-        </PieChart>
+      <div>
+        {/* PieChart was no longer used and created margin inside the <div> */}
         <BarChart
           className='charts'
           width={500}
@@ -48,8 +45,9 @@ const Charts = (props) => {
           />
           <Tooltip />
           <Legend />
-          <CartesianGrid strokeDasharray="0 0" fill="#006400"/>
-          <Bar dataKey="Carbon" fill="white" background={{ fill: "grey" }} />
+          {/* Color style has been modified (only the color codes) */}
+          <CartesianGrid strokeDasharray="0 0" fill="#95afc0"/>
+          <Bar dataKey="Carbon" fill="#22a6b3" background={{ fill: "lightgrey" }} />
         </BarChart>
       </div>
     
