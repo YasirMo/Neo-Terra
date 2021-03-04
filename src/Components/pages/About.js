@@ -36,7 +36,7 @@ Encourage: help them take a course of action providing existing and innovating s
 In addition to this, we believe that users should be more exposed to the news, as it is known from research that news has a correlation with the level of concern people have towards environmental issues.
 2019 was the second warmest year on record and the end of the warmest decade (2010- 2019) ever recorded.
 Carbon dioxide (CO2) levels and other greenhouse gases in the atmosphere rose to new records in 2019. 
-Climate change is affecting every country on every continent. It is disrupting national economies and affecting lives. Weather patterns are changing, sea levels are rising, and weather events are becoming more extreme.              </p>
+            </p>
 </div>
 </div>
               </div>
