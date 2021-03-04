@@ -38,3 +38,14 @@
     transition: transform 150ms;
     transform: scale(1.03);
 }
+
+.subHeading {
+  font-size: 20px;
+}
+
+.comName {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 40px;
+}

@@ -1,6 +1,6 @@
 function FilterSource(story, filter) {
 
-    return story == filter;
+    return story === filter;
 
 }
 
