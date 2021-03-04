@@ -60,7 +60,7 @@ class Footer extends Component {
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
-             Terms Of Use | Cookies Policy | FAQs | <a className="ig-tag"href="https://www.instagram.com/neo_terra/">Instagram</a>
+             Terms Of Use | Cookies Policy | FAQs | <a className="ig-tag"href="https://www.instagram.com/neo__terra/">Instagram</a>
           </p>
         </div>     
         <Newsletter/>
