@@ -23,7 +23,7 @@ import {ArticleBanner} from './Banner';
         <br/>
         <br/>
         Things you can try:    
-              <ul> 
+        <br></br>
                 <br></br>
                 <li>Notice how many meals you eat with meat and cut that by 25%. Try to buy local produce
                     as this cut carbon dioxide emissions from transportation, preservation and prolonged refrigeration.</li>
@@ -35,7 +35,7 @@ import {ArticleBanner} from './Banner';
                 <li>Buy sustainable or organic fresh produce whenever possible.</li>
                 <br></br>
                 <li>Eat all your food and reduce waste</li>
-              </ul>
+              
       </p>
     ),
     img: '/images/breakdown.png',
@@ -54,14 +54,14 @@ import {ArticleBanner} from './Banner';
             <br/>
             Things you can try:
              
-             <ul> 
+            <br></br>
                <br></br>
                <li>When possible take public transportation, bike or walk your destination.</li>
                <br></br>
                <li>When it is time to replace your vehicle consider changing to an electric or petrol smart car. You can also try car sharing schemes.</li>
                <br></br>
                <li>If you have to use your care make sure tyres are fully pumped and oxygen sensors are in good order.</li>
-              </ul>
+              
           </p>
         ),
         img: '/images/EV.jpg',
@@ -80,14 +80,14 @@ import {ArticleBanner} from './Banner';
             <br/>
             Things you can try:
              
-              <ul> 
+            <br></br>
                 <br></br>
                 <li>Consider taking holidays closer to home or urge your company to set up virtual business trips </li>
                 <br></br>
                 <li>For trips within the same country or continent take the train.</li>
                 <br></br>
                 <li>When flying is unavoidable pay a little extra for carbon offsetting. <a target="_blank" rel="noreferrer" href="https://www.myclimate.org/carbon-offset/"><i>myClimate</i></a> compares carbon emissions of flights</li>
-               </ul>
+               
           </p>
         ),
         img: '/images/plane.jpg',
@@ -105,13 +105,13 @@ import {ArticleBanner} from './Banner';
             <br/>
             Things you can try:
              
-             <ul> 
+            <br></br>
                <br></br>
                <li>To help combat this invest in higher quality clothing that will last.</li>
                <br></br>
                <li>You can also shop at second-hand shops or swap clothes with family and friends instead of buying new ones.</li>
                
-              </ul>
+              
           </p>
         ),
         img: '/images/recycle.jpg',
@@ -130,7 +130,7 @@ import {ArticleBanner} from './Banner';
             <br/>
             Things you can do right now:
              
-             <ul> 
+            <br></br>
                <br></br>
                <li>Power your home with renewable energy</li>
                <br></br>
@@ -141,7 +141,7 @@ import {ArticleBanner} from './Banner';
                <li>Buy LED lightbulbs</li>
                <br></br>
                <li>Unplug rarely used devices</li>
-              </ul>
+              
           </p>
         ),
         img: '/images/recycleenergy.jpg',

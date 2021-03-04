@@ -45,7 +45,7 @@ a.Links-footer:hover{
 .list {
     position: relative;
     right: 330px;
-    top: 100px;
+    top: 70px;
 }
 
 hr {
@@ -60,8 +60,8 @@ hr {
 
 .com {
     position: relative;
-    right: 468px;
-    top: 170px;
+    right: 458px;
+    top: 100px;
     font-size: 2rem;
 }
 

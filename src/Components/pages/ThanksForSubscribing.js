@@ -1,13 +1,14 @@
 import React from 'react';
 import Layout from '../../Layout/Layout'
 import '../../Styles/ThanksForSubscribing.css';
-import { Link } from 'react-router-dom';
 
 const backgroundImage = {
-    backgroundImage : "url(/images/ForestPic.jpg)",
-    height: "1000px",
+    backgroundImage : "url(/images/image.jpg)",
+    height: "100vh",
     display: "flex",
-    width :"1900px"
+    width :"100%",
+    backgroundRepeat: 'no-repeat',
+	backgroundSize: 'cover'
 };
 
 function ThanksForSubscribing () {
@@ -16,7 +17,7 @@ function ThanksForSubscribing () {
          <Layout>
         
          <div style={backgroundImage}>
-              <div className="centerText">
+              <div className="centerContent">
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
                 <h1>
