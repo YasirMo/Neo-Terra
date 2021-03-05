@@ -6,7 +6,7 @@ const Solutions = (props) => {
     const  HandleSolutions =()=>{
         
         if (props.finalScore < 10 ){
-            return window.location.href = "/firstSolutions";
+            return window.location.href = "/SolutionCards";
         } else{
             return window.location.href = "/secondSolutions";
         }
