@@ -1,6 +1,5 @@
 import React from "react";
 import "../././Styles/Footer.css"
-import { Link } from 'react-router-dom';
 import   '../Components/pages/Newsletter Page/Newsletter'
 import Newsletter from "../Components/pages/Newsletter Page/Newsletter";
 import { Component } from "react";

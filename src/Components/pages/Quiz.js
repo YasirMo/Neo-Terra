@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './../../Styles/Quiz_2.css';
-import {Link} from 'react-router-dom';
 
 export default function Quiz() 
 {

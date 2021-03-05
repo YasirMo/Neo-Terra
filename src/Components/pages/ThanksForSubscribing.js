@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../../Layout/Layout'
 import '../../Styles/ThanksForSubscribing.css';
 
 const backgroundImage = {
@@ -14,9 +13,11 @@ const backgroundImage = {
 function ThanksForSubscribing () {
     return(
         <>
-         <Layout>
+         
         
          <div style={backgroundImage}>
+             <div className="comName">
+         <i>NeoTerra: <span className="subHeading">Towards a healthier world</span></i>
               <div className="centerContent">
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
@@ -25,9 +26,9 @@ function ThanksForSubscribing () {
                 </button>
             </h1>
               </div>
-              
+              </div>
               </div>  
-         </Layout>
+         
 
 
         </>
