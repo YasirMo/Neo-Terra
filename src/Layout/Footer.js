@@ -22,7 +22,7 @@ class Footer extends Component {
             </h2>
           </div>
           <div className="com">  
-             <h1>Neo Terra Project</h1>
+             <h1>Neo Terra </h1>
            </div> 
         
           <div className="home">           

@@ -11,7 +11,6 @@ import Article_2 from './Components/pages/Learn Page/Article-CC_in_society';
 import Admin from './Components/pages/News Page/Admin';
 import Article_3 from './Components/pages/Learn Page/Article-Ways_to_reduce'
 import ScrollToTop from './Components/pages/Learn Page/ScrollToTop';
-import secondSolutions from './Components/pages/Solutions/secondSolutions'
 import SolutionCards from './Components/pages/Solutions/SolutionCards'
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
       <Route path='/ThanksForSubscribing' exact component={ThanksForSubscribing} />
       <Route path='/Admin' exact component={Admin} />
       <Route path='/SolutionCards' exact component={SolutionCards} />
-      <Route path='/secondSolutions' exact component={secondSolutions} />
 
     </ScrollToTop>
       
