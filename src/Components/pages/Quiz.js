@@ -90,9 +90,9 @@ export default function Quiz()
                     </div>
                     <div className="buttons">
                         <button className="restart" onClick={refreshPage}>Restart Quiz</button>
-                        <button className="quit">
-                            <a href="/Learn">Learn More</a>
-                        </button>
+                        {/* Before there was a hyperlink included, but it caused stylying errors. Now using the onClick property we can trigger the return statement
+                            to change redirect to the specified page */}
+                        <button onClick={()=>{return window.location.href = "/Learn"}} className="quit">Learn More</button>
                     </div>
                     </div>
                 ):(

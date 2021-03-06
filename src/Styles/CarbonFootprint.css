@@ -55,14 +55,14 @@ html, body
 
     font-weight: 600;
 
-    background: #badc58;
+    background: #40db9b;
 
     transition: all 0.3s ease;
 }
 
 .carbon-start-box button:hover
 {
-    background: #6ab04c;
+    background: #009e5d;
     color: white;
 }
 
@@ -101,7 +101,8 @@ section .carbon-option-list .c-option
 
     padding: 8px 15px;
     margin-bottom: 15px;
-    background: #6ab04c;
+    background: #B0EBBD;
+    color: black;
     border-radius: 5px;
 
     display: flex;
@@ -114,8 +115,8 @@ section .carbon-option-list .c-option
 
 section .carbon-option-list .c-option:hover
 {
-    background: #badc58;
-    color: black;
+    background: #11BF5A;
+    color: white;
 }
 
 section .carbon-option-list .c-option:last-child
@@ -180,16 +181,16 @@ section .carbon-option-list .c-option:last-child
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    background: #6ab04c;
+    background: #40db9b;
     font-weight: 600;
     transition: all 0.3s ease;
-    color: white;
+    color: black;
 }
 
 .carbon-result .buttons button:hover
 {
-    background: #badc58;
-    color: black;
+    background: #009e5d;
+    color: white;
 }
 
 /* Graph position */
