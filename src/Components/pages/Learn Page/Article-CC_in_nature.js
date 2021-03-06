@@ -6,6 +6,12 @@ import {ArticleBanner} from './Banner';
 import '../../../Styles/Blog.css'; 
 
 
+/* --- Links for banner --- */
+const links = { 
+  previous: '#',
+  next: '/LearnPageTwo',
+}
+
 /* 
 Here you can write the Article's content/body.
 You are most likely to use content boxes. Each box (content / topic / bullet point) should be stored as an object. 
@@ -21,6 +27,7 @@ The object should have the following properties:
 NOTE: please use the property names displayed above.
 */
 
+/* --- Article Body --- */
 const article1 = {
   title: 'What are the consequences of climate change in nature?',
   subtitle: (
@@ -237,6 +244,7 @@ const Ecosystems = {
   layout: 'left'
 }
 
+/* --- Fact --- */
 const fact = {
   txt: 'Ecosystems perform an important role in climate regulation. Nowadays it is known that they absorb around half of CO2 emissions produced by humans'
 }
@@ -263,7 +271,7 @@ function Article_1() {
     <Layout>
         <div>
             {/* Page Banner */}
-            {ArticleBanner(article1, '/images/leafsprout.jpg')}
+            {ArticleBanner(article1, '/images/Articles/leafsprout.jpg', links)}
 
             {/* Article Intro */}
             <p className="article-body">In this article we will look at the main consequences of climate change in nature:</p>

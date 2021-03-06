@@ -69,7 +69,7 @@ export function PageBanner(pageTitle, img)
 
 */
 
-export function ArticleBanner(head, img)
+export function ArticleBanner(head, img, links)
 {
     const banner = {
         main: 
@@ -107,11 +107,13 @@ export function ArticleBanner(head, img)
 
         link: 
         {
-            textAlign: 'left',
+            display: 'flex',
+            justifyContent: 'left',
             color: 'white',
+            textDecoration: 'none',
             fontSize: '20px',
             textDecoration: 'underline',
-            marginBottom: '200px',
+            marginBottom: '150px'
         }
 
     }
@@ -120,7 +122,10 @@ export function ArticleBanner(head, img)
         <div style={banner.main}>
             <div style={banner.header}>
                 <div style={{padding: '50px 100px'}}>
-                    <p style={banner.link}><a className="go-back" href="/">{"<"} Back</a></p>
+                    <div style={banner.link}>
+                        <p style={{paddingRight: '30px'}}><a className="go-back" href={links.previous}>{"<"} Previous</a></p>
+                        <p><a className="go-next" href={links.next}>Next {">"}</a></p>
+                    </div>
                     <div style={banner.title}><h1 style={{margin: 0}}>{head.title}</h1></div>
                     <div style={banner.content}>{head.subtitle}</div>
                 </div>
