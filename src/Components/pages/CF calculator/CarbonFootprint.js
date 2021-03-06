@@ -55,7 +55,7 @@ function CarbonFootprint(props)   {
 	
 	useEffect(() => {
 		getFinalScore();
-	}, [showScore,finalScore,ip]);
+	}, );
 
 	const getFinalScore = () =>
 	{
@@ -161,7 +161,7 @@ function CarbonFootprint(props)   {
 			<div  className="carbon-app">
 				{showScore ? (
 					<div>
-						<div class="graph" style={{opacity: 1, pointerEvents: 'auto'}}>
+						<div className="graph" style={{opacity: 1, pointerEvents: 'auto'}}>
 							<Charts finalScore={finalScore.toFixed(2)}/>	
 						</div>
 						{/* Before: score-section-carbon */}
@@ -169,7 +169,7 @@ function CarbonFootprint(props)   {
 							<span>Your total is:  {finalScore.toFixed(2)}</span>
 							<span>The world average is 4.4</span>
 							<span>The Uk average is 14.1</span>
-							<div class="buttons">
+							<div className="buttons">
 								<Solutions finalScore={finalScore.toFixed(2)}/>
 								<button onClick={deleteUser}>Retake Quiz</button>
 							</div>

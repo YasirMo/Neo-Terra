@@ -1,22 +1,24 @@
 import React from 'react';
-import Layout from '../../Layout/Layout'
 import '../../Styles/ThanksForSubscribing.css';
-import { Link } from 'react-router-dom';
 
 const backgroundImage = {
-    backgroundImage : "url(/images/ForestPic.jpg)",
-    height: "1000px",
+    backgroundImage : "url(/images/image.jpg)",
+    height: "100vh",
     display: "flex",
-    width :"1900px"
+    width :"100%",
+    backgroundRepeat: 'no-repeat',
+	backgroundSize: 'cover'
 };
 
 function ThanksForSubscribing () {
     return(
         <>
-         <Layout>
+         
         
          <div style={backgroundImage}>
-              <div className="centerText">
+             <div className="comName">
+         <i>NeoTerra: <span className="subHeading">Towards a healthier world</span></i>
+              <div className="centerContent">
                 <h1> THANKS FOR SUBSCRIBING </h1>
                 <h1>TO OUR NEWSLETTER</h1>
                 <h1>
@@ -24,9 +26,9 @@ function ThanksForSubscribing () {
                 </button>
             </h1>
               </div>
-              
+              </div>
               </div>  
-         </Layout>
+         
 
 
         </>

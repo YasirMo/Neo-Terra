@@ -1,6 +1,5 @@
 import React from "react";
 import "../././Styles/Footer.css"
-import { Link } from 'react-router-dom';
 import   '../Components/pages/Newsletter Page/Newsletter'
 import Newsletter from "../Components/pages/Newsletter Page/Newsletter";
 import { Component } from "react";
@@ -23,7 +22,7 @@ class Footer extends Component {
             </h2>
           </div>
           <div className="com">  
-             <h1>Neo Terra Project</h1>
+             <h1>Neo Terra </h1>
            </div> 
         
           <div className="home">           

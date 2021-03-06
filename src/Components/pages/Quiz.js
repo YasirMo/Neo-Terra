@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './../../Styles/Quiz_2.css';
-import {Link} from 'react-router-dom';
 
 export default function Quiz() 
 {
@@ -117,6 +116,7 @@ export default function Quiz()
                                 </div>
                                 <div className="option-list">
                                     {questions[currentQuestion].answerOptions.map((answerOption, i) => (
+                                        // eslint-disable-next-line no-sequences
                                         <div key={'answer', i}className="option" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
                                             <span>{answerOption.answerText}</span>
                                         </div>

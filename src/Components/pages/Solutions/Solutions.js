@@ -5,10 +5,10 @@ import React from 'react'
 const Solutions = (props) => {
     const  HandleSolutions =()=>{
         
-        if (props.finalScore < 10 ){
-            return window.location.href = "/firstSolutions";
+        if (props.finalScore  > 10 ){
+            return window.location.href = "/SolutionCards";
         } else{
-            return window.location.href = "/secondSolutions";
+            return window.location.href = "/SolutionCards";
         }
     }
     return (

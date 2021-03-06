@@ -1,7 +1,6 @@
 import React from 'react';
 import NewsService from './NewsService';
 //import '../.././../Styles/App.css';
-import axios from 'axios';
 import '../.././../Styles/NewsStory.css';
 import SplitDate from './SplitDate.js'
 import FilterSource from './FilterSource.js'
