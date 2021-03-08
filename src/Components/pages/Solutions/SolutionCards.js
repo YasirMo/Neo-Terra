@@ -8,6 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
+import './../../../Styles/SolutionCards.css';
+
 function SolutionCards() {
     
   const backgroundImage = {
@@ -47,6 +49,7 @@ function SolutionCards() {
         root: {
           maxWidth: 405,
         },
+        /* No longer used as now a SolutionCards.css handles the render and animation */
         btn:{
             padding: '10px 24px',
             textDecoration: 'none',
@@ -277,77 +280,80 @@ function SolutionCards() {
       }
     //This is the area where all the Solutions would be Presented
     //The code below is for when a User has answered that their household owns a car
-const classes = useStyles()
+    const classes = useStyles()
+
     return (
         <div style={backgroundImage}>
-        <div className={classes.div} >
-                   {/* Card 1*/}
-                 <h1 className={classes.SolutionsTitle}> Solutions</h1>  
-                 {/*Here useStyles are utilized instead of a css files*/}
-        <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/images/EV.jpg"
-          //images
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-           Buy an Electic car
-          </Typography>
-          <Typography variant="body2" component="p">
-          CO2 Emissions Prevented: {ansRemapped[6] * 169.4} grams <br/>
-          Fuel Savings: £{(0.3 * ansRemapped[6]) * 0.12}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+            <div className={classes.div}>
+                {/* Card 1*/}
+                <h1 className={classes.SolutionsTitle}> Solutions</h1>  
+                {/*Here useStyles are utilized instead of a css files*/}
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        component="img"
+                        height="140"
+                        image="/images/EV.jpg"
+                        //images
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                            Buy an Electic car
+                            </Typography>
+                            <Typography variant="body2" component="p">
+                            CO2 Emissions Prevented: {ansRemapped[6] * 169.4} grams <br/>
+                            Fuel Savings: £{(0.3 * ansRemapped[6]) * 0.12}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
                 <br/>
 
-             {/* Card 2*/}
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/images/plant.jpg"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          Compost Your Waste
-          </Typography>
-          <Typography variant="body2" c component="p">
-          CO2 Emissions Prevented: {29500 /ansRemapped[10]} grams
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <br/>
-             {/* Card 3*/}
-             <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/images/recycle.jpg"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          Buy from Charity/ Thrift Shops
-          </Typography>
-          <Typography variant="body2" component="p">
-          CO2 Emissions Prevented: {15000 /ansRemapped[15]} grams
-          <br/>
-          Savings Made: £{ansRemapped[15] * 210}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <br/>
-    <button className={classes.btn}> <a href="/Learn" style={{color: 'black',textDecoration: 'none',}}> Continue To Website</a> </button>
-</div>
-</div>
+                {/* Card 2*/}
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        component="img"
+                        height="140"
+                        image="/images/plant.jpg"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                            Compost Your Waste
+                            </Typography>
+                            <Typography variant="body2" c component="p">
+                            CO2 Emissions Prevented: {29500 /ansRemapped[10]} grams
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <br/>
+
+                {/* Card 3*/}
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        component="img"
+                        height="140"
+                        image="/images/recycle.jpg"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                            Buy from Charity/ Thrift Shops
+                            </Typography>
+                            <Typography variant="body2" component="p">
+                            CO2 Emissions Prevented: {15000 /ansRemapped[15]} grams
+                            <br/>
+                            Savings Made: £{ansRemapped[15] * 210}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <br/>
+                {/* Removed button div and instead developed btn animation through css */}
+                <a className="return-btn" href="/Learn">Continue To Website</a>
+            </div>
+        </div>
     )
 }
 
