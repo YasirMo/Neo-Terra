@@ -25,9 +25,7 @@ function Home()
       <div className="content">
         <h1>How aware are you about climate change?</h1>
         <h2><i>Put yourself to the test</i></h2>
-        <a href='/Quiz'>
-        Take Our Quiz
-        </a>
+        <a className="quiz-btn" href='/Quiz'>Take Our Quiz</a>
       </div>
     </div>
   );

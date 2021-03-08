@@ -60,7 +60,7 @@ html, body
     margin-top: 0;
     margin-bottom: 40px;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -70,29 +70,31 @@ html, body
     color: white;
     font-size: 25px;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /*Button*/
-.content a
+.content .quiz-btn
 {
     background: #0984e3;
     padding: 10px 24px;
     color: white;
     text-decoration: none;
+    text-transform: none;
     font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
+    transition: all 0.1s ease-in-out;
 }
 
 /*Button on hover*/
-.content a:hover
+.content .quiz-btn:hover
 {
-    background: #66b1eb;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
     padding: 10px 24px;
-    color: white;
+    color: lightblue;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
 }
