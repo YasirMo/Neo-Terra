@@ -8,54 +8,45 @@ class Footer extends Component {
   
   render(){
   return (
-  
-      
     <div className="main">
       <div className="container">
-        
+        {/* Header */}
         <div className="row">
           <div className="col">
             <h2 className="list">
               <li>London, England</li>
               <li>Uxbridge</li>
-
             </h2>
           </div>
+
           <div className="com">  
              <h1>Neo Terra </h1>
            </div> 
-        
-          <div className="home">           
-            <h5><a href='/' className="Links-footer" >  Home </a></h5>
-          </div>
-          
-          <div className="learn">
-            <h5><a href='/Learn' className="Links-footer">  Learn </a></h5>
-          </div>
-
-          <div className="action">
-            <h5><a href='/TakeAction'className="Links-footer" >  Take action </a></h5>
-          </div>
-        
-          <div className="about">
-            <h5><a href='/About'className="Links-footer" > About us</a></h5>
-          </div>
-
-          <div className="news">
-          <h5><a href='News' className="Links-footer" >News</a></h5>
-          </div>
-
-          <div className="quiz">
-          <h5> <a href='/Quiz' className="Links-footer" >  Quiz </a></h5>
-          </div>
-
-          <div className="cf">
-          <h5><a href='/CarbonFootprint'className="Links-footer" >  CF Calculator </a></h5>
+          {/* Main Links */}
+          <div className="footer-links">
+            <div>
+              <a className="link" href="/">Home</a>
+            </div>
+            <div>
+              <a className="link" href="/Learn">Learn</a>
+            </div>
+            <div>
+              <a className="link" href="/News">News</a>
+            </div>
+            <div>
+              <a className="link" href="/Quiz">Quiz</a>
+            </div>
+            <div>
+              <a className="link" href="/About">About Us</a>
+            </div>
+            <div>
+              <a className="link" href="/CarbonFootprint">CF Calculator</a>
+            </div>
           </div>
           
         </div>
-       
         <hr />
+        {/* Bottom Info / Links */}
         <div className="row">
           <p className="col-sm">
             &copy;2020 Neo-Terra | All Rights Reserved |
@@ -63,9 +54,8 @@ class Footer extends Component {
           </p>
         </div>     
         <Newsletter/>
+      </div>
     </div>
-    </div>
-
   );
 }
 }
