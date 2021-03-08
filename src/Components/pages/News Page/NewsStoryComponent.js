@@ -5,12 +5,7 @@ import '../.././../Styles/NewsStory.css';
 import SplitDate from './SplitDate.js'
 import FilterSource from './FilterSource.js'
 
-const Newsstory = {
-
-    backgroundImage : "url(/images/forest.jpg)",
-   
-};
-
+const Newsstory = {backgroundImage : "url(/images/forest.jpg)",};
 
 class NewsStoryComponent extends React.Component {
 
@@ -102,7 +97,7 @@ class NewsStoryComponent extends React.Component {
                     <div style = {Newsstory} className = "newsimage"></div>
                     <div className = "newscontent">
 
-                        <h2>Test Post</h2>
+                        <h3>Test Post</h3>
                         <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
                         <span>Source</span>
                         <span>Date of Upload</span>
@@ -122,11 +117,11 @@ class NewsStoryComponent extends React.Component {
                     <div style = {Newsstory} className = "newsimage"></div>
                     <div className = "newscontent">
 
-                        <h2>{News.storyTitle}</h2>
-                        <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
-                        <span>{News.source}</span>
-                        <span>{News.date}</span>
-                        <a href={News.storyLink}  rel="noreferrer" target ="_blank">Open Story</a>
+                        <h3 className = "newsTitle">{News.storyTitle}</h3>
+                        <p className = "newsDesc">Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
+                        <span className = "newsSource">{News.source}</span>
+                        <span className = "newsDate">{News.date}</span>
+                        <a href={News.storyLink}  rel="noreferrer" target ="_blank" className = "newsOpenBtn">Open Story</a>
             
                     </div>
 

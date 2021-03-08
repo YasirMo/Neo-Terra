@@ -40,7 +40,38 @@
     grid-area: "content";
     margin: 5px;
     display: grid;
+    grid-template-areas: "title" "description" "source" "date" "open-button";
 
+}
+
+.newsTitle {
+    grid-area: "title";
+    overflow: scroll;
+    margin: 5px;
+}
+
+.newsDesc {
+    grid-area: "description";
+    overflow: hidden;
+    margin: 5px;
+}
+
+.newsSource {
+    grid-area: "source";
+    overflow: hidden;
+    margin: 5px;
+}
+
+.newsDate {
+    grid-area: "date";
+    overflow: hidden;
+    margin: 5px;
+}
+
+.newsOpenBtn{
+    grid-area: "open-button";
+    overflow: hidden;
+    margin: 5px;
 }
 
 .newscontent a {
