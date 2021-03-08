@@ -12,26 +12,18 @@ const backgroundImage = {
 
 function ThanksForSubscribing () {
     return(
-        <>
-         
         
          <div style={backgroundImage}>
-             <div className="comName">
-         <i>NeoTerra: <span className="subHeading">Towards a healthier world</span></i>
-              <div className="centerContent">
-                <h1> THANKS FOR SUBSCRIBING </h1>
-                <h1>TO OUR NEWSLETTER</h1>
-                <h1>
-                <button className="continueButton"> <a href="/Learn"> Continue To Website</a>
-                </button>
-            </h1>
-              </div>
-              </div>
-              </div>  
-         
-
-
-        </>
+            <div className="comName">
+                <i>NeoTerra: <span className="subHeading">Towards a healthier world</span></i>
+                <div className="centerContent">
+                    <h1> THANKS FOR SUBSCRIBING </h1>
+                    <h1>TO OUR NEWSLETTER</h1>
+                    {/* continue btn: now acts as a hyperlink. CSS style makes sure it looks like a button */}
+                    <a className="continueButton" href="/Learn"> Continue To Website</a>
+                </div>
+            </div>
+        </div>  
     )
 }
 export default ThanksForSubscribing; 

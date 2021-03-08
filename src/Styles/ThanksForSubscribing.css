@@ -3,7 +3,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
     text-align: center;
     background: rgb(0, 0, 0, 0.7);
     padding: 50px;
@@ -17,26 +16,27 @@
   color: white;
   font-size: 40px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .continueButton {
   background: #0984e3;
   padding: 10px 24px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   border-radius: 20px;
-}
-
-.continueButton a {
+  border: none;
   color: white;
+  transition: all 0.1s ease-in-out;
 }
 
 .continueButton:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
-    transition: transform 150ms;
-    transform: scale(1.03);
+    text-decoration: none;
+    color: lightblue;
+    font-size: 19px;
 }
 
 .subHeading {
