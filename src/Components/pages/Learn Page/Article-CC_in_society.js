@@ -108,7 +108,7 @@ const fact = {
               {CreateBox(Water)}
               </div>
 
-              <p className="article-body">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <a href='/LearnPageThree' className="link">  what you can do. </a></p>
+              <p className="article-body">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <a href='/LearnPageThree' className="link"><i>what you can do.</i></a></p>
               <br/>
           </Layout>
       );

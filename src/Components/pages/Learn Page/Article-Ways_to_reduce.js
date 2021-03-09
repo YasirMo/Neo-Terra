@@ -93,7 +93,7 @@ const Flying = {
           <br></br>
           <li>For trips within the same country or continent take the train.</li>
           <br></br>
-          <li>When flying is unavoidable pay a little extra for carbon offsetting. <a target="_blank" rel="noreferrer" href="https://www.myclimate.org/carbon-offset/"><i>myClimate</i></a> compares carbon emissions of flights</li>
+          <li>When flying is unavoidable pay a little extra for carbon offsetting. <a className="link" target="_blank" rel="noreferrer" href="https://www.myclimate.org/carbon-offset/"><i>myClimate</i></a> compares carbon emissions of flights</li>
           
     </p>
   ),
