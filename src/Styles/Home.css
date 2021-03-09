@@ -43,6 +43,7 @@ html, body
 /*Dark Box Content*/
 .content
 {
+    height: 320px;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -70,6 +70,7 @@ function SolutionCards() {
         SolutionsTitle:{
           color:'white',
           fontFamily: 'sans-serif',
+          fontWeight: '600',
         },
       });
      
