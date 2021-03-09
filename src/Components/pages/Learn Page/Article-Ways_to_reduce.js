@@ -1,5 +1,5 @@
 import Layout from '../../../Layout/Layout'
-import {CreateBox, CreateFact} from './ArticleBox';
+import {CreateBox, CreateFact, References} from './ArticleBox';
 import {ArticleBanner} from './Banner';
 
 /* --- Links for Banner --- */
@@ -160,6 +160,21 @@ const fact = {
   txt: 'The worst impacts of climate change could be irreversible by 2030'
 }
 
+const sources = [
+  {
+    web: "David Suzuki Foundation",
+    link: "https://davidsuzuki.org/what-you-can-do/top-10-ways-can-stop-climate-change/",
+    title: "Top 10 things you can do about climate change",
+    language: "EN",
+  },
+  {
+    web: "Curbed",
+    link: "https://archive.curbed.com/2017/6/7/15749900/how-to-stop-climate-change-actions",
+    title: "101 ways to fight climate change",
+    language: "EN",
+  },
+]
+
 function Article_3() {
     return (
         <Layout>
@@ -174,6 +189,7 @@ function Article_3() {
             {CreateBox(Fashion)}
             {CreateBox(Impact)}
 
+            {References(sources)}
             </div>
         </Layout>
     )

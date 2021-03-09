@@ -1,5 +1,5 @@
 import Layout from '../../../Layout/Layout'
-import {CreateBox, CreateFact} from './ArticleBox';
+import {CreateBox, CreateFact, References} from './ArticleBox';
 import {ArticleBanner} from './Banner';
 
 //This css file modifies some parts of the content.
@@ -249,13 +249,46 @@ const fact = {
   txt: 'Ecosystems perform an important role in climate regulation. Nowadays it is known that they absorb around half of CO2 emissions produced by humans'
 }
 
+const sources = [
+  {
+    web: "wwf.org.uk",
+    link: "https://www.wwf.org.uk/learn/effects-of/climate-change",
+    title: "Effects of climate change",
+    language: "EN"
+  },
+  {
+    web: "ayudaenaccion.org",
+    link: "https://ayudaenaccion.org/ong/blog/sostenibilidad/consecuencias-del-cambio-climatico/#:~:text=La%20deforestaci%C3%B3n%20y%20desaparici%C3%B3n%20de,de%20gases%20de%20efecto%20invernadero.",
+    title: "Consequences of climate change",
+    language: "SPA"
+  },
+  {
+    web: "Greenpeace",
+    link: "https://es.greenpeace.org/es/trabajamos-en/cambio-climatico/asi-afecta-el-cambio-climatico/efectos-del-cambio-climatico-en-el-medio-ambiente/",
+    title: "Effects of climate change in the environment",
+    language: "SPA"
+  },
+  {
+    web: "ecoinventos.com",
+    link: "https://ecoinventos.com/los-diez-efectos-mas-importantes-del-cambio-climatico/",
+    title: "Top 10 most important effects of climate change",
+    language: "SPA"
+  },
+  {
+    web: "nuevatribuna.es",
+    link: "https://nuevatribuna.publico.es/articulo/medio-ambiente/efectos-cambio-climatico-biodiversidad/20190525090956163038.html",
+    title: "Effects of climate change in biodiversity",
+    language: "SPA"
+  },
+]
+
 /* 
 Inside the main function we will pass only the required functions and arguments which will build the page content.
 The functions defined already include CSS parameters.
 
 //Instruccions on how to build an article:
 
-- Create an instance of NavBar always!!!!
+- Create an instance of NavBar always!!!! (just add content inside the <Layout> Component)
 - to add an element such as page banner, box content or fact box use the imported functions from Article.js and banner.js.
   Make sure you call the function within brackets --> "{}" inside a "<div>" tag.
   Take a look at each JS to know more on their function call syntax.
@@ -301,16 +334,7 @@ function Article_1() {
             </p>
 
             {/* References */}
-            <div className="references">
-              <p>References:</p>
-              <ul>
-                <li>wwf.org.uk - <a href="https://www.wwf.org.uk/learn/effects-of/climate-change">Effects of climate change</a> (EN)</li>
-                <li>ayudaenaccion.org - <a href="https://ayudaenaccion.org/ong/blog/sostenibilidad/consecuencias-del-cambio-climatico/#:~:text=La%20deforestaci%C3%B3n%20y%20desaparici%C3%B3n%20de,de%20gases%20de%20efecto%20invernadero.">Consequences of climate change</a> (SPN)</li>
-                <li>greenpeace.org - <a href="https://es.greenpeace.org/es/trabajamos-en/cambio-climatico/asi-afecta-el-cambio-climatico/efectos-del-cambio-climatico-en-el-medio-ambiente/">Effects of climate change in the environment</a> (SPN)</li>
-                <li>ecoinventos.com - <a href="https://ecoinventos.com/los-diez-efectos-mas-importantes-del-cambio-climatico/">Top 10 most important effects of climate change</a> (SPN)</li>
-                <li>nuevatribuna.es - <a href="https://nuevatribuna.publico.es/articulo/medio-ambiente/efectos-cambio-climatico-biodiversidad/20190525090956163038.html">Effects of climate change in biodiversity</a> (SPN)</li>
-              </ul>
-            </div>
+            {References(sources)}
         </div>
     </Layout>
     );

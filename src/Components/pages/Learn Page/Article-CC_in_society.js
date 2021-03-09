@@ -1,5 +1,5 @@
 import Layout from '../../../Layout/Layout'
-import {CreateBox, CreateFact} from './ArticleBox';
+import {CreateBox, CreateFact, References} from './ArticleBox';
 import {ArticleBanner} from './Banner';
 
 /* --- Links for Banner --- */
@@ -94,6 +94,45 @@ const fact = {
   txt: 'There is more carbon dioxide in our atmosphere than any time in human history'
 }
 
+const sources = [
+  {
+    web: "Columbia University",
+    link: "https://blogs.ei.columbia.edu/2019/12/27/climate-change-impacts-everyone/",
+    title: "10 Climate change impacts that will affect us all",
+    language: "EN"
+  },
+  {
+    web: "National Geographic",
+    link: "https://www.nationalgeographic.com/climate-change/how-to-live-with-it/health.html",
+    title: "Climate change: how to live with it",
+    language: "EN"
+  },
+  {
+    web: "wwf.org.uk",
+    link: "https://www.wwf.org.uk/learn/effects-of/climate-change",
+    title: "Effects of climate change",
+    language: "EN"
+  },
+  {
+    web: "noaa.gov",
+    link: "https://www.noaa.gov/education/resource-collections/climate/climate-change-impacts",
+    title: "Climate change impacts",
+    language: "EN"
+  },
+  {
+    web: "Health Affairs",
+    link: "https://www.healthaffairs.org/do/10.1377/hblog20181218.278288/full/",
+    title: "Climate change is the greatest threat to human healh in history",
+    language: "EN"
+  },
+  {
+    web: "Carbon Brief",
+    link: "https://www.carbonbrief.org/impact-climate-change-health-is-major-threat-21st-century",
+    title: "Impact of climate change on health is 'the major threat of 21st century'",
+    language: "EN"
+  },
+]
+
   function Article_2() {
       return (
           <Layout>
@@ -109,7 +148,9 @@ const fact = {
               </div>
 
               <p className="article-body">Climate change is an ever growing issue concerning us all. We all need to do our part to overcome it. Find out <a href='/LearnPageThree' className="link"><i>what you can do.</i></a></p>
-              <br/>
+
+              {References(sources)}
+
           </Layout>
       );
   }

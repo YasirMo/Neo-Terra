@@ -117,3 +117,28 @@ export function CreateFact(content)
         </Paper>
     );
 }
+
+/*
+
+//References function:
+This function returns a list with all the sources used in the article
+
+This method requires an array of object in order to work. Each object in the array must have the following properties:
+
+- web: The main source website (This element is not a hyperlink)
+- link: The we address to the original source / article
+- title: Name of the article (from the source)
+- language: specify the language of the source article (preferably abbreviations i.e: SPA, EN, GER, etc)
+*/
+
+export function References(links)
+{
+    return (
+        <div className="references">
+            <p>References:</p>
+            <ul>
+                {links.map((source) => {return <li>{source.web} - <a className="link" href={source.link}>{source.title}</a> ({source.language})</li>})}
+            </ul>
+        </div>
+    );
+}
