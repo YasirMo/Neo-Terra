@@ -299,6 +299,18 @@ function Article_1() {
             have taken place in the last centuries.
             It is important to take action now in order to reduce its effects and become able to adapt in time to the new conditions that are being imposed.
             </p>
+
+            {/* References */}
+            <div className="references">
+              <p>References:</p>
+              <ul>
+                <li>wwf.org.uk - <a href="https://www.wwf.org.uk/learn/effects-of/climate-change">Effects of climate change</a> (EN)</li>
+                <li>ayudaenaccion.org - <a href="https://ayudaenaccion.org/ong/blog/sostenibilidad/consecuencias-del-cambio-climatico/#:~:text=La%20deforestaci%C3%B3n%20y%20desaparici%C3%B3n%20de,de%20gases%20de%20efecto%20invernadero.">Consequences of climate change</a> (SPN)</li>
+                <li>greenpeace.org - <a href="https://es.greenpeace.org/es/trabajamos-en/cambio-climatico/asi-afecta-el-cambio-climatico/efectos-del-cambio-climatico-en-el-medio-ambiente/">Effects of climate change in the environment</a> (SPN)</li>
+                <li>ecoinventos.com - <a href="https://ecoinventos.com/los-diez-efectos-mas-importantes-del-cambio-climatico/">Top 10 most important effects of climate change</a> (SPN)</li>
+                <li>nuevatribuna.es - <a href="https://nuevatribuna.publico.es/articulo/medio-ambiente/efectos-cambio-climatico-biodiversidad/20190525090956163038.html">Effects of climate change in biodiversity</a> (SPN)</li>
+              </ul>
+            </div>
         </div>
     </Layout>
     );

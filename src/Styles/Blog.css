@@ -48,6 +48,27 @@ i.box-title h1
     color: #0984e3;
 }
 
+.references
+{
+    padding: 0 120px;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.references p
+{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.references ul
+{
+    padding-left: 20px;
+    list-style: square;
+}
+
 /* Don't know where this works
 .ending {
     margin: 2em 0;
