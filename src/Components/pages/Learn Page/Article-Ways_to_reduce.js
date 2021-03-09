@@ -160,6 +160,7 @@ const fact = {
   txt: 'The worst impacts of climate change could be irreversible by 2030'
 }
 
+/* --- References --- */
 const sources = [
   {
     web: "David Suzuki Foundation",

@@ -94,6 +94,7 @@ const fact = {
   txt: 'There is more carbon dioxide in our atmosphere than any time in human history'
 }
 
+/* --- References --- */
 const sources = [
   {
     web: "Columbia University",
