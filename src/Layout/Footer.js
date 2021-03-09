@@ -45,7 +45,7 @@ class Footer extends Component {
           </div>
           
         </div>
-        <hr />
+        <hr className="footer-line" />
         {/* Bottom Info / Links */}
         <div className="row">
           <p className="col-sm">
