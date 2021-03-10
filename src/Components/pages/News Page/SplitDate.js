@@ -4,32 +4,95 @@
 
 function SplitDate(date) {
 
-    //state = {
-    //   total: 0
-    //}
+    if (date !== null) {
 
-    //var day = 0;
-    //var month = 0;
-    //var year = 0;
+        if (date[date.length - 5] == "/") {
 
-    var dateSplit = date.split("/");
+            var dateSplit = date.split("/");
 
-    var day = dateSplit[0];
-    var month = dateSplit[1];
-    var year = dateSplit[2];
+            var day = dateSplit[0];
+            var month = dateSplit[1];
+            var year = dateSplit[2];
 
-    //var day = date.charAt(0) + date.charAt(1);
-    //var month = date.charAt(3) + date.charAt(4);
-    //var year = date.charAt(6) + date.charAt(7) + date.charAt(8)+ date.charAt(9);
+            var totalDate = year + month + day;
 
-    var totalDate = year + month + day;
-    //this.setState({total: totalDate});
+            return totalDate;
 
-    return totalDate;
+        } else {
 
-    //return this.state;
+            var dateSplit = date.split(" ");
 
-    
+            var day = dateSplit[0];
+
+            switch (dateSplit[1]) {
+                case 'Jan':
+                    var month = '01';
+                    break;
+
+                case 'Feb':
+                    var month = '02';
+                    break;
+
+                case 'Mar':
+                    var month = '03';
+                    break;
+
+                case 'Apr':
+                    var month = '04';
+                    break;
+
+                case 'May':
+                    var month = '05';
+                    break;
+
+                case 'Jun':
+                    var month = '06';
+                    break;
+
+                case 'Jul':
+                    var month = '07';
+                    break;
+
+                case 'Aug':
+                    var month = '08';
+                    break;
+
+                case 'Sep':
+                    var month = '09';
+                    break;
+
+                case 'Oct':
+                    var month = '10';
+                    break;
+
+                case 'Nov':
+                    var month = '11';
+                    break;
+
+                case 'Dec':
+                    var month = '12';
+                    break;
+            
+                default:
+                    break;
+            } //End Switch
+
+            var year = dateSplit[2];
+
+            var totalDate = year + month + day;
+
+            return totalDate;
+
+
+        } //End If
+
+
+    } else {
+
+        return date;
+
+    }
+
 }
 
 export default SplitDate
