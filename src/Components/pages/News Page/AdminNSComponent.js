@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const Newsstory = {
 
-    backgroundImage : "url(/images/forest.jpg)",
+    backgroundImage : "url(/images/nature2.jpg)",
    
 };
 
@@ -32,12 +32,18 @@ class AdminNSComponent extends React.Component {
 
     }
 
+    deleteSelector = e => {
+
+        e.preventDefault()
+        this.setState({story_id: e.target.id})
+
+    }
+
     deleteHandler = e => {
 
         e.preventDefault()
-
-        this.setState({story_id: e.target.id})
         axios.delete('http://localhost:8080/news/', {params: {id: this.state.story_id}})
+        window.location.reload(false);
 
     }
 
@@ -61,13 +67,12 @@ class AdminNSComponent extends React.Component {
                     <div style = {Newsstory} className = "newsimage"></div>
                     <div className = "newscontent">
 
-                        <h3>{News.story_id}</h3>
-                        <h2>{News.storyTitle}</h2>
-                        <p>Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
-                        <span>{News.storyLink}</span>
-                        <span>Date of Upload</span>
-                        <a href={News.storyLink} target ="_blank" rel="noreferrer">Open Story</a>
-                        <button id = {News.id} onClick = {this.deleteHandler}>DELETE</button>
+                        <h3 className = "newsTitle">{News.storyTitle}</h3>
+                        <p className = "newsDesc">Test desciption is quite long on purpose do not mind anything nothing shady going on here</p>
+                        <span className = "newsSource">{News.source}</span>
+                        <span className = "newsDate">{News.date}</span>
+                        <a href={News.storyLink}  rel="noreferrer" target ="_blank" className = "newsOpenBtn">Open Story</a>
+                        <button id = {News.id} onMouseEnter = {this.deleteSelector} onClick = {this.deleteHandler}>DELETE</button>
             
                     </div>
 
