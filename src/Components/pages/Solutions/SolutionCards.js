@@ -302,8 +302,8 @@ function SolutionCards() {
                             Buy an Electic car
                             </Typography>
                             <Typography variant="body2" component="p">
-                            CO2 Emissions Prevented: {ansRemapped[6] * 169.4} grams <br/>
-                            Fuel Savings: £{(0.3 * ansRemapped[6]) * 0.12}
+                            CO2 Emissions Prevented: {(ansRemapped[6] * 169.4).toFixed(2)} grams <br/>
+                            Annual Fuel Savings: £{((0.3 * ansRemapped[6]) * 0.12).toFixed(2)}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -323,7 +323,7 @@ function SolutionCards() {
                             Compost Your Waste
                             </Typography>
                             <Typography variant="body2" c component="p">
-                            CO2 Emissions Prevented: {29500 /ansRemapped[10]} grams
+                            CO2 Emissions Prevented: {(29500 /ansRemapped[10]).toFixed(2)} grams
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -343,9 +343,9 @@ function SolutionCards() {
                             Buy from Charity/ Thrift Shops
                             </Typography>
                             <Typography variant="body2" component="p">
-                            CO2 Emissions Prevented: {15000 /ansRemapped[15]} grams
+                            CO2 Emissions Prevented: {(15000 /ansRemapped[15]).toFixed(2)} grams
                             <br/>
-                            Savings Made: £{ansRemapped[15] * 210}
+                            Annual Savings Made: £{(ansRemapped[15] * 210).toFixed(2)}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
